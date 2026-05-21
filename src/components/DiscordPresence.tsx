@@ -11,6 +11,7 @@ interface Activity {
   name?: string
   details?: string
   state?: string
+  emoji?: { name?: string; id?: string | null; animated?: boolean }
   timestamps?: { start?: number; end?: number }
   assets?: { large_image?: string; small_image?: string }
 }
@@ -33,46 +34,56 @@ interface LanyardResponse {
 
 const DISCORD_USER_ID = '484182924762284054'
 const LANYARD_API_URL = `https://api.lanyard.rest/v1/users/${DISCORD_USER_ID}`
-const LANYARD_REFRESH_MS = 60_000
+const LANYARD_REFRESH_MS = 10_000
 
-const DiscordSkeleton = () => (
-  <div className="relative overflow-hidden sm:aspect-square">
-    <div className="grid size-full grid-rows-4">
-      <Skeleton className="bg-secondary/50" />
-      <div className="row-span-3 flex flex-col gap-3 p-3">
-        <div className="flex gap-x-2">
-          <Skeleton className="-mt-12 size-20 rounded-full" />
-        </div>
-        <Skeleton className="h-14 rounded-xl" />
-        <Skeleton className="min-h-20 grow rounded-xl" />
-      </div>
-    </div>
-  </div>
+const STATUS_CONFIGS: Record<
+  DiscordStatus,
+  { label: string; bgClass: string; indicator?: React.ReactNode }
+> = {
+  online: {
+    label: 'Online',
+    bgClass: 'bg-green-500',
+  },
+  idle: {
+    label: 'Idle',
+    bgClass: 'bg-yellow-500',
+    indicator: <div className="bg-background size-2 rounded-full" />,
+  },
+  dnd: {
+    label: 'Do Not Disturb',
+    bgClass: 'bg-red-500',
+    indicator: <div className="bg-background h-[3px] w-[9px] rounded-full" />,
+  },
+  offline: {
+    label: 'Offline',
+    bgClass: 'bg-muted-foreground',
+    indicator: <div className="bg-background size-1.5 rounded-full" />,
+  },
+}
+
+const DiscordIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 127.14 96.36"
+    fill="currentColor"
+    className="size-7"
+    aria-hidden="true"
+  >
+    <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z" />
+  </svg>
 )
 
 const StatusIndicator = ({ status }: { status: DiscordStatus }) => {
-  const statusClasses: Record<DiscordStatus, string> = {
-    online: 'bg-green-500',
-    idle: 'bg-yellow-500',
-    dnd: 'bg-red-500 flex items-center justify-center',
-    offline: 'bg-muted-foreground flex items-center justify-center',
-  }
-
+  const config = STATUS_CONFIGS[status]
   return (
     <div
       className={cn(
-        'border-background absolute right-0 bottom-0 size-5 rounded-full border-[3px]',
-        statusClasses[status],
+        'ring-background absolute right-0 bottom-0 flex size-3.5 items-center justify-center rounded-full ring-2',
+        config.bgClass,
       )}
     >
-      {status === 'idle' && (
-        <div className="bg-background size-2 rounded-full" />
-      )}
-      {status === 'dnd' && (
-        <div className="bg-background h-[3px] w-[9px] rounded-full" />
-      )}
-      {status === 'offline' && (
-        <div className="bg-background size-1.5 rounded-full" />
+      {config.indicator && (
+        <div className="scale-[0.55]">{config.indicator}</div>
       )}
     </div>
   )
@@ -144,7 +155,7 @@ const ActivityDisplay = ({ activity }: { activity: Activity }) => {
   return (
     <div className="flex w-full items-center gap-x-3">
       <div
-        className="relative aspect-square h-full w-auto shrink-0 rounded-md bg-contain"
+        className="relative aspect-square h-full w-auto shrink-0 rounded-md bg-contain bg-center bg-no-repeat"
         style={{ backgroundImage: `url('${getImageUrl('large_image')}')` }}
       >
         {activity.assets?.small_image && (
@@ -157,9 +168,11 @@ const ActivityDisplay = ({ activity }: { activity: Activity }) => {
           />
         )}
       </div>
-      <div className="my-2 flex min-w-0 flex-1 flex-col gap-y-1 overflow-hidden">
+      <div className="my-1 flex min-w-0 flex-1 flex-col gap-y-1 overflow-hidden">
         {activity.name && (
-          <div className="truncate text-xs leading-none">{activity.name}</div>
+          <div className="truncate text-xs leading-none font-medium">
+            {activity.name}
+          </div>
         )}
         {activity.details && (
           <div className="text-muted-foreground truncate text-[10px] leading-none">
@@ -198,6 +211,17 @@ const ActivityDisplay = ({ activity }: { activity: Activity }) => {
   )
 }
 
+const DiscordSkeleton = () => (
+  <div className="relative overflow-hidden rounded-lg">
+    <Skeleton className="h-14" />
+    <div className="bg-muted flex flex-col gap-2.5 p-3">
+      <Skeleton className="-mt-10 size-16 rounded-full" />
+      <Skeleton className="h-14 rounded-md" />
+      <Skeleton className="h-16 rounded-md" />
+    </div>
+  </div>
+)
+
 const DiscordPresence = () => {
   const [lanyard, setLanyard] = useState<LanyardResponse | null>(null)
   const [isLoading, setIsLoading] = useState(true)
@@ -208,12 +232,12 @@ const DiscordPresence = () => {
     const fetchPresence = async () => {
       try {
         const res = await fetch(LANYARD_API_URL)
-        if (!res.ok) throw new Error(`${res.status}`)
+        if (!res.ok) throw new Error(`HTTP ${res.status}`)
         const body = (await res.json()) as LanyardResponse
-        if (!body.data) throw new Error('invalid response')
+        if (!body.data) throw new Error('missing data field')
         if (mounted) setLanyard(body)
-      } catch {
-        // keep whatever state we have
+      } catch (err) {
+        console.error('[DiscordPresence] fetch failed:', err)
       } finally {
         if (mounted) setIsLoading(false)
       }
@@ -245,48 +269,72 @@ const DiscordPresence = () => {
   if (isLoading) return <DiscordSkeleton />
   if (!lanyard?.data) return null
 
-  const { discord_status, discord_user } = lanyard.data
+  const { discord_status, discord_user, activities } = lanyard.data
   const status = discord_status as DiscordStatus
+  const customStatusActivity = activities.find((a) => a.type === 4)
+  const customStatusEmoji = customStatusActivity?.emoji?.name ?? null
+  const customStatusText = customStatusActivity?.state ?? null
+  const customStatus =
+    customStatusEmoji || customStatusText
+      ? [customStatusEmoji, customStatusText].filter(Boolean).join(' ')
+      : null
+
   const avatarUrl = discord_user.avatar
     ? `https://cdn.discordapp.com/avatars/${discord_user.id}/${discord_user.avatar}.png?size=128`
     : '/jett-bread-pfp.jpg'
   const displayName =
-    discord_user.global_name ?? discord_user.display_name ?? discord_user.username
+    discord_user.global_name ??
+    discord_user.display_name ??
+    discord_user.username
 
   return (
-    <div className="relative overflow-hidden sm:aspect-square">
-      <div className="grid size-full grid-rows-4">
-        <div className="bg-secondary/50" />
-        <div className="row-span-3 flex flex-col gap-3 p-3">
+    <div className="relative overflow-hidden rounded-lg">
+      {/* Banner */}
+      <div className="from-primary/20 to-primary/5 h-14 bg-gradient-to-br" />
+
+      {/* Content */}
+      <div className="bg-muted flex flex-col gap-2.5 p-3">
+          {/* Avatar */}
           <div className="relative w-fit">
             <AvatarComponent
               src={avatarUrl}
               alt={displayName}
               fallback="n"
-              className="-mt-12 size-20 rounded-full"
+              className="-mt-10 size-16 rounded-full"
             />
             <StatusIndicator status={status} />
           </div>
 
-          <div className="bg-secondary/50 flex flex-col gap-y-1 rounded-xl p-3">
-            <span className="text-sm leading-none">{displayName}</span>
+          {/* User info */}
+          <div className="bg-border/50 flex flex-col gap-y-1 rounded-md px-3 py-2">
+            <div className="flex items-center justify-between gap-x-2">
+              <span className="text-sm leading-none font-medium shrink-0">
+                {displayName}
+              </span>
+              {customStatus && (
+                <span className="text-muted-foreground truncate text-[12px] leading-none italic">
+                  {customStatus}
+                </span>
+              )}
+            </div>
             <span className="text-muted-foreground text-xs leading-none">
               @{discord_user.username}
             </span>
           </div>
 
-          <div className="bg-secondary/50 flex min-h-20 grow rounded-xl px-3 py-2">
+          {/* Activity */}
+          <div className="bg-border/50 flex min-h-14 flex-1 items-center rounded-md px-3 py-2">
             {mainActivity ? (
               <ActivityDisplay activity={mainActivity} />
             ) : (
-              <div className="flex size-full items-center justify-center">
-                <span className="text-muted-foreground text-xs">
-                  No activity
-                </span>
-              </div>
+              <span className="text-muted-foreground text-xs">No activity</span>
             )}
           </div>
-        </div>
+      </div>
+
+      {/* Discord logo badge */}
+      <div className="bg-primary text-background absolute top-0 right-0 m-3 flex size-11 items-center justify-center rounded-full">
+        <DiscordIcon />
       </div>
     </div>
   )
