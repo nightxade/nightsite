@@ -9,7 +9,6 @@ import {
   isSubpost,
 } from '@/lib/data-utils'
 import { Icon } from 'astro-icon/components'
-import { ScrollArea } from '@/components/ui/scroll-area'
 
 const { parentId } = Astro.props
 const currentWriteupId = Astro.params.id as string
@@ -83,10 +82,8 @@ const currentSubwriteupDetails = isCurrentSubpost
           </div>
         </summary>
 
-        <ScrollArea
-          client:load
-          className="mx-auto max-h-[30vh] max-w-4xl"
-          type="always"
+        <div
+          class="mx-auto max-h-[30vh] max-w-4xl overflow-y-auto [scrollbar-color:hsl(var(--border))_transparent] [scrollbar-width:thin]"
           data-subposts-header-scroll
         >
           <ul class="flex list-none flex-col gap-y-1 px-4 pb-4">
@@ -190,7 +187,7 @@ const currentSubwriteupDetails = isCurrentSubpost
                 </div>
               )}
             </ul>
-        </ScrollArea>
+        </div>
       </details>
     </div>
   )
@@ -255,12 +252,10 @@ const currentSubwriteupDetails = isCurrentSubpost
       const container = document.getElementById('mobile-subposts-container')
       if (!container) return
 
-      state.headerScrollArea = container.querySelector(
+      state.scrollArea = container.querySelector(
         '[data-subposts-header-scroll]',
       )
-      state.scrollArea = state.headerScrollArea?.querySelector(
-        '[data-radix-scroll-area-viewport]',
-      )
+      state.headerScrollArea = state.scrollArea
       state.detailsElement = container.querySelector('details')
       const links = container.querySelectorAll('.mobile-subposts-link')
 

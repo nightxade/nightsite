@@ -26,7 +26,7 @@ const postsByYear = groupPostsByYear(page.data)
 const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a))
 ---
 
-<Layout class="max-w-4xl">
+<Layout class="max-w-5xl">
   <PageHead slot="head" title="Blog" />
   <Breadcrumbs
     items={[

@@ -204,26 +204,17 @@ const DiscordPresence = () => {
 
   useEffect(() => {
     let mounted = true
-    let inFlight = false
-    let controller: AbortController | null = null
 
-    const fetchPresence = async (showLoading = false) => {
-      if (inFlight) return
-      inFlight = true
-      if (showLoading) setIsLoading(true)
-      const ac = new AbortController()
-      controller = ac
+    const fetchPresence = async () => {
       try {
-        const res = await fetch(LANYARD_API_URL, { signal: ac.signal })
+        const res = await fetch(LANYARD_API_URL)
         if (!res.ok) throw new Error(`${res.status}`)
         const body = (await res.json()) as LanyardResponse
         if (!body.data) throw new Error('invalid response')
         if (mounted) setLanyard(body)
       } catch {
-        if (ac.signal.aborted) return
+        // keep whatever state we have
       } finally {
-        if (controller === ac) controller = null
-        inFlight = false
         if (mounted) setIsLoading(false)
       }
     }
@@ -232,12 +223,11 @@ const DiscordPresence = () => {
       if (document.visibilityState === 'visible') void fetchPresence()
     }
 
-    void fetchPresence(true)
+    void fetchPresence()
     const id = window.setInterval(refreshWhenVisible, LANYARD_REFRESH_MS)
     document.addEventListener('visibilitychange', refreshWhenVisible)
     return () => {
       mounted = false
-      controller?.abort()
       window.clearInterval(id)
       document.removeEventListener('visibilitychange', refreshWhenVisible)
     }
