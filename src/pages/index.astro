@@ -10,7 +10,7 @@ import Layout from '@/layouts/layout.astro'
   <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
     <section class="rounded-lg border sm:flex-1">
       <div class="flex flex-col space-y-1.5 p-6">
-        <h3 class="text-3xl leading-none font-medium">nightxade</h3>
+        <h3 id="site-heading" class="w-fit text-3xl leading-none font-medium">nightxade</h3>
         <p class="text-muted-foreground text-sm">
         /ˈnaɪt.ʃeɪd/ &bull; <span class="font-medium">nightshade</span>
         </p>
@@ -21,11 +21,11 @@ import Layout from '@/layouts/layout.astro'
         </p>
 
         <p class="text-muted-foreground mb-2 text-base">
-          i'm interested in all things computer science! in recent times, i've enjoyed learning about security, microarchitecture, ML systems, AI safety, and distributed systems. check out my reading page to see what i've been studying lately :)
+          i'm interested in all things computer science! in recent times, i've enjoyed learning about security, microarchitecture, ML systems, AI safety, and distributed systems. check out my <Link href="/reading" class="text-foreground" underline>reading page</Link> to see what i've been studying lately :)
         </p>
 
         <p class="text-muted-foreground mb-2 text-base">
-          if you want to get in touch with me, send me an email or dm me on discord.
+          if you want to get in touch with me, <Link href="mailto:matthewcaieatsrice@gmail.com" class="text-foreground" underline>send me an email</Link> or dm me on discord.
         </p>
       </div>
     </section>
@@ -35,3 +35,22 @@ import Layout from '@/layouts/layout.astro'
     </section>
   </div>
 </Layout>
+
+<style>
+  #site-heading {
+    background: linear-gradient(to right, #c5c8ee, #6b6fa8, #c5c8ee);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  @keyframes gradient-flow {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+
+  #site-heading:hover {
+    animation: gradient-flow 3s linear infinite;
+  }
+</style>

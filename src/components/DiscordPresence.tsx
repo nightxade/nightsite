@@ -214,7 +214,7 @@ const ActivityDisplay = ({ activity }: { activity: Activity }) => {
 const DiscordSkeleton = () => (
   <div className="relative overflow-hidden rounded-lg">
     <Skeleton className="h-14" />
-    <div className="bg-muted flex flex-col gap-2.5 p-3">
+    <div className="bg-background flex flex-col gap-2.5 p-3">
       <Skeleton className="-mt-10 size-16 rounded-full" />
       <Skeleton className="h-14 rounded-md" />
       <Skeleton className="h-16 rounded-md" />
@@ -290,10 +290,10 @@ const DiscordPresence = () => {
   return (
     <div className="relative overflow-hidden rounded-lg">
       {/* Banner */}
-      <div className="from-primary/20 to-primary/5 h-16 bg-gradient-to-br" />
+      <div className="bg-muted h-16" />
 
       {/* Content */}
-      <div className="bg-muted flex flex-col gap-2.5 p-3">
+      <div className="bg-background flex flex-col gap-2.5 p-3">
           {/* Avatar */}
           <div className="relative w-fit">
             <AvatarComponent
@@ -306,7 +306,7 @@ const DiscordPresence = () => {
           </div>
 
           {/* User info */}
-          <div className="bg-border/50 flex flex-col gap-y-1 rounded-md px-3 py-2">
+          <div className="bg-muted flex flex-col gap-y-1 rounded-md px-3 py-2">
             <div className="flex items-center justify-between gap-x-2">
               <span className="text-sm leading-none font-medium shrink-0">
                 {displayName}
@@ -323,7 +323,7 @@ const DiscordPresence = () => {
           </div>
 
           {/* Activity */}
-          <div className="bg-border/50 flex min-h-14 flex-1 items-center rounded-md px-3 py-2">
+          <div className="bg-muted flex min-h-14 flex-1 items-center rounded-md px-3 py-2">
             {mainActivity ? (
               <ActivityDisplay activity={mainActivity} />
             ) : (
