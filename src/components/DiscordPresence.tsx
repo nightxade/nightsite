@@ -290,7 +290,7 @@ const DiscordPresence = () => {
   return (
     <div className="relative overflow-hidden rounded-lg">
       {/* Banner */}
-      <div className="from-primary/20 to-primary/5 h-14 bg-gradient-to-br" />
+      <div className="from-primary/20 to-primary/5 h-16 bg-gradient-to-br" />
 
       {/* Content */}
       <div className="bg-muted flex flex-col gap-2.5 p-3">

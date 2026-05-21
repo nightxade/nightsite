@@ -55,6 +55,11 @@ import { Icon } from 'astro-icon/components'
 
   initThemeToggle()
 
+  document.addEventListener('astro:before-swap', (e) => {
+    const storedTheme = localStorage.getItem('theme') || 'light'
+    ;(e as any).newDocument.documentElement.setAttribute('data-theme', storedTheme)
+  })
+
   document.addEventListener('astro:after-swap', () => {
     const storedTheme = localStorage.getItem('theme') || 'light'
     const element = document.documentElement
