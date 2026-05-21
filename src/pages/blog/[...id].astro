@@ -78,7 +78,7 @@ const tocSections = await getTOCSections(currentPostId)
   }
 
   <section
-    class="grid grid-cols-[minmax(0px,1fr)_min(calc(var(--breakpoint-md)-2rem),100%)_minmax(0px,1fr)] gap-y-6"
+    class="grid grid-cols-[minmax(0px,1fr)_min(720px,100%)_minmax(0px,1fr)] gap-y-6"
   >
     <div class="col-start-2">
       <Breadcrumbs
@@ -233,7 +233,6 @@ const tocSections = await getTOCSections(currentPostId)
           parentId={
             isCurrentSubpost ? getParentId(currentPostId) : currentPostId
           }
-          className="w-64"
         />
       )
     }
@@ -296,4 +295,5 @@ const tocSections = await getTOCSections(currentPostId)
 
   document.addEventListener('astro:page-load', ensureKatexStyles)
   document.addEventListener('astro:after-swap', ensureKatexStyles)
+</script>ro:after-swap', ensureKatexStyles)
 </script>

@@ -1,0 +1,25 @@
+---
+title: Flag Extraction
+description: "They told me I just need to extract flag but I don't know what that means?!"
+date: 2023-11-27
+tags:
+  - forensics
+  - rar
+  - zip
+  - binwalk
+order: 7
+---
+
+They told me I just need to extract flag but I don't know what that means?!
+[flag.rar](/writeups/1337up-live-ctf-2023/assets/flag.rar)  
+
+---
+
+After extracting the first file with an online .rar extractor, I realized that it was probably just a bunch of nested compressions/zips, given that the next file was a .tar.xz file.  
+
+The easiest solutions are to either use 7-Zip File Manager or just ```binwalk -eM flag.rar``` on Linux (```-e``` means extract, ```-M``` is basically recursive), which results in a final file, flag.gif.  
+
+Use a hex editor and Ctrl+F for "INTIGRITI" or do ```grep "INTIGRITI" flag.gif``` on Linux to get the flag!  
+
+
+    INTIGRITI{fl46_3x7r4c710n_c0mpl373}

@@ -6,6 +6,7 @@ import PaginationComponent from '@/components/ui/pagination'
 import { SITE } from '@/consts'
 import Layout from '@/layouts/layout.astro'
 import { getAllPosts, groupPostsByYear } from '@/lib/data-utils'
+import type { CollectionEntry } from 'astro:content'
 import type { PaginateFunction } from 'astro'
 
 export async function getStaticPaths({
@@ -13,7 +14,9 @@ export async function getStaticPaths({
 }: {
   paginate: PaginateFunction
 }) {
-  const allPosts = await getAllPosts()
+  const allPosts = (await getAllPosts()).filter(
+    (p): p is CollectionEntry<'blog'> => p.collection === 'blog',
+  )
   return paginate(allPosts, { pageSize: SITE.postsPerPage })
 }
 
@@ -23,7 +26,7 @@ const postsByYear = groupPostsByYear(page.data)
 const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a))
 ---
 
-<Layout class="max-w-3xl">
+<Layout class="max-w-4xl">
   <PageHead slot="head" title="Blog" />
   <Breadcrumbs
     items={[

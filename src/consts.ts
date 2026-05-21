@@ -1,42 +1,41 @@
 import type { IconMap, SocialLink, Site } from '@/types'
 
 export const SITE: Site = {
-  title: 'astro-erudite',
+  title: 'nightxade',
   description:
-    'astro-erudite is a opinionated, unstyled blogging template—built with Astro, Tailwind, and shadcn/ui.',
-  href: 'https://astro-erudite.vercel.app',
-  author: 'jktrn',
+    'beautiful, deadly poison',
+  href: 'href-todo',
+  author: 'nightxade',
   locale: 'en-US',
-  featuredPostCount: 2,
-  postsPerPage: 3,
+  featuredPostCount: 3,
+  postsPerPage: 5,
 }
 
 export const NAV_LINKS: SocialLink[] = [
-  {
-    href: '/blog',
-    label: 'blog',
-  },
-  {
-    href: '/authors',
-    label: 'authors',
-  },
-  {
-    href: '/about',
-    label: 'about',
-  },
+  { href: '/', label: 'home' },
+  { href: '/blog', label: 'blog' },
+  { href: '/writeups', label: 'writeups' },
+  { href: '/reading', label: 'reading' },
+  { href: '/work', label: 'work' },
+  { href: '/resume', label: 'resume' },
+  { href: '/about', label: 'about' },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: 'https://github.com/jktrn',
+    href: 'https://github.com/nightxade',
     label: 'GitHub',
   },
   {
-    href: 'https://twitter.com/enscry',
-    label: 'Twitter',
+    href: 'https://www.linkedin.com/in/matthew-cai1337/',
+    label: 'LinkedIn'
   },
+  // {
+  //   href: 'https://twitter.com/enscry',
+  //   label: 'Twitter',
+  // },
   {
-    href: 'mailto:jason@enscribe.dev',
+    href: 'mailto:matthew.cai.official@gmail.com',
     label: 'Email',
   },
   {

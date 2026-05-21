@@ -7,16 +7,30 @@ import Layout from '@/layouts/layout.astro'
 import { cn } from '@/lib/utils'
 ---
 
-<Layout class="max-w-3xl">
+<Layout class="max-w-4xl">
   <PageHead slot="head" title="404" />
   <Breadcrumbs items={[{ label: '???', icon: 'lucide:circle-help' }]} />
 
   <section
     class="flex flex-col items-center justify-center gap-y-4 text-center"
   >
-    <div class="max-w-md">
+    <div class="max-w-lg">
       <h1 class="mb-4 text-3xl font-medium">404: Page not found</h1>
-      <p class="prose">Oops! The page you're looking for doesn't exist.</p>
+      <p class="prose">Unfortunately, you somehow stumbled upon a null deref on the site :&lt;</p>
+      <br>
+      <pre class="command-line text-left"><code class="language-bash">Program received signal SIGSEGV, Segmentation fault.</code>
+<code class="language-bash"><span style="color: #6495ED">0x0000006e69676874</span> in <span style="color: yellow">main</span> ()</code>
+<code class="language-bash" style="color:red">pwndbg@night&gt; <span class="cursor">█</span></code></pre>
+
+<style>
+  .cursor {
+    animation: blink 2s step-start infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+</style>
     </div>
     <Link
       href="/"
