@@ -38,6 +38,14 @@ import Layout from '@/layouts/layout.astro'
 
 <style>
   #site-heading {
+    background: linear-gradient(to right, #9295c8, #484c84, #9295c8);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  [data-theme='dark'] #site-heading {
     background: linear-gradient(to right, #c5c8ee, #6b6fa8, #c5c8ee);
     background-size: 200% auto;
     -webkit-background-clip: text;
