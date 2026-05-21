@@ -4,7 +4,7 @@
 
 Personal website for nightxade. A personalized adaptation of the [astro-erudite](https://github.com/jktrn/astro-erudite) template by [enscribe](https://enscribe.dev).
 
-[![License](https://img.shields.io/github/license/nightxade/nightxade.dev?color=0a0a0a&logo=github&logoColor=fff&style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/github/license/nightxade/nightsite?color=0a0a0a&logo=github&logoColor=fff&style=for-the-badge)](LICENSE)
 
 </div>
 
