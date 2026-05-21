@@ -1,10 +1,206 @@
 ---
 import Breadcrumbs from '@/components/breadcrumbs.astro'
+import Link from '@/components/link.astro'
 import PageHead from '@/components/page-head.astro'
 import Layout from '@/layouts/layout.astro'
 ---
 
-<Layout class="max-w-5xl">
+<Layout class="max-w-4xl">
   <PageHead slot="head" title="Resume" />
-  <Breadcrumbs items={[{ label: 'Resume', icon: 'lucide:file-text' }]} />
+  <div class="flex items-center justify-between">
+    <Breadcrumbs items={[{ label: 'Resume', icon: 'lucide:file-text' }]} />
+    <Link href="/static/resume.pdf" external class="text-muted-foreground hover:text-foreground text-sm" underline>Download PDF</Link>
+  </div>
+
+  <div class="flex flex-col gap-8 pb-12 text-foreground/80">
+
+    <!-- Header -->
+    <div class="flex flex-col items-center gap-1 text-center">
+      <h1 class="text-5xl font-semibold">Matthew Cai</h1>
+      <div class="text-muted-foreground flex items-center gap-4 text-sm">
+        <span>(561) 777-6131</span>
+        <span>&middot;</span>
+        <Link href="mailto:matthew.cai.official@gmail.com" class="text-muted-foreground hover:text-foreground" underline>matthew.cai.official@gmail.com</Link>
+        <span>&middot;</span>
+        <Link href="https://github.com/nightxade" external class="text-muted-foreground hover:text-foreground" underline>github.com/nightxade</Link>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <section class="flex flex-col gap-3">
+      <h2 class="border-b-2 border-foreground/25 pb-1 text-lg font-semibold">Education</h2>
+      <div class="flex flex-col gap-1">
+        <div class="flex items-baseline justify-between gap-4">
+          <span class="font-semibold">University of California, Berkeley</span>
+          <span class="text-muted-foreground shrink-0 text-sm">Expected May 2027</span>
+        </div>
+        <div class="flex items-baseline justify-between gap-4">
+          <span class="text-muted-foreground text-sm italic">Bachelor of Science, Electrical Engineering and Computer Science</span>
+          <span class="text-muted-foreground shrink-0 text-sm">GPA: 4.00/4.00</span>
+        </div>
+        <p class="text-sm"><span class="font-medium">Undergrad Coursework:</span> <span class="text-muted-foreground">SICP, DSA, Machine Structures, Circuits, Computer Architecture, Computer Security, Compilers, OS, Advanced Algorithms, Databases, Machine Learning, Reinforcement Learning, Linear Algebra, Discrete Math, Calculus I/II/III, Abstract Algebra</span></p>
+        <p class="text-sm"><span class="font-medium">Graduate Coursework:</span> <span class="text-muted-foreground">Computer Architecture (audit), Computer Security, Performance Optimization</span></p>
+        <p class="text-sm"><span class="font-medium">Leadership:</span> <span class="text-muted-foreground">Berke1337 Cybersecurity Club, Quantum Computing at Berkeley (QCB), Eta Kappa Nu (HKN)</span></p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="flex flex-col gap-4">
+      <h2 class="border-b-2 border-foreground/25 pb-1 text-lg font-semibold">Experience</h2>
+
+      <div class="flex flex-col gap-1">
+        <div class="flex items-baseline justify-between gap-4">
+          <p class="text-sm"><span class="font-semibold">Meta</span> <span class="text-muted-foreground">| <span class="italic">(Incoming) Offensive Security Engineering Intern</span></span></p>
+          <span class="text-muted-foreground shrink-0 text-sm">June 2026 – August 2026</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <div class="flex items-baseline justify-between gap-4">
+          <p class="text-sm"><span class="font-semibold">Meta</span> <span class="text-muted-foreground">| <span class="italic">Software Engineering (Network Security) Intern</span></span></p>
+          <span class="text-muted-foreground shrink-0 text-sm">May 2025 – August 2025</span>
+        </div>
+        <ul class="text-muted-foreground ml-4 flex list-none flex-col gap-0.5 text-sm">
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Redesigned concurrency and pipelining for validation of network access control list (ACL) generation, reducing runtime by <span class="font-semibold">99%</span></span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Devised a scalable, custom lexer to automate generating <span class="font-semibold">6,000+</span> lines of AST grammars from Apache Thrift interfaces</span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Replaced quadratic-complexity IP prefix matching with radix trees in TACACS+ validator, cutting runtime from <span class="font-semibold">2.5 min to 1 sec</span></span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Developed CLI to enhance and debug ACL generation library capirca by leveraging real-time OLAP databases and entity graphs</span></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <div class="flex items-baseline justify-between gap-4">
+          <p class="text-sm"><span class="font-semibold">MITRE</span> <span class="text-muted-foreground">| <span class="italic">Reverse Engineering Intern</span></span></p>
+          <span class="text-muted-foreground shrink-0 text-sm">June 2024 – August 2024</span>
+        </div>
+        <ul class="text-muted-foreground ml-4 flex list-none flex-col gap-0.5 text-sm">
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Assessed the performance of Ghidra BSim, an open-source binary differential analysis tool, across diverse architectures and OSS</span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Integrated Ghidra's Python API into a headless CLI with parallelized BSim database queries and statistical results for engineers</span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Reverse engineered firmware vulnerabilities and exploited side channels in an embedded ARM device for a CTF, tied for <span class="font-semibold">1st place</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="flex flex-col gap-4">
+      <h2 class="border-b-2 border-foreground/25 pb-1 text-lg font-semibold">Research</h2>
+
+      <div class="flex flex-col gap-1">
+        <div class="flex items-baseline justify-between gap-4">
+          <p class="text-sm"><span class="font-semibold">Graduate Computer Security Research at UC Berkeley (CS 261)</span> <span class="text-muted-foreground">| <span class="italic">Security Researcher <span class="font-semibold">[1]</span></span></span></p>
+          <span class="text-muted-foreground shrink-0 text-sm">February 2026 – May 2026</span>
+        </div>
+        <ul class="text-muted-foreground ml-4 flex list-none flex-col gap-0.5 text-sm">
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Designed the <span class="italic">first</span> LLM-based decompiler for <span class="font-semibold">Go source recovery</span>, integrating Gemini, Ghidra, GoReSym, and custom Go heuristics</span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Curated <span class="italic">first</span> Go decompiler benchmark of <span class="font-semibold">1.8M functions</span> extracted from 1600 unique binaries across <span class="font-semibold">120 OSS</span> projects</span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Introduced novel evaluation metrics: CodeBLEU, LLM-as-a-judge, and syntax validation scoring weighted by code and AST complexity</span></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <div class="flex items-baseline justify-between gap-4">
+          <p class="text-sm"><span class="font-semibold">Security Group at UC Berkeley (D. Song)</span> <span class="text-muted-foreground">| <span class="italic">Security Researcher <span class="font-semibold">[2]</span></span></span></p>
+          <span class="text-muted-foreground shrink-0 text-sm">January 2025 – December 2025</span>
+        </div>
+        <ul class="text-muted-foreground ml-4 flex list-none flex-col gap-0.5 text-sm">
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Engineered sandboxed LLM-agent MCP for automated PoC generation across <span class="font-semibold">1,500 vulnerabilities</span> in <span class="font-semibold">200 OSS</span> projects</span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Discovered <span class="font-semibold">15 zero-days</span> during benchmarking, leading to CVE-2025-7797, CVE-2025-7464, and CVE-2025-7462</span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Architected framework to evaluate LLM agents on generating ROP chains for real-world binaries, e.g. GNU Coreutils</span></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <div class="flex items-baseline justify-between gap-4">
+          <p class="text-sm"><span class="font-semibold">Industrial Cyber-Physical Systems (iCyPhy) at UC Berkeley</span> <span class="text-muted-foreground">| <span class="italic">Systems Researcher <span class="font-semibold">[3]</span></span></span></p>
+          <span class="text-muted-foreground shrink-0 text-sm">October 2025 – December 2025</span>
+        </div>
+        <ul class="text-muted-foreground ml-4 flex list-none flex-col gap-0.5 text-sm">
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Extended the GameTime algorithm for worst-case execution time (WCET) analysis of the Lingua Franca polyglot language</span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Programmed 3 FRDM-K64F microcontrollers with Zephyr RTOS to demo WCET analysis on a real embedded, distributed system</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="flex flex-col gap-4">
+      <h2 class="border-b-2 border-foreground/25 pb-1 text-lg font-semibold">Publications</h2>
+
+      <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm font-semibold">[1] ComeBack: Assessing LLM Decompilation for Go</p>
+          <p class="text-muted-foreground text-sm"><span class="underline decoration-muted-foreground underline-offset-[3px]">Matthew Cai</span>, Jonah Bedouch</p>
+        </div>
+        <span class="text-muted-foreground shrink-0 text-sm">Preprint, 2026</span>
+      </div>
+
+      <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm font-semibold">[2] CyberGym: Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale</p>
+          <p class="text-muted-foreground text-sm">Zhun Wang, Tianneng Shi, Jingxuan He, <span class="underline decoration-muted-foreground underline-offset-[3px]">Matthew Cai</span>, Jialin Zhang, Dawn Song</p>
+        </div>
+        <span class="text-muted-foreground shrink-0 text-sm">ICLR Oral 2026</span>
+      </div>
+
+      <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5">
+          <p class="text-sm font-semibold">[3] Formally Verified WCET Analysis of Distributed Lingua Franca Systems via GameTime</p>
+          <p class="text-muted-foreground text-sm">Zeynep Guzey, Anagha Ananth, <span class="underline decoration-muted-foreground underline-offset-[3px]">Matthew Cai</span>, Jiaquan Li, Shaokai Lin</p>
+        </div>
+        <span class="text-muted-foreground shrink-0 text-sm">Preprint, 2025</span>
+      </div>
+    </section>
+
+    <!-- Activities and Projects -->
+    <section class="flex flex-col gap-4">
+      <h2 class="border-b-2 border-foreground/25 pb-1 text-lg font-semibold">Activities and Projects</h2>
+
+      <div class="flex flex-col gap-1">
+        <div class="flex items-baseline justify-between gap-4">
+          <p class="text-sm"><span class="font-semibold">Cybersecurity Capture the Flag</span> <span class="text-muted-foreground">| <span class="italic">Cryptography, Vulnerability Researcher</span></span></p>
+          <span class="text-muted-foreground shrink-0 text-sm">September 2023 – Present</span>
+        </div>
+        <ul class="text-muted-foreground ml-4 flex list-none flex-col gap-0.5 text-sm">
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Member of <span class="font-semibold">top 3</span> US CTF Team, <span class="italic">Squid Proxy Lovers</span>: 3rd at Google 2025, 2nd at idek 2025, 2nd at Dice Qual 2025, 5th at Lake 2025</span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Skills: symmetric cryptanalysis; lattice attacks; stack/heap userspace ELF exploitation; microarchitecture exploitation</span></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <div class="flex items-baseline justify-between gap-4">
+          <p class="text-sm"><span class="font-semibold">Berke1337 Cybersecurity Club</span> <span class="text-muted-foreground">| <span class="italic">Officer</span></span></p>
+          <span class="text-muted-foreground shrink-0 text-sm">August 2024 – Present</span>
+        </div>
+        <ul class="text-muted-foreground ml-4 flex list-none flex-col gap-0.5 text-sm">
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Helped build custom homelab for network defense training and created custom pwn challenges for demonstrations and practice</span></li>
+          <li class="flex gap-2"><span class="shrink-0">&middot;</span><span>Organized training and recruitment for the club CTF team; taught members software exploitation, fuzzing, cryptography, etc.</span></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <div class="flex items-baseline justify-between gap-4">
+          <p class="text-sm"><span class="font-semibold">Google × Flare Verifiable AI Hackathon</span> <span class="text-muted-foreground">| <span class="italic">3rd Place</span></span></p>
+          <span class="text-muted-foreground shrink-0 text-sm">March 2025</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <div class="flex items-baseline justify-between gap-4">
+          <p class="text-sm"><span class="font-semibold">American Invitational Mathematics Examination</span> <span class="text-muted-foreground">| <span class="italic">5-time qualifier, highest score of 7</span></span></p>
+          <span class="text-muted-foreground shrink-0 text-sm">2019 – 2024</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="flex flex-col gap-3">
+      <h2 class="border-b-2 border-foreground/25 pb-1 text-lg font-semibold">Skills</h2>
+      <div class="flex flex-col gap-1.5 text-sm">
+        <p><span class="font-medium">Languages:</span> <span class="text-muted-foreground">C/C++, Python, SageMath, Go, Rust, OCaml, Lisp, Java, SQL, x86, ARM, RISC-V, Bash, Chisel, LaTeX</span></p>
+        <p><span class="font-medium">Tools:</span> <span class="text-muted-foreground">Git/Mercurial, Docker, Make, GDB/pwndbg, Wireshark, Ghidra/Binary Ninja/IDA, VirtualBox</span></p>
+        <p><span class="font-medium">Operating Systems:</span> <span class="text-muted-foreground">Windows, Linux (Kali, Debian, Ubuntu, Arch)</span></p>
+        <p><span class="font-medium">Research Interests:</span> <span class="text-muted-foreground">security, microarchitecture, performance, databases, distributed systems, AI safety, ML systems</span></p>
+      </div>
+    </section>
+
+  </div>
 </Layout>
