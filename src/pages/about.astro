@@ -1,5 +1,6 @@
 ---
 import Breadcrumbs from '@/components/breadcrumbs.astro'
+import Link from '@/components/link.astro'
 import PageHead from '@/components/page-head.astro'
 import Layout from '@/layouts/layout.astro'
 ---
@@ -7,4 +8,33 @@ import Layout from '@/layouts/layout.astro'
 <Layout class="max-w-5xl">
   <PageHead slot="head" title="About" />
   <Breadcrumbs items={[{ label: 'About', icon: 'lucide:info' }]} />
+
+  <div class="rounded-lg border font-mono text-sm">
+    <div class="border-b px-4 py-3">
+      <span class="text-primary">───[nightxade@nightsite ~]</span><span class="text-muted-foreground">$ whoami</span>
+    </div>
+    <div class="flex flex-col gap-4 px-4 py-4">
+
+      <p class="text-muted-foreground leading-relaxed">
+      Heya! I'm <span class="text-primary font-semibold">nightxade</span>, known irl as Matthew. I'm currently attending <span class="font-medium" style="color: #fdb515">UC Berkeley</span>, majoring in Electrical Engineering and Computer Sciences. As of May 2026, I have just completed my second year of school; I plan to graduate after 2 more semesters of school (out-of-state tuition is expensive :&lt;).
+      </p>
+
+      <p class="text-muted-foreground leading-relaxed">
+      I am interested in quite a few different areas of computer science. Consequently, I'm trying to cram as many classes as I possibly can into my 6 college semesters, and read my way through all the subjects I'm passionate about. I've begun <Link href="/reading" underline>tracking my reading</Link>, too, as a way of recording my progress and learning journey. If you have any reading or subject recommendations, please send them my way! I'm also a devout believer (cult member?) in <span style="color: #d34516">Rust</span>, though my favorite languages additionally extend to C and (somewhat reluctantly, in spite of its type system) Python too. I want to eventually be a programming language polyglot (WIP); currently, I'd like to learn more functional programming and hardware description languages.
+      </p>
+
+      <p class="text-muted-foreground leading-relaxed">
+      I'm a semi-active cybersecurity capture the flag (CTF) player — I main crypto/pwn on <span class="text-foreground">Squid Proxy Lovers</span> and <span class="text-foreground">Cosmic Bit Flip</span>. I've realized recently that I enjoy reading vulnerability research blogs and papers even more :skull:. I used to author <Link href="/writeups" underline>writeups</Link> for all the challenges I solved; perhaps I'll pick it up again in the future, provided LLMs haven't killed CTFs yet... :(
+      </p>
+
+      <p class="text-muted-foreground leading-relaxed">
+      I used to be math competition kid, primarily in middle school. (For a while, my proudest achievement was qualifying for the AIME in 8th grade)! I've since stepped away from the scene, but I still retain an interest in interesting mathematics — during my freshman year of college, I studied abstract algebra and Galois theory. Perhaps I'll take the Putnam for fun at some point! I also really enjoy playing the <span class="line-through">24</span> 1000 game from time to time :D
+      </p>
+
+      <p class="text-muted-foreground leading-relaxed">
+      Outside of computer science, I'm broadly interested in quantum computing, most science subjects (bio, chem, astronomy, physics), and world history. In my limited free time, I watch F1 and MotoGP, read manhua, grind monkeytype and bullet chess, and follow CounterStrike esports. I'm a former Valorant addict, and previously played Geometry Dash, Brawl Stars, Clash Royale, Terraria, and Minecraft.
+      </p>
+
+    </div>
+  </div>
 </Layout>
