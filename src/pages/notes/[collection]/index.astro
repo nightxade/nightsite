@@ -24,8 +24,9 @@ const notes = await getNotesForCollection(collection)
     ]}
   />
 
-  <div class="mb-2">
+  <div class="mb-4">
     <p class="text-muted-foreground text-sm">{meta.description}</p>
+    {meta.about && <p class="mt-2 text-sm">{meta.about}</p>}
   </div>
 
   <ul class="flex flex-col gap-1.5">

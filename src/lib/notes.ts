@@ -33,16 +33,19 @@ const NOTES_DIR = './src/content/notes'
 export interface CollectionMeta {
   name: string
   description: string
+  about?: string
 }
 
 export const COLLECTION_META: Record<string, CollectionMeta> = {
   cs162: {
     name: 'CS 162',
     description: 'Operating Systems and System Programming',
+    about: 'Textbook: "Operating Systems: Principles and Practice" — Dahlin & Anderson'
   },
   cs170: {
     name: 'CS 170',
     description: 'Efficient Algorithms and Intractable Problems',
+    about: 'Textbook: "Algorithms" — Papadimitriou, Dasgupta, & Vazirani'
   },
   cs185: {
     name: 'CS 185',
@@ -59,10 +62,12 @@ export const COLLECTION_META: Record<string, CollectionMeta> = {
   math113: {
     name: 'MATH 113',
     description: 'Abstract Algebra',
+    about: 'Textbook: "Abstract Algebra" — Dummit & Foote'
   },
   math53: {
     name: 'MATH 53',
     description: 'Multivariable Calculus',
+    about: 'Textbook: "Calculus, 8th Edition" — James Stewart'
   },
 }
 
