@@ -1,0 +1,42 @@
+---
+import Breadcrumbs from '@/components/breadcrumbs.astro'
+import Link from '@/components/link.astro'
+import PageHead from '@/components/page-head.astro'
+import Layout from '@/layouts/layout.astro'
+import { COLLECTION_META, getNoteCollections, getNotesForCollection } from '@/lib/notes'
+
+const collections = await getNoteCollections()
+
+const collectionData = await Promise.all(
+  collections.map(async (id) => {
+    const notes = await getNotesForCollection(id)
+    return { id, meta: COLLECTION_META[id], count: notes.length }
+  }),
+)
+---
+
+<Layout class="max-w-5xl">
+  <PageHead slot="head" title="Notes" />
+  <Breadcrumbs items={[{ label: 'Notes', icon: 'lucide:notebook-text' }]} />
+
+  <p class="text-muted-foreground mb-6 text-sm">
+    Notes I've written while taking classes and reading books. Rendered from Obsidian markdown.
+  </p>
+
+  <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+    {
+      collectionData.map(({ id, meta, count }) => (
+        <Link
+          href={`/notes/${id}`}
+          class="hover:bg-muted/50 group flex flex-col gap-1 rounded-lg border px-4 py-3 transition-colors"
+        >
+          <div class="flex items-baseline justify-between gap-2">
+            <span class="font-medium">{meta.name}</span>
+            <span class="text-muted-foreground text-xs">{count} {count === 1 ? 'note' : 'notes'}</span>
+          </div>
+          <p class="text-muted-foreground text-sm">{meta.description}</p>
+        </Link>
+      ))
+    }
+  </div>
+</Layout>

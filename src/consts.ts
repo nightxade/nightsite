@@ -16,6 +16,7 @@ export const NAV_LINKS: SocialLink[] = [
   { href: '/blog', label: 'blog' },
   { href: '/writeups', label: 'writeups' },
   { href: '/reading', label: 'reading' },
+  { href: '/notes', label: 'notes' },
   { href: '/work', label: 'work' },
   { href: '/resume', label: 'resume' },
   { href: '/about', label: 'about' },
