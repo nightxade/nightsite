@@ -391,7 +391,7 @@ export const readingEntries: ReadingEntry[] = [
     "month": 6
   },
   {
-    "title": "WhatsApp Private Processing (whitepaper)",
+    "title": "Private Processing for WhatsApp Overview",
     "url": "https://ai.meta.com/static-resource/private-processing-technical-whitepaper",
     "category": "paper",
     "year": 2025,
@@ -542,7 +542,7 @@ export const readingEntries: ReadingEntry[] = [
     "month": 6
   },
   {
-    "title": "Entrybleed",
+    "title": "EntryBleed: A Universal KASLR Bypass against KPTI on Linux",
     "category": "paper",
     "dateRead": "2025-07-31",
     "year": 2025,
@@ -1302,7 +1302,7 @@ export const readingEntries: ReadingEntry[] = [
     "month": 8
   },
   {
-    "title": "CacheOut",
+    "title": "CacheOut: Leaking Data on Intel CPUs via Cache Evictions",
     "category": "paper",
     "dateRead": "2025-08-01",
     "year": 2025,
@@ -2451,6 +2451,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing",
+    "url": "https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf",
     "category": "paper",
     "dateRead": "2025-12-02",
     "year": 2025,
@@ -3323,6 +3324,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "CONIKS: Bringing Key Transparency to End Users",
+    "url": "https://eprint.iacr.org/2014/1004",
     "category": "paper",
     "dateRead": "2026-02-14",
     "year": 2026,
@@ -4413,6 +4415,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "SIEVE is Simpler than LRU: an Efficient Turn-Key Eviction Algorithm for Web Caches",
+    "url": "https://www.usenix.org/conference/nsdi24/presentation/zhang-yazhuo",
     "category": "paper",
     "dateRead": "2026-04-28",
     "year": 2026,
@@ -4420,6 +4423,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Efficient Gossip Protocols for Verifying the Consistency of Certificate Logs",
+    "url": "https://arxiv.org/abs/1511.01514",
     "category": "paper",
     "dateRead": "2026-04-27",
     "year": 2026,
@@ -4427,6 +4431,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Q-Learning with Adjoint Matching",
+    "url": "https://arxiv.org/abs/2601.14234",
     "category": "paper",
     "dateRead": "2026-04-25",
     "year": 2026,
@@ -4452,6 +4457,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Dissecting and Modeling the Architecture of Modern GPU Cores",
+    "url": "https://arxiv.org/abs/2503.20481",
     "category": "paper",
     "dateRead": "2026-04-22",
     "year": 2026,
@@ -4459,6 +4465,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Binary Rewriting without Control Flow Recovery",
+    "url": "https://dl.acm.org/doi/10.1145/3385412.3385972",
     "category": "paper",
     "dateRead": "2026-04-21",
     "year": 2026,
@@ -4474,6 +4481,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Deep Residual Learning for Image Recognition",
+    "url": "https://arxiv.org/abs/1512.03385",
     "category": "paper",
     "dateRead": "2026-04-20",
     "year": 2026,
@@ -4481,6 +4489,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "(State of) The Art of War: Offensive Techniques in Binary Analysis",
+    "url": "https://ieeexplore.ieee.org/document/7546500",
     "category": "paper",
     "dateRead": "2026-04-20",
     "year": 2026,
@@ -4538,6 +4547,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "A Software-defined Tensor Streaming Multiprocessor for Large-scale Machine Learning",
+    "url": "https://dl.acm.org/doi/10.1145/3470496.3527405",
     "category": "paper",
     "dateRead": "2026-04-16",
     "year": 2026,
@@ -4554,6 +4564,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Simba: Scaling Deep-Learning Inference with Chiplet-Based Architecture",
+    "url": "https://dl.acm.org/doi/10.1145/3352460.3358302",
     "category": "paper",
     "dateRead": "2026-04-15",
     "year": 2026,
@@ -4561,6 +4572,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "BODMAS: An Open Dataset for Learning based Temporal Analysis of PE Malware",
+    "url": "https://ieeexplore.ieee.org/document/9474321",
     "category": "paper",
     "dateRead": "2026-04-15",
     "year": 2026,
@@ -4568,6 +4580,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Reinforcement Learning and Control as Probabilistic Inference: Tutorial and Review",
+    "url": "https://arxiv.org/abs/1805.00909",
     "category": "paper",
     "dateRead": "2026-04-14",
     "year": 2026,
@@ -4575,6 +4588,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Adversaries Can Misuse Combinations of Safe Models",
+    "url": "https://arxiv.org/abs/2406.14595",
     "category": "paper",
     "dateRead": "2026-04-12",
     "year": 2026,
@@ -4609,6 +4623,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Improving Alignment and Robustness with Circuit Breakers",
+    "url": "https://arxiv.org/abs/2406.04313",
     "category": "paper",
     "dateRead": "2026-04-10",
     "year": 2026,
@@ -4649,6 +4664,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "AI+HW 2035: Shaping the Next Decade",
+    "url": "https://arxiv.org/abs/2603.05225",
     "category": "paper",
     "dateRead": "2026-04-08",
     "year": 2026,
@@ -4656,6 +4672,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Cilk: An Efficient Multithreaded Runtime System",
+    "url": "https://dl.acm.org/doi/10.1145/209937.209958",
     "category": "paper",
     "dateRead": "2026-04-08",
     "year": 2026,
@@ -4663,6 +4680,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Measuring Security Practices and How They Impact Security",
+    "url": "https://dl.acm.org/doi/10.1145/3355369.3355571",
     "category": "paper",
     "dateRead": "2026-04-07",
     "year": 2026,
@@ -4670,6 +4688,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "So Long, And No Thanks for the Externalities: The Rational Rejection of Security Advice by Users",
+    "url": "https://dl.acm.org/doi/10.1145/1719030.1719050",
     "category": "paper",
     "dateRead": "2026-04-07",
     "year": 2026,
@@ -4720,6 +4739,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "A Practical and Secure Byzantine Robust Aggregator",
+    "url": "https://arxiv.org/abs/2506.23183",
     "category": "paper",
     "dateRead": "2026-04-06",
     "year": 2026,
@@ -4735,6 +4755,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Rethinking Web Cache Design for the AI Era",
+    "url": "https://dl.acm.org/doi/10.1145/3772052.3772255",
     "category": "paper",
     "dateRead": "2026-04-04",
     "year": 2026,
@@ -4750,6 +4771,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Sever: A Robust Meta-Algorithm for Stochastic Optimization",
+    "url": "https://arxiv.org/abs/1803.02815",
     "category": "paper",
     "dateRead": "2026-04-03",
     "year": 2026,
@@ -4757,6 +4779,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Poison Frogs! Targeted Clean-Label Poisoning Attacks on Neural Networks",
+    "url": "https://arxiv.org/abs/1804.00792",
     "category": "paper",
     "dateRead": "2026-04-03",
     "year": 2026,
@@ -4789,6 +4812,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models",
+    "url": "https://arxiv.org/abs/2601.07372",
     "category": "paper",
     "dateRead": "2026-05-20",
     "year": 2026,
@@ -4796,6 +4820,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "MLIR: Scaling Compiler Infrastructure for Domain Specific Computation",
+    "url": "https://arxiv.org/abs/2002.11054",
     "category": "paper",
     "dateRead": "2026-05-15",
     "year": 2026,
@@ -4828,6 +4853,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Memory Is All You Need: An Overview of Compute-in-Memory Architectures for Accelerating Large Language Model Inference",
+    "url": "https://arxiv.org/abs/2406.08413",
     "category": "paper",
     "dateRead": "2026-05-12",
     "year": 2026,
@@ -4843,6 +4869,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Guided Flow Policy: Learning from High-Value Actions in Offline Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2512.03973",
     "category": "paper",
     "dateRead": "2026-05-11",
     "year": 2026,
@@ -4858,6 +4885,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "CudaDMA: Optimizing GPU Memory Bandwidth via Warp Specialization",
+    "url": "https://dl.acm.org/doi/10.1145/2063384.2063400",
     "category": "paper",
     "dateRead": "2026-05-05",
     "year": 2026,
@@ -4865,6 +4893,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Shared Memory Consistency Models: A Tutorial",
+    "url": "https://ieeexplore.ieee.org/document/546611",
     "category": "paper",
     "dateRead": "2026-05-04",
     "year": 2026,
@@ -4872,6 +4901,7 @@ export const readingEntries: ReadingEntry[] = [
   },
   {
     "title": "Efficient Online Reinforcement Learning with Offline Data",
+    "url": "https://arxiv.org/abs/2302.02948",
     "category": "paper",
     "dateRead": "2026-05-03",
     "year": 2026,
