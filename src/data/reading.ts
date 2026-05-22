@@ -15,10 +15,10 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
-    "title": "Rational Points on Elliptic Curves — 2.1, 2.2, 2.3, 2.4, 2.5",
+    "title": "Rational Points on Elliptic Curves — Chapter 2",
     "category": "book",
     "bookTitle": "Rational Points on Elliptic Curves",
-    "chapter": "2.1, 2.2, 2.3, 2.4, 2.5",
+    "chapter": "Chapter 2",
     "year": 2025,
     "month": 4
   },
@@ -51,10 +51,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 4
   },
   {
-    "title": "Rational Points on Elliptic Curves — 1.2, 1.3, 1.4, A1, A2",
+    "title": "Rational Points on Elliptic Curves — Chapter A",
     "category": "book",
     "bookTitle": "Rational Points on Elliptic Curves",
-    "chapter": "1.2, 1.3, 1.4, A1, A2",
+    "chapter": "Chapter A",
     "year": 2025,
     "month": 4
   },
@@ -73,10 +73,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 4
   },
   {
-    "title": "Rational Points on Elliptic Curves — 1.1",
+    "title": "Rational Points on Elliptic Curves — Chapter 1",
     "category": "book",
     "bookTitle": "Rational Points on Elliptic Curves",
-    "chapter": "1.1",
+    "chapter": "Chapter 1",
     "year": 2025,
     "month": 4
   },
@@ -130,10 +130,18 @@ export const readingEntries: ReadingEntry[] = [
     "month": 4
   },
   {
-    "title": "Galois Theory, 4th Edition — Chapter 1, 2",
+    "title": "Galois Theory, 4th Edition — Chapter 2",
     "category": "book",
     "bookTitle": "Galois Theory, 4th Edition",
-    "chapter": "Chapter 1, 2",
+    "chapter": "Chapter 2",
+    "year": 2025,
+    "month": 5
+  },
+  {
+    "title": "Galois Theory, 4th Edition — Chapter 1",
+    "category": "book",
+    "bookTitle": "Galois Theory, 4th Edition",
+    "chapter": "Chapter 1",
     "year": 2025,
     "month": 5
   },
@@ -480,10 +488,18 @@ export const readingEntries: ReadingEntry[] = [
     "month": 6
   },
   {
-    "title": "Galois Theory, 4th Edition — Chapter 13, 14",
+    "title": "Galois Theory, 4th Edition — Chapter 14",
     "category": "book",
     "bookTitle": "Galois Theory, 4th Edition",
-    "chapter": "Chapter 13, 14",
+    "chapter": "Chapter 14",
+    "year": 2025,
+    "month": 6
+  },
+  {
+    "title": "Galois Theory, 4th Edition — Chapter 13",
+    "category": "book",
+    "bookTitle": "Galois Theory, 4th Edition",
+    "chapter": "Chapter 13",
     "year": 2025,
     "month": 6
   },
@@ -511,10 +527,18 @@ export const readingEntries: ReadingEntry[] = [
     "month": 6
   },
   {
-    "title": "Galois Theory, 4th Edition — Chapter 9, 10",
+    "title": "Galois Theory, 4th Edition — Chapter 10",
     "category": "book",
     "bookTitle": "Galois Theory, 4th Edition",
-    "chapter": "Chapter 9, 10",
+    "chapter": "Chapter 10",
+    "year": 2025,
+    "month": 6
+  },
+  {
+    "title": "Galois Theory, 4th Edition — Chapter 9",
+    "category": "book",
+    "bookTitle": "Galois Theory, 4th Edition",
+    "chapter": "Chapter 9",
     "year": 2025,
     "month": 6
   },
@@ -526,18 +550,50 @@ export const readingEntries: ReadingEntry[] = [
     "month": 6
   },
   {
-    "title": "Galois Theory, 4th Edition — Chapter 7, 8",
+    "title": "Galois Theory, 4th Edition — Chapter 8",
     "category": "book",
     "bookTitle": "Galois Theory, 4th Edition",
-    "chapter": "Chapter 7, 8",
+    "chapter": "Chapter 8",
     "year": 2025,
     "month": 6
   },
   {
-    "title": "Galois Theory, 4th Edition — Chapter 3, 4, 5, 6",
+    "title": "Galois Theory, 4th Edition — Chapter 7",
     "category": "book",
     "bookTitle": "Galois Theory, 4th Edition",
-    "chapter": "Chapter 3, 4, 5, 6",
+    "chapter": "Chapter 7",
+    "year": 2025,
+    "month": 6
+  },
+  {
+    "title": "Galois Theory, 4th Edition — Chapter 6",
+    "category": "book",
+    "bookTitle": "Galois Theory, 4th Edition",
+    "chapter": "Chapter 6",
+    "year": 2025,
+    "month": 6
+  },
+  {
+    "title": "Galois Theory, 4th Edition — Chapter 5",
+    "category": "book",
+    "bookTitle": "Galois Theory, 4th Edition",
+    "chapter": "Chapter 5",
+    "year": 2025,
+    "month": 6
+  },
+  {
+    "title": "Galois Theory, 4th Edition — Chapter 4",
+    "category": "book",
+    "bookTitle": "Galois Theory, 4th Edition",
+    "chapter": "Chapter 4",
+    "year": 2025,
+    "month": 6
+  },
+  {
+    "title": "Galois Theory, 4th Edition — Chapter 3",
+    "category": "book",
+    "bookTitle": "Galois Theory, 4th Edition",
+    "chapter": "Chapter 3",
     "year": 2025,
     "month": 6
   },
@@ -753,10 +809,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 7
   },
   {
-    "title": "DPV — 2.3, 2.4, 2.5",
+    "title": "Algorithms (DPV) — Chapter 2",
     "category": "book",
-    "bookTitle": "DPV",
-    "chapter": "2.3, 2.4, 2.5",
+    "bookTitle": "Algorithms (DPV)",
+    "chapter": "Chapter 2",
     "dateRead": "2025-08-30",
     "year": 2025,
     "month": 8
@@ -778,20 +834,20 @@ export const readingEntries: ReadingEntry[] = [
     "month": 8
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 3",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 3",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 3",
+    "chapter": "Chapter 3",
     "dateRead": "2025-08-29",
     "year": 2025,
     "month": 8
   },
   {
-    "title": "OCaml Programming: Correct + Efficient + Beautiful — Ch 2",
+    "title": "OCaml Programming: Correct + Efficient + Beautiful — Chapter 2",
     "url": "https://cs3110.github.io/textbook/chapters/basics/intro.html",
     "category": "book",
     "bookTitle": "OCaml Programming: Correct + Efficient + Beautiful",
-    "chapter": "Ch 2",
+    "chapter": "Chapter 2",
     "dateRead": "2025-08-29",
     "year": 2025,
     "month": 8
@@ -821,38 +877,29 @@ export const readingEntries: ReadingEntry[] = [
     "month": 8
   },
   {
-    "title": "OCaml Programming: Correct + Efficient + Beautiful — Ch 1",
+    "title": "OCaml Programming: Correct + Efficient + Beautiful — Chapter 1",
     "url": "https://cs3110.github.io/textbook/chapters/intro/intro.html",
     "category": "book",
     "bookTitle": "OCaml Programming: Correct + Efficient + Beautiful",
-    "chapter": "Ch 1",
+    "chapter": "Chapter 1",
     "dateRead": "2025-08-28",
     "year": 2025,
     "month": 8
   },
   {
-    "title": "DPV — 2.1, 2.2",
-    "category": "book",
-    "bookTitle": "DPV",
-    "chapter": "2.1, 2.2",
-    "dateRead": "2025-08-28",
-    "year": 2025,
-    "month": 8
-  },
-  {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 2",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 2",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 2",
+    "chapter": "Chapter 2",
     "dateRead": "2025-08-28",
     "year": 2025,
     "month": 8
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 1",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 1",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 1",
+    "chapter": "Chapter 1",
     "dateRead": "2025-08-28",
     "year": 2025,
     "month": 8
@@ -898,10 +945,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 8
   },
   {
-    "title": "A&D — Ch 1",
+    "title": "Operating Systems: Principles and Practice — Chapter 1",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 1",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 1",
     "dateRead": "2025-08-27",
     "year": 2025,
     "month": 8
@@ -1310,28 +1357,28 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://ieeexplore.ieee.org/document/9519461/"
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 7",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 7",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 7",
+    "chapter": "Chapter 7",
     "dateRead": "2025-09-29",
     "year": 2025,
     "month": 9
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 10",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 10",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 10",
+    "chapter": "Chapter 10",
     "dateRead": "2025-09-28",
     "year": 2025,
     "month": 9
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 9",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 9",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 9",
+    "chapter": "Chapter 9",
     "dateRead": "2025-09-28",
     "year": 2025,
     "month": 9
@@ -1409,10 +1456,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 9
   },
   {
-    "title": "DPV — Ch 5",
+    "title": "Algorithms (DPV) — Chapter 5",
     "category": "book",
-    "bookTitle": "DPV",
-    "chapter": "Ch 5",
+    "bookTitle": "Algorithms (DPV)",
+    "chapter": "Chapter 5",
     "dateRead": "2025-09-24",
     "year": 2025,
     "month": 9
@@ -1434,10 +1481,10 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://arxiv.org/abs/2305.05920"
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 6",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 6",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 6",
+    "chapter": "Chapter 6",
     "dateRead": "2025-09-21",
     "year": 2025,
     "month": 9
@@ -1451,21 +1498,21 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://arxiv.org/abs/2403.02310"
   },
   {
-    "title": "learncpp.com — Ch 2",
+    "title": "learncpp.com — Chapter 2",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 2",
+    "chapter": "Chapter 2",
     "dateRead": "2025-09-20",
     "year": 2025,
     "month": 9
   },
   {
-    "title": "learncpp.com — Ch 1",
+    "title": "learncpp.com — Chapter 1",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 1",
+    "chapter": "Chapter 1",
     "dateRead": "2025-09-20",
     "year": 2025,
     "month": 9
@@ -1479,11 +1526,11 @@ export const readingEntries: ReadingEntry[] = [
     "month": 9
   },
   {
-    "title": "OCaml Programming: Correct + Efficient + Beautiful — Ch 5",
+    "title": "OCaml Programming: Correct + Efficient + Beautiful — Chapter 5",
     "url": "https://cs3110.github.io/textbook/chapters/modules/intro.html",
     "category": "book",
     "bookTitle": "OCaml Programming: Correct + Efficient + Beautiful",
-    "chapter": "Ch 5",
+    "chapter": "Chapter 5",
     "dateRead": "2025-09-19",
     "year": 2025,
     "month": 9
@@ -1513,10 +1560,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 9
   },
   {
-    "title": "DPV — Ch 4",
+    "title": "Algorithms (DPV) — Chapter 4",
     "category": "book",
-    "bookTitle": "DPV",
-    "chapter": "Ch 4",
+    "bookTitle": "Algorithms (DPV)",
+    "chapter": "Chapter 4",
     "dateRead": "2025-09-15",
     "year": 2025,
     "month": 9
@@ -1538,20 +1585,20 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://sean.heelan.io/wp-content/uploads/2018/08/usenix_sec_18.pdf"
   },
   {
-    "title": "OCaml Programming: Correct + Efficient + Beautiful — Ch 4",
+    "title": "OCaml Programming: Correct + Efficient + Beautiful — Chapter 4",
     "url": "https://cs3110.github.io/textbook/chapters/hop/intro.html",
     "category": "book",
     "bookTitle": "OCaml Programming: Correct + Efficient + Beautiful",
-    "chapter": "Ch 4",
+    "chapter": "Chapter 4",
     "dateRead": "2025-09-12",
     "year": 2025,
     "month": 9
   },
   {
-    "title": "A&D — Ch 3",
+    "title": "Operating Systems: Principles and Practice — Chapter 3",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 3",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 3",
     "dateRead": "2025-09-12",
     "year": 2025,
     "month": 9
@@ -1621,28 +1668,28 @@ export const readingEntries: ReadingEntry[] = [
     "month": 9
   },
   {
-    "title": "DPV — Ch 3",
+    "title": "Algorithms (DPV) — Chapter 3",
     "category": "book",
-    "bookTitle": "DPV",
-    "chapter": "Ch 3",
+    "bookTitle": "Algorithms (DPV)",
+    "chapter": "Chapter 3",
     "dateRead": "2025-09-09",
     "year": 2025,
     "month": 9
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 4",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 4",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 4",
+    "chapter": "Chapter 4",
     "dateRead": "2025-09-08",
     "year": 2025,
     "month": 9
   },
   {
-    "title": "A&D — Ch 4",
+    "title": "Operating Systems: Principles and Practice — Chapter 4",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 4",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 4",
     "dateRead": "2025-09-08",
     "year": 2025,
     "month": 9
@@ -1688,11 +1735,11 @@ export const readingEntries: ReadingEntry[] = [
     "month": 9
   },
   {
-    "title": "OCaml Programming: Correct + Efficient + Beautiful — Ch 3",
+    "title": "OCaml Programming: Correct + Efficient + Beautiful — Chapter 3",
     "url": "https://cs3110.github.io/textbook/chapters/data/intro.html",
     "category": "book",
     "bookTitle": "OCaml Programming: Correct + Efficient + Beautiful",
-    "chapter": "Ch 3",
+    "chapter": "Chapter 3",
     "dateRead": "2025-09-05",
     "year": 2025,
     "month": 9
@@ -1722,10 +1769,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 9
   },
   {
-    "title": "A&D — Ch 10",
+    "title": "Operating Systems: Principles and Practice — Chapter 10",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 10",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 10",
     "dateRead": "2025-10-31",
     "year": 2025,
     "month": 10
@@ -1779,19 +1826,19 @@ export const readingEntries: ReadingEntry[] = [
     "month": 10
   },
   {
-    "title": "DPV — Ch 8",
+    "title": "Algorithms (DPV) — Chapter 8",
     "category": "book",
-    "bookTitle": "DPV",
-    "chapter": "Ch 8",
+    "bookTitle": "Algorithms (DPV)",
+    "chapter": "Chapter 8",
     "dateRead": "2025-10-28",
     "year": 2025,
     "month": 10
   },
   {
-    "title": "A&D — Ch 9",
+    "title": "Operating Systems: Principles and Practice — Chapter 9",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 9",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 9",
     "dateRead": "2025-10-27",
     "year": 2025,
     "month": 10
@@ -1813,10 +1860,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 10
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 12",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 12",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 12",
+    "chapter": "Chapter 12",
     "dateRead": "2025-10-21",
     "year": 2025,
     "month": 10
@@ -1838,19 +1885,19 @@ export const readingEntries: ReadingEntry[] = [
     "month": 10
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 11",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 11",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 11",
+    "chapter": "Chapter 11",
     "dateRead": "2025-10-19",
     "year": 2025,
     "month": 10
   },
   {
-    "title": "A&D — Ch 8",
+    "title": "Operating Systems: Principles and Practice — Chapter 8",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 8",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 8",
     "dateRead": "2025-10-18",
     "year": 2025,
     "month": 10
@@ -1864,28 +1911,28 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://dl.acm.org/doi/10.1145/3035918.3064016"
   },
   {
-    "title": "DPV — Ch 7",
+    "title": "Algorithms (DPV) — Chapter 7",
     "category": "book",
-    "bookTitle": "DPV",
-    "chapter": "Ch 7",
+    "bookTitle": "Algorithms (DPV)",
+    "chapter": "Chapter 7",
     "dateRead": "2025-10-14",
     "year": 2025,
     "month": 10
   },
   {
-    "title": "Android Hackers Handbook — Ch 2",
+    "title": "Android Hackers Handbook — Chapter 2",
     "category": "book",
     "bookTitle": "Android Hackers Handbook",
-    "chapter": "Ch 2",
+    "chapter": "Chapter 2",
     "dateRead": "2025-10-12",
     "year": 2025,
     "month": 10
   },
   {
-    "title": "Android Hackers Handbook — Ch 1",
+    "title": "Android Hackers Handbook — Chapter 1",
     "category": "book",
     "bookTitle": "Android Hackers Handbook",
-    "chapter": "Ch 1",
+    "chapter": "Chapter 1",
     "dateRead": "2025-10-12",
     "year": 2025,
     "month": 10
@@ -1899,7 +1946,7 @@ export const readingEntries: ReadingEntry[] = [
     "month": 10
   },
   {
-    "title": "OCaml Programming: Correct + Efficient + Beautiful",
+    "title": "OCaml Programming: Correct + Efficient + Beautiful — Chapter 7",
     "url": "https://cs3110.github.io/textbook/chapters/conc/intro.html",
     "category": "book",
     "bookTitle": "OCaml Programming: Correct + Efficient + Beautiful",
@@ -1908,10 +1955,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 10
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 8",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 8",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 8",
+    "chapter": "Chapter 8",
     "dateRead": "2025-10-11",
     "year": 2025,
     "month": 10
@@ -1925,16 +1972,16 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://dl.acm.org/doi/10.1145/3319535.3354224"
   },
   {
-    "title": "A&D — Ch 7",
+    "title": "Operating Systems: Principles and Practice — Chapter 7",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 7",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 7",
     "dateRead": "2025-10-08",
     "year": 2025,
     "month": 10
   },
   {
-    "title": "OCaml Programming: Correct + Efficient + Beautiful",
+    "title": "OCaml Programming: Correct + Efficient + Beautiful — Chapter 6",
     "url": "https://cs3110.github.io/textbook/chapters/mut/intro.html",
     "category": "book",
     "bookTitle": "OCaml Programming: Correct + Efficient + Beautiful",
@@ -1951,19 +1998,19 @@ export const readingEntries: ReadingEntry[] = [
     "month": 10
   },
   {
-    "title": "A&D — Ch 6",
+    "title": "Operating Systems: Principles and Practice — Chapter 6",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 6",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 6",
     "dateRead": "2025-10-04",
     "year": 2025,
     "month": 10
   },
   {
-    "title": "DPV — Ch 6",
+    "title": "Algorithms (DPV) — Chapter 6",
     "category": "book",
-    "bookTitle": "DPV",
-    "chapter": "Ch 6",
+    "bookTitle": "Algorithms (DPV)",
+    "chapter": "Chapter 6",
     "dateRead": "2025-10-03",
     "year": 2025,
     "month": 10
@@ -2041,16 +2088,16 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://arxiv.org/abs/2510.27176"
   },
   {
-    "title": "A&D — Ch 14",
+    "title": "Operating Systems: Principles and Practice — Chapter 14",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 14",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 14",
     "dateRead": "2025-11-14",
     "year": 2025,
     "month": 11
   },
   {
-    "title": "OCaml Programming: Correct + Efficient + Beautiful",
+    "title": "OCaml Programming: Correct + Efficient + Beautiful — Chapter 8",
     "url": "https://cs3110.github.io/textbook/chapters/correctness/intro.html",
     "category": "book",
     "bookTitle": "OCaml Programming: Correct + Efficient + Beautiful",
@@ -2059,37 +2106,37 @@ export const readingEntries: ReadingEntry[] = [
     "month": 11
   },
   {
-    "title": "A&D — Ch 13",
+    "title": "Operating Systems: Principles and Practice — Chapter 13",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 13",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 13",
     "dateRead": "2025-11-12",
     "year": 2025,
     "month": 11
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 17",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 17",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 17",
+    "chapter": "Chapter 17",
     "dateRead": "2025-11-12",
     "year": 2025,
     "month": 11
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 14",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 14",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 14",
+    "chapter": "Chapter 14",
     "dateRead": "2025-11-11",
     "year": 2025,
     "month": 11
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 13",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 13",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 13",
+    "chapter": "Chapter 13",
     "dateRead": "2025-11-10",
     "year": 2025,
     "month": 11
@@ -2135,28 +2182,28 @@ export const readingEntries: ReadingEntry[] = [
     "month": 11
   },
   {
-    "title": "A&D — Ch 12",
+    "title": "Operating Systems: Principles and Practice — Chapter 12",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 12",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 12",
     "dateRead": "2025-11-05",
     "year": 2025,
     "month": 11
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 16",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 16",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 16",
+    "chapter": "Chapter 16",
     "dateRead": "2025-11-04",
     "year": 2025,
     "month": 11
   },
   {
-    "title": "Linux Kernel Development, 3rd Edition — Ch 15",
+    "title": "Linux Kernel Development, 3rd Edition — Chapter 15",
     "category": "book",
     "bookTitle": "Linux Kernel Development, 3rd Edition",
-    "chapter": "Ch 15",
+    "chapter": "Chapter 15",
     "dateRead": "2025-11-04",
     "year": 2025,
     "month": 11
@@ -2170,10 +2217,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 11
   },
   {
-    "title": "A&D — Ch 11",
+    "title": "Operating Systems: Principles and Practice — Chapter 11",
     "category": "book",
-    "bookTitle": "A&D",
-    "chapter": "Ch 11",
+    "bookTitle": "Operating Systems: Principles and Practice",
+    "chapter": "Chapter 11",
     "dateRead": "2025-11-02",
     "year": 2025,
     "month": 11
@@ -2195,89 +2242,89 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://arxiv.org/abs/2503.23076"
   },
   {
-    "title": "learncpp.com — Ch 10",
+    "title": "learncpp.com — Chapter 10",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 10",
+    "chapter": "Chapter 10",
     "dateRead": "2025-12-31",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "learncpp.com — Ch 9",
+    "title": "learncpp.com — Chapter 9",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 9",
+    "chapter": "Chapter 9",
     "dateRead": "2025-12-30",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "learncpp.com — Ch 8",
+    "title": "learncpp.com — Chapter 8",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 8",
+    "chapter": "Chapter 8",
     "dateRead": "2025-12-29",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "Deep Learning — Ch 5",
+    "title": "Deep Learning — Chapter 5",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 5",
+    "chapter": "Chapter 5",
     "dateRead": "2025-12-29",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "learncpp.com — Ch 7",
+    "title": "learncpp.com — Chapter 7",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 7",
+    "chapter": "Chapter 7",
     "dateRead": "2025-12-28",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "learncpp.com — Ch O",
+    "title": "learncpp.com — Chapter O",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch O",
+    "chapter": "Chapter O",
     "dateRead": "2025-12-28",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "learncpp.com — Ch 6",
+    "title": "learncpp.com — Chapter 6",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 6",
+    "chapter": "Chapter 6",
     "dateRead": "2025-12-28",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "Deep Learning — Ch 4",
+    "title": "Deep Learning — Chapter 4",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 4",
+    "chapter": "Chapter 4",
     "dateRead": "2025-12-28",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "learncpp.com — Ch 5",
+    "title": "learncpp.com — Chapter 5",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 5",
+    "chapter": "Chapter 5",
     "dateRead": "2025-12-27",
     "year": 2025,
     "month": 12
@@ -2299,48 +2346,48 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://www.usenix.org/conference/usenixsecurity18/presentation/bulck"
   },
   {
-    "title": "learncpp.com — Ch 4",
+    "title": "learncpp.com — Chapter 4",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 4",
+    "chapter": "Chapter 4",
     "dateRead": "2025-12-26",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "Deep Learning — Ch 3",
+    "title": "Deep Learning — Chapter 3",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 3",
+    "chapter": "Chapter 3",
     "dateRead": "2025-12-25",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "Deep Learning — Ch 2",
+    "title": "Deep Learning — Chapter 2",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 2",
+    "chapter": "Chapter 2",
     "dateRead": "2025-12-25",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "Deep Learning — Ch 1",
+    "title": "Deep Learning — Chapter 1",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 1",
+    "chapter": "Chapter 1",
     "dateRead": "2025-12-24",
     "year": 2025,
     "month": 12
   },
   {
-    "title": "learncpp.com — Ch 3",
+    "title": "learncpp.com — Chapter 3",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 3",
+    "chapter": "Chapter 3",
     "dateRead": "2025-12-23",
     "year": 2025,
     "month": 12
@@ -2434,22 +2481,6 @@ export const readingEntries: ReadingEntry[] = [
     "month": 12
   },
   {
-    "title": "Experts Problem x2",
-    "category": "book",
-    "bookTitle": "Experts Problem x2",
-    "dateRead": "2025-12-06",
-    "year": 2025,
-    "month": 12
-  },
-  {
-    "title": "Experts Problem x1",
-    "category": "book",
-    "bookTitle": "Experts Problem x1",
-    "dateRead": "2025-12-06",
-    "year": 2025,
-    "month": 12
-  },
-  {
     "title": "Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing",
     "url": "https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf",
     "category": "paper",
@@ -2529,11 +2560,11 @@ export const readingEntries: ReadingEntry[] = [
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 28",
+    "title": "learncpp.com — Chapter 28",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 28",
+    "chapter": "Chapter 28",
     "dateRead": "2026-01-28",
     "year": 2026,
     "month": 1
@@ -2547,20 +2578,20 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://dl.acm.org/doi/10.1145/2408776.2408795"
   },
   {
-    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Ch 3",
+    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Chapter 3",
     "category": "book",
     "bookTitle": "Reinforcement Learning: An Introduction, 2nd Edition",
-    "chapter": "Ch 3",
+    "chapter": "Chapter 3",
     "dateRead": "2026-01-28",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 27",
+    "title": "learncpp.com — Chapter 27",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 27",
+    "chapter": "Chapter 27",
     "dateRead": "2026-01-28",
     "year": 2026,
     "month": 1
@@ -2590,11 +2621,11 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://cseweb.ucsd.edu/~savage/papers/WEIS15.pdf"
   },
   {
-    "title": "learncpp.com — Ch 26",
+    "title": "learncpp.com — Chapter 26",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 26",
+    "chapter": "Chapter 26",
     "dateRead": "2026-01-24",
     "year": 2026,
     "month": 1
@@ -2608,10 +2639,10 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://ieeexplore.ieee.org/document/5958044/"
   },
   {
-    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Ch 2",
+    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Chapter 2",
     "category": "book",
     "bookTitle": "Reinforcement Learning: An Introduction, 2nd Edition",
-    "chapter": "Ch 2",
+    "chapter": "Chapter 2",
     "dateRead": "2026-01-23",
     "year": 2026,
     "month": 1
@@ -2625,11 +2656,11 @@ export const readingEntries: ReadingEntry[] = [
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 25",
+    "title": "learncpp.com — Chapter 25",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 25",
+    "chapter": "Chapter 25",
     "dateRead": "2026-01-22",
     "year": 2026,
     "month": 1
@@ -2643,49 +2674,49 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://dl.acm.org/doi/10.1145/1562164.1562190"
   },
   {
-    "title": "learncpp.com — Ch 24",
+    "title": "learncpp.com — Chapter 24",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 24",
+    "chapter": "Chapter 24",
     "dateRead": "2026-01-20",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Ch 3",
+    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Chapter 3",
     "category": "book",
     "bookTitle": "Computer Architecture, A Quantitative Approach, Sixth Edition",
-    "chapter": "Ch 3",
+    "chapter": "Chapter 3",
     "dateRead": "2026-01-20",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Ch 1",
+    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Chapter 1",
     "category": "book",
     "bookTitle": "Reinforcement Learning: An Introduction, 2nd Edition",
-    "chapter": "Ch 1",
+    "chapter": "Chapter 1",
     "dateRead": "2026-01-19",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 23",
+    "title": "learncpp.com — Chapter 23",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 23",
+    "chapter": "Chapter 23",
     "dateRead": "2026-01-19",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 22",
+    "title": "learncpp.com — Chapter 22",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 22",
+    "chapter": "Chapter 22",
     "dateRead": "2026-01-17",
     "year": 2026,
     "month": 1
@@ -2708,11 +2739,11 @@ export const readingEntries: ReadingEntry[] = [
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 21",
+    "title": "learncpp.com — Chapter 21",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 21",
+    "chapter": "Chapter 21",
     "dateRead": "2026-01-16",
     "year": 2026,
     "month": 1
@@ -2758,78 +2789,78 @@ export const readingEntries: ReadingEntry[] = [
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 20",
+    "title": "learncpp.com — Chapter 20",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 20",
+    "chapter": "Chapter 20",
     "dateRead": "2026-01-13",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 19",
+    "title": "learncpp.com — Chapter 19",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 19",
+    "chapter": "Chapter 19",
     "dateRead": "2026-01-12",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 18",
+    "title": "learncpp.com — Chapter 18",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 18",
+    "chapter": "Chapter 18",
     "dateRead": "2026-01-12",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Ch 2",
+    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Chapter 2",
     "category": "book",
     "bookTitle": "Computer Architecture, A Quantitative Approach, Sixth Edition",
-    "chapter": "Ch 2",
+    "chapter": "Chapter 2",
     "dateRead": "2026-01-12",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 17",
+    "title": "learncpp.com — Chapter 17",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 17",
+    "chapter": "Chapter 17",
     "dateRead": "2026-01-11",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "Deep Learning — Ch 12",
+    "title": "Deep Learning — Chapter 12",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 12",
+    "chapter": "Chapter 12",
     "dateRead": "2026-01-11",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Ch 1",
+    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Chapter 1",
     "category": "book",
     "bookTitle": "Computer Architecture, A Quantitative Approach, Sixth Edition",
-    "chapter": "Ch 1",
+    "chapter": "Chapter 1",
     "dateRead": "2026-01-11",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 16",
+    "title": "learncpp.com — Chapter 16",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 16",
+    "chapter": "Chapter 16",
     "dateRead": "2026-01-10",
     "year": 2026,
     "month": 1
@@ -2843,19 +2874,19 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://arxiv.org/abs/1409.0473"
   },
   {
-    "title": "Deep Learning — Ch 11",
+    "title": "Deep Learning — Chapter 11",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 11",
+    "chapter": "Chapter 11",
     "dateRead": "2026-01-10",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "Deep Learning — Ch 10",
+    "title": "Deep Learning — Chapter 10",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 10",
+    "chapter": "Chapter 10",
     "dateRead": "2026-01-09",
     "year": 2026,
     "month": 1
@@ -2869,30 +2900,30 @@ export const readingEntries: ReadingEntry[] = [
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 15",
+    "title": "learncpp.com — Chapter 15",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 15",
+    "chapter": "Chapter 15",
     "dateRead": "2026-01-08",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 14",
+    "title": "learncpp.com — Chapter 14",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 14",
+    "chapter": "Chapter 14",
     "dateRead": "2026-01-06",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "Deep Learning — Ch 9",
+    "title": "Deep Learning — Chapter 9",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 9",
+    "chapter": "Chapter 9",
     "dateRead": "2026-01-06",
     "year": 2026,
     "month": 1
@@ -2914,11 +2945,11 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://www.usenix.org/conference/fast25/presentation/qin"
   },
   {
-    "title": "learncpp.com — Ch 13",
+    "title": "learncpp.com — Chapter 13",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 13",
+    "chapter": "Chapter 13",
     "dateRead": "2026-01-04",
     "year": 2026,
     "month": 1
@@ -2932,49 +2963,49 @@ export const readingEntries: ReadingEntry[] = [
     "month": 1
   },
   {
-    "title": "Deep Learning — Ch 8",
+    "title": "Deep Learning — Chapter 8",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 8",
+    "chapter": "Chapter 8",
     "dateRead": "2026-01-04",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 12",
+    "title": "learncpp.com — Chapter 12",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 12",
+    "chapter": "Chapter 12",
     "dateRead": "2026-01-04",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch F",
+    "title": "learncpp.com — Chapter F",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch F",
+    "chapter": "Chapter F",
     "dateRead": "2026-01-02",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "learncpp.com — Ch 11",
+    "title": "learncpp.com — Chapter 11",
     "url": "https://www.learncpp.com/",
     "category": "book",
     "bookTitle": "learncpp.com",
-    "chapter": "Ch 11",
+    "chapter": "Chapter 11",
     "dateRead": "2026-01-02",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "Deep Learning — Ch 7",
+    "title": "Deep Learning — Chapter 7",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 7",
+    "chapter": "Chapter 7",
     "dateRead": "2026-01-01",
     "year": 2026,
     "month": 1
@@ -2988,19 +3019,19 @@ export const readingEntries: ReadingEntry[] = [
     "month": 1
   },
   {
-    "title": "Deep Learning — Ch 6",
+    "title": "Deep Learning — Chapter 6",
     "category": "book",
     "bookTitle": "Deep Learning",
-    "chapter": "Ch 6",
+    "chapter": "Chapter 6",
     "dateRead": "2026-01-01",
     "year": 2026,
     "month": 1
   },
   {
-    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Ch 7",
+    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Chapter 7",
     "category": "book",
     "bookTitle": "Reinforcement Learning: An Introduction, 2nd Edition",
-    "chapter": "Ch 7",
+    "chapter": "Chapter 7",
     "dateRead": "2026-02-28",
     "year": 2026,
     "month": 2
@@ -3070,10 +3101,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 2
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 4",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 4",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 4",
+    "chapter": "Chapter 4",
     "dateRead": "2026-02-26",
     "year": 2026,
     "month": 2
@@ -3135,10 +3166,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 2
   },
   {
-    "title": "Database Internals — Ch 5",
+    "title": "Database Internals — Chapter 5",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 5",
+    "chapter": "Chapter 5",
     "dateRead": "2026-02-24",
     "year": 2026,
     "month": 2
@@ -3208,10 +3239,10 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/chen-boru"
   },
   {
-    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Ch 6",
+    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Chapter 6",
     "category": "book",
     "bookTitle": "Reinforcement Learning: An Introduction, 2nd Edition",
-    "chapter": "Ch 6",
+    "chapter": "Chapter 6",
     "dateRead": "2026-02-22",
     "year": 2026,
     "month": 2
@@ -3305,19 +3336,19 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://dl.acm.org/doi/10.1145/3613424.3614255"
   },
   {
-    "title": "Digital Design with Chisel — Ch 2",
+    "title": "Digital Design with Chisel — Chapter 2",
     "category": "book",
     "bookTitle": "Digital Design with Chisel",
-    "chapter": "Ch 2",
+    "chapter": "Chapter 2",
     "dateRead": "2026-02-16",
     "year": 2026,
     "month": 2
   },
   {
-    "title": "Database Internals — Ch 4",
+    "title": "Database Internals — Chapter 4",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 4",
+    "chapter": "Chapter 4",
     "dateRead": "2026-02-16",
     "year": 2026,
     "month": 2
@@ -3331,10 +3362,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 2
   },
   {
-    "title": "Introduction to Modern Cryptography — Ch 3",
+    "title": "Introduction to Modern Cryptography — Chapter 3",
     "category": "book",
     "bookTitle": "Introduction to Modern Cryptography",
-    "chapter": "Ch 3",
+    "chapter": "Chapter 3",
     "dateRead": "2026-02-13",
     "year": 2026,
     "month": 2
@@ -3396,46 +3427,46 @@ export const readingEntries: ReadingEntry[] = [
     "month": 2
   },
   {
-    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Ch 5",
+    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Chapter 5",
     "category": "book",
     "bookTitle": "Reinforcement Learning: An Introduction, 2nd Edition",
-    "chapter": "Ch 5",
+    "chapter": "Chapter 5",
     "dateRead": "2026-02-11",
     "year": 2026,
     "month": 2
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 4",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 4",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 4",
+    "chapter": "Chapter 4",
     "dateRead": "2026-02-11",
     "year": 2026,
     "month": 2
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 3",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 3",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 3",
+    "chapter": "Chapter 3",
     "dateRead": "2026-02-10",
     "year": 2026,
     "month": 2
   },
   {
-    "title": "Database Internals — Ch 3",
+    "title": "Database Internals — Chapter 3",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 3",
+    "chapter": "Chapter 3",
     "dateRead": "2026-02-10",
     "year": 2026,
     "month": 2
   },
   {
-    "title": "Database Internals — Ch 2",
+    "title": "Database Internals — Chapter 2",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 2",
+    "chapter": "Chapter 2",
     "dateRead": "2026-02-09",
     "year": 2026,
     "month": 2
@@ -3505,10 +3536,10 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://www.ndss-symposium.org/wp-content/uploads/2017/09/Traps-and-Pitfalls-Practical-Problems-in-System-Call-Interposition-Based-Security-Tools-Tal-Garfinkel.pdf"
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 2",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 2",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 2",
+    "chapter": "Chapter 2",
     "dateRead": "2026-02-06",
     "year": 2026,
     "month": 2
@@ -3570,28 +3601,28 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://www.usenix.org/legacy/event/sec06/tech/mccamant/mccamant.pdf"
   },
   {
-    "title": "Foundations of Cryptography, Volume 1: Basic Tools — Ch 3",
+    "title": "Foundations of Cryptography, Volume 1: Basic Tools — Chapter 3",
     "category": "book",
     "bookTitle": "Foundations of Cryptography, Volume 1: Basic Tools",
-    "chapter": "Ch 3",
+    "chapter": "Chapter 3",
     "dateRead": "2026-02-05",
     "year": 2026,
     "month": 2
   },
   {
-    "title": "Database Internals — Ch 1",
+    "title": "Database Internals — Chapter 1",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 1",
+    "chapter": "Chapter 1",
     "dateRead": "2026-02-03",
     "year": 2026,
     "month": 2
   },
   {
-    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Ch 4",
+    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Chapter 4",
     "category": "book",
     "bookTitle": "Reinforcement Learning: An Introduction, 2nd Edition",
-    "chapter": "Ch 4",
+    "chapter": "Chapter 4",
     "dateRead": "2026-02-03",
     "year": 2026,
     "month": 2
@@ -3621,10 +3652,10 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F25/projects/reports/project1012_paper_97290597159163632740.pdf"
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 1",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 1",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 1",
+    "chapter": "Chapter 1",
     "dateRead": "2026-02-01",
     "year": 2026,
     "month": 2
@@ -3646,28 +3677,28 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://arxiv.org/abs/2105.14111"
   },
   {
-    "title": "Digital Design with Chisel — Ch 10",
+    "title": "Digital Design with Chisel — Chapter 10",
     "category": "book",
     "bookTitle": "Digital Design with Chisel",
-    "chapter": "Ch 10",
+    "chapter": "Chapter 10",
     "dateRead": "2026-03-31",
     "year": 2026,
     "month": 3
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 20",
+    "title": "Database System Concepts, 7th Edition — Chapter 20",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 20",
+    "chapter": "Chapter 20",
     "dateRead": "2026-03-31",
     "year": 2026,
     "month": 3
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 19",
+    "title": "Database System Concepts, 7th Edition — Chapter 19",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 19",
+    "chapter": "Chapter 19",
     "dateRead": "2026-03-30",
     "year": 2026,
     "month": 3
@@ -3809,10 +3840,10 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://telex.cc/pub/telex-usenixsec11.pdf"
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 8",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 8",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 8",
+    "chapter": "Chapter 8",
     "dateRead": "2026-03-23",
     "year": 2026,
     "month": 3
@@ -3842,19 +3873,19 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://arxiv.org/abs/2503.11926"
   },
   {
-    "title": "Database Internals — Ch 10",
+    "title": "Database Internals — Chapter 10",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 10",
+    "chapter": "Chapter 10",
     "dateRead": "2026-03-22",
     "year": 2026,
     "month": 3
   },
   {
-    "title": "Database Internals — Ch 9",
+    "title": "Database Internals — Chapter 9",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 9",
+    "chapter": "Chapter 9",
     "dateRead": "2026-03-22",
     "year": 2026,
     "month": 3
@@ -3876,10 +3907,10 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://arxiv.org/abs/2602.07666"
   },
   {
-    "title": "Digital Design with Chisel — Ch 9",
+    "title": "Digital Design with Chisel — Chapter 9",
     "category": "book",
     "bookTitle": "Digital Design with Chisel",
-    "chapter": "Ch 9",
+    "chapter": "Chapter 9",
     "dateRead": "2026-03-21",
     "year": 2026,
     "month": 3
@@ -3893,10 +3924,10 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://arxiv.org/abs/2404.13501"
   },
   {
-    "title": "Digital Design with Chisel — Ch 8",
+    "title": "Digital Design with Chisel — Chapter 8",
     "category": "book",
     "bookTitle": "Digital Design with Chisel",
-    "chapter": "Ch 8",
+    "chapter": "Chapter 8",
     "dateRead": "2026-03-20",
     "year": 2026,
     "month": 3
@@ -3918,10 +3949,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 3
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 6",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 6",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 6",
+    "chapter": "Chapter 6",
     "dateRead": "2026-03-19",
     "year": 2026,
     "month": 3
@@ -3951,19 +3982,19 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://lamport.azurewebsites.net/pubs/time-clocks.pdf"
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 18",
+    "title": "Database System Concepts, 7th Edition — Chapter 18",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 18",
+    "chapter": "Chapter 18",
     "dateRead": "2026-03-18",
     "year": 2026,
     "month": 3
   },
   {
-    "title": "Database Internals — Ch 8",
+    "title": "Database Internals — Chapter 8",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 8",
+    "chapter": "Chapter 8",
     "dateRead": "2026-03-18",
     "year": 2026,
     "month": 3
@@ -4001,10 +4032,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 3
   },
   {
-    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Ch 9",
+    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Chapter 9",
     "category": "book",
     "bookTitle": "Reinforcement Learning: An Introduction, 2nd Edition",
-    "chapter": "Ch 9",
+    "chapter": "Chapter 9",
     "dateRead": "2026-03-14",
     "year": 2026,
     "month": 3
@@ -4018,19 +4049,19 @@ export const readingEntries: ReadingEntry[] = [
     "month": 3
   },
   {
-    "title": "Digital Design with Chisel — Ch 7",
+    "title": "Digital Design with Chisel — Chapter 7",
     "category": "book",
     "bookTitle": "Digital Design with Chisel",
-    "chapter": "Ch 7",
+    "chapter": "Chapter 7",
     "dateRead": "2026-03-12",
     "year": 2026,
     "month": 3
   },
   {
-    "title": "Digital Design with Chisel — Ch 6",
+    "title": "Digital Design with Chisel — Chapter 6",
     "category": "book",
     "bookTitle": "Digital Design with Chisel",
-    "chapter": "Ch 6",
+    "chapter": "Chapter 6",
     "dateRead": "2026-03-12",
     "year": 2026,
     "month": 3
@@ -4072,19 +4103,19 @@ export const readingEntries: ReadingEntry[] = [
     "month": 3
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 17",
+    "title": "Database System Concepts, 7th Edition — Chapter 17",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 17",
+    "chapter": "Chapter 17",
     "dateRead": "2026-03-10",
     "year": 2026,
     "month": 3
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 15",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 15",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 15",
+    "chapter": "Chapter 15",
     "dateRead": "2026-03-10",
     "year": 2026,
     "month": 3
@@ -4146,19 +4177,19 @@ export const readingEntries: ReadingEntry[] = [
     "month": 3
   },
   {
-    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Ch 4",
+    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Chapter 4",
     "category": "book",
     "bookTitle": "Computer Architecture, A Quantitative Approach, Sixth Edition",
-    "chapter": "Ch 4",
+    "chapter": "Chapter 4",
     "dateRead": "2026-03-09",
     "year": 2026,
     "month": 3
   },
   {
-    "title": "Database Internals — Ch 7",
+    "title": "Database Internals — Chapter 7",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 7",
+    "chapter": "Chapter 7",
     "dateRead": "2026-03-09",
     "year": 2026,
     "month": 3
@@ -4180,10 +4211,10 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://users.elis.ugent.be/~leeckhou/papers/asplos06.pdf"
   },
   {
-    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Ch 8",
+    "title": "Reinforcement Learning: An Introduction, 2nd Edition — Chapter 8",
     "category": "book",
     "bookTitle": "Reinforcement Learning: An Introduction, 2nd Edition",
-    "chapter": "Ch 8",
+    "chapter": "Chapter 8",
     "dateRead": "2026-03-07",
     "year": 2026,
     "month": 3
@@ -4229,19 +4260,19 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://www.osti.gov/servlets/purl/1407078/"
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 7",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 7",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 7",
+    "chapter": "Chapter 7",
     "dateRead": "2026-03-06",
     "year": 2026,
     "month": 3
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 16",
+    "title": "Database System Concepts, 7th Edition — Chapter 16",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 16",
+    "chapter": "Chapter 16",
     "dateRead": "2026-03-05",
     "year": 2026,
     "month": 3
@@ -4279,10 +4310,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 3
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 15",
+    "title": "Database System Concepts, 7th Edition — Chapter 15",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 15",
+    "chapter": "Chapter 15",
     "dateRead": "2026-03-04",
     "year": 2026,
     "month": 3
@@ -4304,10 +4335,10 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://arxiv.org/abs/2203.02155"
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 2",
+    "title": "Database System Concepts, 7th Edition — Chapter 2",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 2",
+    "chapter": "Chapter 2",
     "dateRead": "2026-03-03",
     "year": 2026,
     "month": 3
@@ -4321,10 +4352,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 3
   },
   {
-    "title": "Database Internals — Ch 6",
+    "title": "Database Internals — Chapter 6",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 6",
+    "chapter": "Chapter 6",
     "dateRead": "2026-03-03",
     "year": 2026,
     "month": 3
@@ -4338,19 +4369,19 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://vldb.org/pvldb/vol3/R106.pdf"
   },
   {
-    "title": "Digital Design with Chisel — Ch 5",
+    "title": "Digital Design with Chisel — Chapter 5",
     "category": "book",
     "bookTitle": "Digital Design with Chisel",
-    "chapter": "Ch 5",
+    "chapter": "Chapter 5",
     "dateRead": "2026-03-03",
     "year": 2026,
     "month": 3
   },
   {
-    "title": "Digital Design with Chisel — Ch 4",
+    "title": "Digital Design with Chisel — Chapter 4",
     "category": "book",
     "bookTitle": "Digital Design with Chisel",
-    "chapter": "Ch 4",
+    "chapter": "Chapter 4",
     "dateRead": "2026-03-03",
     "year": 2026,
     "month": 3
@@ -4364,10 +4395,10 @@ export const readingEntries: ReadingEntry[] = [
     "url": "http://arxiv.org/abs/2403.04132"
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 1",
+    "title": "Database System Concepts, 7th Edition — Chapter 1",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 1",
+    "chapter": "Chapter 1",
     "dateRead": "2026-03-02",
     "year": 2026,
     "month": 3
@@ -4405,10 +4436,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 3
   },
   {
-    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Ch 7",
+    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Chapter 7",
     "category": "book",
     "bookTitle": "Computer Architecture, A Quantitative Approach, Sixth Edition",
-    "chapter": "Ch 7",
+    "chapter": "Chapter 7",
     "dateRead": "2026-04-30",
     "year": 2026,
     "month": 4
@@ -4438,19 +4469,19 @@ export const readingEntries: ReadingEntry[] = [
     "month": 4
   },
   {
-    "title": "Database Internals — Ch 14",
+    "title": "Database Internals — Chapter 14",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 14",
+    "chapter": "Chapter 14",
     "dateRead": "2026-04-23",
     "year": 2026,
     "month": 4
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 11",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 11",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 11",
+    "chapter": "Chapter 11",
     "dateRead": "2026-04-22",
     "year": 2026,
     "month": 4
@@ -4496,10 +4527,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 4
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 23",
+    "title": "Database System Concepts, 7th Edition — Chapter 23",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 23",
+    "chapter": "Chapter 23",
     "dateRead": "2026-04-19",
     "year": 2026,
     "month": 4
@@ -4513,10 +4544,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 4
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 12",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 12",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 12",
+    "chapter": "Chapter 12",
     "dateRead": "2026-04-17",
     "year": 2026,
     "month": 4
@@ -4554,10 +4585,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 4
   },
   {
-    "title": "Database Internals — Ch 13",
+    "title": "Database Internals — Chapter 13",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 13",
+    "chapter": "Chapter 13",
     "dateRead": "2026-04-15",
     "year": 2026,
     "month": 4
@@ -4595,28 +4626,28 @@ export const readingEntries: ReadingEntry[] = [
     "month": 4
   },
   {
-    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Ch 6",
+    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Chapter 6",
     "category": "book",
     "bookTitle": "Computer Architecture, A Quantitative Approach, Sixth Edition",
-    "chapter": "Ch 6",
+    "chapter": "Chapter 6",
     "dateRead": "2026-04-11",
     "year": 2026,
     "month": 4
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 22",
+    "title": "Database System Concepts, 7th Edition — Chapter 22",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 22",
+    "chapter": "Chapter 22",
     "dateRead": "2026-04-11",
     "year": 2026,
     "month": 4
   },
   {
-    "title": "Database Internals — Ch 12",
+    "title": "Database Internals — Chapter 12",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 12",
+    "chapter": "Chapter 12",
     "dateRead": "2026-04-10",
     "year": 2026,
     "month": 4
@@ -4630,10 +4661,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 4
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 10",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 10",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 10",
+    "chapter": "Chapter 10",
     "dateRead": "2026-04-09",
     "year": 2026,
     "month": 4
@@ -4703,28 +4734,28 @@ export const readingEntries: ReadingEntry[] = [
     "month": 4
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 21",
+    "title": "Database System Concepts, 7th Edition — Chapter 21",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 21",
+    "chapter": "Chapter 21",
     "dateRead": "2026-04-07",
     "year": 2026,
     "month": 4
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Ch 9",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 9",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Ch 9",
+    "chapter": "Chapter 9",
     "dateRead": "2026-04-06",
     "year": 2026,
     "month": 4
   },
   {
-    "title": "Database Internals — Ch 11",
+    "title": "Database Internals — Chapter 11",
     "category": "book",
     "bookTitle": "Database Internals",
-    "chapter": "Ch 11",
+    "chapter": "Chapter 11",
     "dateRead": "2026-04-06",
     "year": 2026,
     "month": 4
@@ -4786,10 +4817,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 4
   },
   {
-    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Ch 5",
+    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Chapter 5",
     "category": "book",
     "bookTitle": "Computer Architecture, A Quantitative Approach, Sixth Edition",
-    "chapter": "Ch 5",
+    "chapter": "Chapter 5",
     "dateRead": "2026-04-03",
     "year": 2026,
     "month": 4
@@ -4835,10 +4866,10 @@ export const readingEntries: ReadingEntry[] = [
     "month": 5
   },
   {
-    "title": "Database System Concepts, 7th Edition — Ch 24",
+    "title": "Database System Concepts, 7th Edition — Chapter 24",
     "category": "book",
     "bookTitle": "Database System Concepts, 7th Edition",
-    "chapter": "Ch 24",
+    "chapter": "Chapter 24",
     "dateRead": "2026-05-13",
     "year": 2026,
     "month": 5
