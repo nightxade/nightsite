@@ -78,15 +78,7 @@ s_{m+1}^{\epsilon_{m+1}}\dots s_{n}^{\epsilon_{n}},& k=m+1\leq n, \\
 $$
 Where $k$ is the smallest integer in the range $1\leq k\leq m+1$ such that $s_{k}^{\epsilon_{k}}\neq r_{m-k+1}^{-\delta_{m-k+1}}$. (Where the product of $r$ and $s$ in the center does not cancel).
 **Theorem 17:** Let $G$ be a group, $S$ a set, and $\varphi:S\to G$ a set map. Then there is a unique group homomorphism $\Phi:F(S)\to G$ such that the following diagram commutes:
-```tikz
-\usepackage{tikz-cd}
-\begin{document}
-\begin{tikzcd}[every label/.append style={font=\normalsize}]
-S \arrow[rr, "\mathrm{inclusion}" above, midway] \arrow[rrd, "\varphi" below left=2pt, midway] &&  F(S) \arrow[d, "\Phi" right=1pt, midway] \\
-&& G
-\end{tikzcd}
-\end{document}
-```
+![[thm17-triangle.png]]
 
 **Corollary 18:** $F(S)$ is unique up to a unique isomorphism which is the identity map on the set $S$.
 **Definition:** The group $F(S)$ is called the *free group* on the set $S$. A group $F$ is a *free group* if there is some $S$ such that $F=F(S)$ — in this case we call $S$ a set of *free generators* (or a *free basis*) of $F$. The cardinality of $S$ is the *rank* of the free group.

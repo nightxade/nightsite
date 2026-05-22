@@ -58,20 +58,7 @@ $$
 **Theorem 20:** If $K$ is algebraic over $F$ and $L$ is algebraic over $K$, then $L$ is algebraic over $F$.
 **Definition:** Let $K_{1},K_{2}\subseteq K$. Then the *composite field* of $K_{1}$ and $K_{2}$, denoted $K_{1}K_{2}$, is the smallest subfield of $K$ with $K_{1},K_{2}\subseteq K_{1}K_{2}$. This extends to any number of subfields.
 **Proposition 21:** Let $K_{1},K_{2}$ be two finite extensions of a field $F\subseteq K$. Then $[K_{1}K_{2}:F]\leq[K_{1}:F][K_{2}:F]$. Equality is true $\iff$ an $F$-basis for one of the fields remains linearly independent over the other field. If $\{ \alpha_{1},\dots,\alpha_{n} \}$ and $\{ \beta_{1},\dots,\beta_{m} \}$ are the bases for $K_{1}$ and $K_{2}$, respectively, then the elements $\alpha_{i}\beta_{j}$ span $K_{1}K_{2}$ over $F$. Pictorially,
-```tikz
-\usepackage{tikz-cd}
-\begin{document}
-\begin{tikzcd}
-
-& K_{1}K_{2}
-	\arrow[dl, "\leq m" above left=1pt, midway]
-	\arrow[dr, "\leq n" above right=1pt, midway]
-	& \\
-K_{1} \arrow[dr, "n" below left=1pt, midway] & & K_{2} \arrow[dl, "m" below right=1pt, midway] \\
-& F & \\
-\end{tikzcd}
-\end{document}
-```
+![[prop21-diamond.png]]
 **Corollary 22:** Suppose that $[K_{1}:F]=n$, $[K_{2}:F]=m$ in Proposition 21, where $(m,n)=1$. Then $K_{1}K_{2}:F=[K_{1}:F][K_{2}:F]=mn$.
 ## 13.3 Classical Straightedge and Compass Constructions
 **Proposition 23:** If the element $\alpha \in \mathbb{R}$ is obtained from a field $F\subset \mathbb{R}$ by a series of compass and straightedge constructions then $[F(\alpha):F]=2^{k}$ for some integer $k\geq 0$.
@@ -87,16 +74,7 @@ Let $F$ be a field.
 **Definition:** The field $\mathbb{Q}(\zeta_{n})$ is called the *cyclotomic field of $n$th roots of unity*.
 **Fact:** The polynomial $\frac{x^{p}-1}{x-1}$ is the minimal polynomial for $\zeta_{p}$ and has degree $\varphi(p)=p-1$. In general, $[\mathbb{Q}(\zeta_{n}):\mathbb{Q}]=\varphi(n)$.
 **Theorem 27:** Let $\varphi:F \tilde{\to} F'$ be a field isomorphism. Let $f(x)\in F[x]$ be a polynomial and let $f'(x)\in F'[x]$ be the polynomial obtained by applying $\varphi$ to the coefficients of $f(x)$. Let $E$ be a splitting field for $f(x)$ over $F$ and let $E'$ be a splitting field for $f'(x)$ over $F'$. Then the isomorphism $\varphi$ extends to an isomorphism $\sigma:E \tilde{\to}E'$, i.e. $\sigma$ restricted to $F$ is $\varphi$. Pictorially, <br>
-```tikz
-\usepackage{tikz-cd}
-\begin{document}
-\begin{tikzcd}
-
-\sigma:\hspace{-2em} & E \arrow[r, "\sim" above, midway] \arrow[d, dash] & E' \arrow[d, dash] \\
-\varphi:\hspace{-2em} & F \arrow[r, "\sim" above, midway] & F'
-\end{tikzcd}
-\end{document}
-```
+![[thm27-square.png]]
 **Corollary 28:** (*Uniqueness of Splitting Fields*) Any two splitting fields for a polynomial $f(x)\in F[x]$ over a field $F$ are isomorphic.
 **Definition:** The field $\overline{F}$ is called an *algebraic closure* of $F$ is $\overline{F}$ is algebraic over $F$ and if every polynomial $f(x)\in F[x]$ splits completely over $\overline{F}$ (that is, $\overline{F}$ contains all the elements algebraic over $F$).
 **Definition:** A field $K$ is *algebraically closed* if every polynomial with coefficients in $K$ has a root in $K$.

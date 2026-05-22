@@ -127,6 +127,10 @@ const next = index < notes.length - 1 ? notes[index + 1] : null
     display: block;
   }
 
+  :global([data-theme='dark'] .prose img) {
+    filter: invert(1);
+  }
+
   /* TikZJax rendered SVGs */
   :global(.prose svg[width]) {
     display: block;
