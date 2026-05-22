@@ -9,7 +9,10 @@ import Layout from '@/layouts/layout.astro'
   <PageHead slot="head" title="Resume" />
   <div class="flex items-center justify-between">
     <Breadcrumbs items={[{ label: 'Resume', icon: 'lucide:file-text' }]} />
-    <Link href="/static/resume.pdf" external class="text-muted-foreground hover:text-foreground text-sm" underline>Download PDF</Link>
+    <div class="flex items-center gap-4">
+      <Link href="/transcript" class="text-muted-foreground hover:text-foreground text-sm" underline>View Transcript</Link>
+      <Link href="/static/resume.pdf" external class="text-muted-foreground hover:text-foreground text-sm" underline>Download PDF</Link>
+    </div>
   </div>
 
   <div class="flex flex-col gap-8 pb-12 text-foreground/80">

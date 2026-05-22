@@ -1,0 +1,60 @@
+---
+import Breadcrumbs from '@/components/breadcrumbs.astro'
+import PageHead from '@/components/page-head.astro'
+import Layout from '@/layouts/layout.astro'
+
+const courses = [
+  { code: 'CS 61A',   name: 'Structure and Interpretation of Computer Programs', semester: 'Fall 2024', grade: 'A+' },
+  { code: 'CS 61B',   name: 'Data Structures and Algorithms',                    semester: 'Fall 2024', grade: 'A+' },
+  { code: 'CS 61C',   name: 'Machine Structures',                                semester: 'Spring 2025', grade: 'A+' },
+  { code: 'CS 70',    name: 'Discrete Mathematics and Probability Theory',       semester: 'Spring 2025', grade: 'A+' },
+  { code: 'CS 152',   name: 'Computer Architecture and Engineering',             semester: 'Spring 2026', grade: 'TBD' },
+  { code: 'CS 161',   name: 'Computer Security',                                 semester: 'Fall 2025', grade: 'A+' },
+  { code: 'CS 162',   name: 'Operating Systems and System Programming',          semester: 'Fall 2025', grade: 'A+' },
+  { code: 'CS 164',   name: 'Programming Languages and Compilers',               semester: 'Fall 2025', grade: 'A' },
+  { code: 'CS 170',   name: 'Efficient Algorithms and Intractable Problems',     semester: 'Fall 2025', grade: 'A+' },
+  { code: 'CS 185',   name: 'Deep Reinforcement Learning',                       semester: 'Spring 2026', grade: 'A' },
+  { code: 'CS 186',   name: 'Introduction to Database Systems',                  semester: 'Spring 2026', grade: 'A+' },
+  { code: 'CS 189',   name: 'Introduction to Machine Learning',                  semester: 'Spring 2026', grade: 'TBD' },
+  { code: 'CS 261',   name: 'Security in Computer Systems',   grad: true,        semester: 'Spring 2026', grade: 'TBD' },
+  { code: 'CS 294',   name: 'Performance Optimization',       grad: true,        semester: 'Fall 2025', grade: 'A' },
+  { code: 'EECS 16A', name: 'Designing Information Devices and Systems I',       semester: 'Fall 2024', grade: 'A' },
+  { code: 'EECS 16B', name: 'Designing Information Devices and Systems II',      semester: 'Spring 2025', grade: 'A' },
+  { code: 'MATH 53',  name: 'Multivariable Calculus',                            semester: 'Spring 2025', grade: 'A+' },
+  { code: 'MATH 113', name: 'Abstract Algebra',                                  semester: 'Spring 2025', grade: 'A+' },
+]
+---
+
+<Layout class="max-w-4xl">
+  <PageHead slot="head" title="Transcript" />
+  <div class="flex items-center justify-between">
+    <Breadcrumbs items={[{ label: 'Transcript', icon: 'lucide:graduation-cap' }]} />
+    <a href="/resume" class="text-muted-foreground hover:text-foreground text-sm underline underline-offset-[3px] decoration-muted-foreground hover:decoration-foreground transition-colors">Back to Resume</a>
+  </div>
+
+  <div class="flex flex-col gap-8 pb-12 text-foreground/80">
+
+    <div class="flex flex-col items-center gap-1 text-center">
+      <h1 class="text-5xl font-semibold">Matthew Cai</h1>
+      <p class="text-muted-foreground text-sm">University of California, Berkeley &middot; B.S. Electrical Engineering and Computer Science</p>
+      <p class="text-muted-foreground text-sm">GPA: 4.00 / 4.00</p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+      {courses.map((c) => (
+        <div class="rounded-lg border px-4 py-3 flex flex-col gap-1">
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-medium">{c.code}</span>
+              {c.grad && <span class="text-muted-foreground rounded border px-1.5 py-0.5 text-xs">Graduate</span>}
+            </div>
+            <span class="text-foreground/80 text-sm">{c.grade}</span>
+          </div>
+          <p class="text-muted-foreground text-sm">{c.name}</p>
+          <p class="text-muted-foreground text-xs">{c.semester}</p>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</Layout>
