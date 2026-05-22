@@ -4,7 +4,6 @@ description: "Get the flag and reach the exit. Welcome to BabyGame! Navigate aro
 date: 2023-07-01
 tags:
   - pwn
-  - out-of-bounds
 order: 1
 ---
 

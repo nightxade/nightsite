@@ -4,8 +4,6 @@ description: The s in rsa stands for secure.
 date: 2024-04-01
 tags:
   - crypto
-  - signature
-  - forgery
 order: 6
 ---
 

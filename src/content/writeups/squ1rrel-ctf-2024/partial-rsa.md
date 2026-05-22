@@ -4,9 +4,6 @@ description: "Hmm? What's wrong with using the same flag format again? Whisper i
 date: 2024-04-28
 tags:
   - crypto
-  - rsa
-  - coppersmith
-  - stereotyped-message-attack
 order: 2
 ---
 

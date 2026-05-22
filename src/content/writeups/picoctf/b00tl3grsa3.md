@@ -4,8 +4,6 @@ description: Why use p and q when I can use more? Connect with `nc jupiter.chall
 date: 2023-07-01
 tags:
   - crypto
-  - rsa
-  - multi-prime
 order: 9
 ---
 

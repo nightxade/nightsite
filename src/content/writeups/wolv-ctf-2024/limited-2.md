@@ -4,8 +4,6 @@ description: I was AFK when the flag was being encrypted, can you help me get it
 date: 2024-03-19
 tags:
   - crypto
-  - random
-  - time
 order: 13
 ---
 

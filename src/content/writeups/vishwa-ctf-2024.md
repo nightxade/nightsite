@@ -2,8 +2,6 @@
 title: Vishwa CTF 2024
 description: "CTF writeup collection — Placement #116/1039"
 date: 2024-03-03
-tags:
-  - vishwa-ctf-2024
 ---
 
 Placement: #116/1039

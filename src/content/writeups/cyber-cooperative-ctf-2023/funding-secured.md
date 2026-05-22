@@ -4,8 +4,6 @@ description: Someone in our company leaked some very sensitive information. We a
 date: 2023-12-19
 tags:
   - forensics
-  - lsb
-  - binwalk
 order: 3
 ---
 

@@ -4,10 +4,6 @@ description: "Control the return address and arguments This time you'll need to 
 date: 2023-07-01
 tags:
   - pwn
-  - buffer-overflow
-  - ret2win
-  - args-on-stack
-  - gets
 order: 2
 ---
 

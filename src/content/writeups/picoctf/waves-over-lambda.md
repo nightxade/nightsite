@@ -4,7 +4,6 @@ description: We made a lot of substitutions to encrypt this. Can you decrypt it?
 date: 2023-07-01
 tags:
   - crypto
-  - monoalphabetic-substitution
 order: 21
 ---
 

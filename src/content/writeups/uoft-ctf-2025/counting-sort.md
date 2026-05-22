@@ -4,8 +4,6 @@ description: Did you know that the best time complexity for a sorting algorithm 
 date: 2025-01-12
 tags:
   - pwn
-  - out-of-bounds
-  - write-what-where
 order: 3
 ---
 

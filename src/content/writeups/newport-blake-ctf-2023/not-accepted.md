@@ -4,7 +4,6 @@ description: "I can't seem to pass this problem... can you help me? https://code
 date: 2023-12-04
 tags:
   - misc
-  - codeforces
 order: 7
 ---
 

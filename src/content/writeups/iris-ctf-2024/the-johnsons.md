@@ -4,7 +4,6 @@ description: "Please socialize with the Johnson's and get off your phone. You mi
 date: 2024-01-07
 tags:
   - rev
-  - logic
 order: 11
 ---
 

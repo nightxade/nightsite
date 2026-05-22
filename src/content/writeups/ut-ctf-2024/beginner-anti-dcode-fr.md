@@ -4,7 +4,6 @@ description: "I've heard that everyone just uses dcode.fr to solve all of their 
 date: 2024-04-01
 tags:
   - crypto
-  - caesar
 order: 1
 ---
 

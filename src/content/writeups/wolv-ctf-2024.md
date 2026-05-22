@@ -2,8 +2,6 @@
 title: Wolv CTF 2024
 description: "CTF writeup collection — Placement #88/622"
 date: 2024-03-19
-tags:
-  - wolv-ctf-2024
 ---
 
 Placement: #88/622

@@ -4,8 +4,6 @@ description: "There's something fishy about this PIN-code checker, can you figur
 date: 2023-07-01
 tags:
   - forensics
-  - side-channel
-  - timing
 order: 24
 ---
 

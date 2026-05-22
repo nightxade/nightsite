@@ -4,9 +4,6 @@ description: "The WOLPHV group (yes, this is an actual article) group encrypted 
 date: 2024-03-19
 tags:
   - crypto
-  - aes
-  - aes-cbc
-  - oracle
 order: 10
 ---
 

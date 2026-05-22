@@ -4,7 +4,6 @@ description: "AES-ECB is bad, so I rolled my own cipher block chaining mechanism
 date: 2023-07-01
 tags:
   - crypto
-  - aes
 order: 7
 ---
 

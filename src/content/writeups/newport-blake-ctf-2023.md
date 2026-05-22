@@ -2,8 +2,6 @@
 title: Newport Blake CTF 2023
 description: "CTF writeup collection — Placement #29/451"
 date: 2023-12-04
-tags:
-  - newport-blake-ctf-2023
 ---
 
 Overall Placement: #29/451  

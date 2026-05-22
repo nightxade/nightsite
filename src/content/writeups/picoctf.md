@@ -2,8 +2,6 @@
 title: picoCTF
 description: CTF writeup collection for picoCTF.
 date: 2023-07-01
-tags:
-  - picoctf
 ---
 
 [picoCTF](https://picoctf.org/)  

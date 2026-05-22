@@ -4,8 +4,6 @@ description: "Download this disk image, find the key and log into the remote mac
 date: 2023-07-01
 tags:
   - forensics
-  - disk
-  - permissions
 order: 22
 ---
 

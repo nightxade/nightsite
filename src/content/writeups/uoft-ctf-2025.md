@@ -2,8 +2,6 @@
 title: UofT CTF 2025
 description: "CTF writeup collection — Placement #50/897"
 date: 2025-01-12
-tags:
-  - uoft-ctf-2025
 ---
 
 Placement: #50/897

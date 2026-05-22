@@ -4,7 +4,6 @@ description: "You've received a confidential document! Follow the instructions t
 date: 2024-01-15
 tags:
   - forensics
-  - microsoft-office
 order: 4
 ---
 

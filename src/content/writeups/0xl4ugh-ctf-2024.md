@@ -2,8 +2,6 @@
 title: 0xL4ugh CTF 2024
 description: "CTF writeup collection — Placement #98/614"
 date: 2024-02-10
-tags:
-  - 0xl4ugh-ctf-2024
 ---
 
 Placement: #98/614

@@ -4,8 +4,6 @@ description: "\"It is my experience that proofs involving matrices can be shorte
 date: 2024-07-02
 tags:
   - crypto
-  - rsa
-  - gcd
 order: 1
 ---
 

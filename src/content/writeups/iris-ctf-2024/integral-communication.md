@@ -4,10 +4,6 @@ description: "I've found this secret communication system running on a server. U
 date: 2024-01-07
 tags:
   - crypto
-  - aes
-  - aes-cbc
-  - oracle
-  - json
 order: 2
 ---
 

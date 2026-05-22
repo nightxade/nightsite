@@ -4,7 +4,6 @@ description: Iris visited this cool shop a while back, but forgot where it was! 
 date: 2024-01-07
 tags:
   - osint
-  - reverse-image-search
 order: 7
 ---
 

@@ -2,8 +2,6 @@
 title: Dice CTF Quals 2024
 description: "CTF writeup collection — Placement #167/1040 overall, #7/50 high school"
 date: 2024-02-04
-tags:
-  - dice-ctf-quals-2024
 ---
 
 Placement: #167/1040 overall, #7/50 high school

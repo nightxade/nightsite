@@ -4,8 +4,6 @@ description: "I think that Diffie-Hellman is better with some curves, maybe elli
 date: 2024-01-15
 tags:
   - crypto
-  - ecc
-  - smarts-attack
 order: 1
 ---
 

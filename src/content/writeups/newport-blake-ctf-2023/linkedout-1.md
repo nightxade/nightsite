@@ -4,7 +4,6 @@ description: "I’ve just finished setting up Newport blakes LinkedIn! I hope I 
 date: 2023-12-04
 tags:
   - osint
-  - hex
 order: 9
 ---
 

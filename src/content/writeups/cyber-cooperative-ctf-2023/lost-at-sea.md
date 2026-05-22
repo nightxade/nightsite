@@ -4,7 +4,6 @@ description: I dropped my flag in the sea. Help me find it among the sharks!
 date: 2023-12-19
 tags:
   - forensics
-  - wireshark
 order: 4
 ---
 

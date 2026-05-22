@@ -4,8 +4,6 @@ description: Can you pass the path traversal exam? 👀 There might be some requ
 date: 2023-12-11
 tags:
   - web
-  - robots.txt
-  - path
 order: 9
 ---
 

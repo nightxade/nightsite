@@ -4,7 +4,6 @@ description: This little baby is figuring out how to computer! It looks like the
 date: 2023-12-19
 tags:
   - forensics
-  - binwalk
 order: 2
 ---
 

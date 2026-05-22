@@ -2,8 +2,6 @@
 title: Iris CTF 2024
 description: "CTF writeup collection — Placement #88/1207"
 date: 2024-01-07
-tags:
-  - iris-ctf-2024
 ---
 
 Placement: #88/1207

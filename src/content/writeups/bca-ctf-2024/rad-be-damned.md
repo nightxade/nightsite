@@ -4,7 +4,6 @@ description: "My friend seems to be communicating something but I can't make out
 date: 2024-06-12
 tags:
   - crypto
-  - error-checking
 order: 4
 ---
 

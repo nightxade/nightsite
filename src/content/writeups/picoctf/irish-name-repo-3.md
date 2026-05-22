@@ -4,8 +4,6 @@ description: "There is a secure website running at https://jupiter.challenges.pi
 date: 2023-07-01
 tags:
   - web
-  - sql-injection
-  - curl
 order: 30
 ---
 

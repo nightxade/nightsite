@@ -4,8 +4,6 @@ description: "I think I made my code harder to read. Can you let me know if that
 date: 2023-11-27
 tags:
   - rev
-  - obfuscation
-  - xor
 order: 5
 ---
 

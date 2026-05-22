@@ -4,7 +4,6 @@ description: Password manager? I store all of mine in image form.
 date: 2024-03-25
 tags:
   - crypto
-  - rgb
 order: 1
 ---
 

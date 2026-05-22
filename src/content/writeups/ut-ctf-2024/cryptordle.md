@@ -4,7 +4,6 @@ description: "Just guess the word in 6 tries. What do you mean it's hard?"
 date: 2024-04-01
 tags:
   - crypto
-  - math
 order: 2
 ---
 

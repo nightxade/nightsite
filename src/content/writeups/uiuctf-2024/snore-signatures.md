@@ -4,8 +4,6 @@ description: These signatures are a bore!
 date: 2024-07-02
 tags:
   - crypto
-  - schnorr-signature
-  - forgery
 order: 4
 ---
 

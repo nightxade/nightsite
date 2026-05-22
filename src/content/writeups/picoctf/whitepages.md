@@ -4,8 +4,6 @@ description: I stopped using YellowPages and moved onto WhitePages... but the pa
 date: 2023-07-01
 tags:
   - forensics
-  - unicode
-  - binary
 order: 25
 ---
 

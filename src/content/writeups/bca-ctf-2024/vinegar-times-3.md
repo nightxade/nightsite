@@ -4,7 +4,6 @@ description: "We can't speak French and just say what we see."
 date: 2024-06-12
 tags:
   - crypto
-  - vigenere
 order: 9
 ---
 

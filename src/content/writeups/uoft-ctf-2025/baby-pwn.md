@@ -4,8 +4,6 @@ description: "Here's a baby pwn challenge for you to try out. Can you get the fl
 date: 2025-01-12
 tags:
   - pwn
-  - buffer-overflow
-  - ret2win
 order: 2
 ---
 

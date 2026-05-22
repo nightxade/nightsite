@@ -5,8 +5,6 @@ date: 2023-11-27
 tags:
   - forensics
   - network
-  - wireshark
-  - ftp
 order: 8
 ---
 

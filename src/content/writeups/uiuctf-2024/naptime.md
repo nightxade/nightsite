@@ -4,9 +4,6 @@ description: "I'm pretty tired. Don't leak my flag while I'm asleep."
 date: 2024-07-02
 tags:
   - crypto
-  - knapsack
-  - merkle-hellman
-  - byte-by-byte
 order: 3
 ---
 

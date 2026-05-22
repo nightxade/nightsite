@@ -4,8 +4,6 @@ description: Can you make this program crash?
 date: 2023-12-19
 tags:
   - pwn
-  - buffer-overflow
-  - segfault
 order: 5
 ---
 

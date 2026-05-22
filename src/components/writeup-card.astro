@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import {
   getCombinedWriteupReadingTime,
+  getSubwriteupTags,
   getWriteupSubpostCount,
   isSubpost,
   parseAuthors,
@@ -25,6 +26,9 @@ const authors = await parseAuthors(entry.data.authors ?? [])
 const subwriteupCount = !isSubpost(entry.id)
   ? await getWriteupSubpostCount(entry.id)
   : 0
+const displayTags = subwriteupCount > 0
+  ? await getSubwriteupTags(entry.id)
+  : (entry.data.tags ?? [])
 ---
 
 <div
@@ -50,7 +54,9 @@ const subwriteupCount = !isSubpost(entry.id)
 
     <div class="grow">
       <h3 class="mb-1 text-lg font-medium">{entry.data.title}</h3>
-      <p class="text-muted-foreground mb-2 text-sm">{entry.data.description}</p>
+      {subwriteupCount === 0 && (
+        <p class="text-muted-foreground mb-2 text-sm">{entry.data.description}</p>
+      )}
 
       <div
         class="text-muted-foreground mb-2 flex flex-wrap items-center gap-x-2 text-xs"
@@ -91,13 +97,15 @@ const subwriteupCount = !isSubpost(entry.id)
       </div>
 
       {
-        entry.data.tags && (
+        displayTags.length > 0 && (
           <div class="flex flex-wrap gap-2">
-            {entry.data.tags.map((tag) => (
-              <Badge variant="muted" className="flex items-center gap-x-1">
-                <Icon name="lucide:hash" class="size-3" />
-                {tag}
-              </Badge>
+            {displayTags.map((tag) => (
+              <a href={`/tags/${tag}`} onclick="event.stopPropagation()">
+                <Badge variant="muted" className="flex items-center gap-x-1 hover:bg-muted-foreground/20 transition-colors cursor-pointer">
+                  <Icon name="lucide:hash" class="size-3" />
+                  {tag}
+                </Badge>
+              </a>
             ))}
           </div>
         )

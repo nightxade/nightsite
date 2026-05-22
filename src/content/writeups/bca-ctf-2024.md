@@ -2,8 +2,6 @@
 title: BCA CTF 2024
 description: "CTF writeup collection — Placement #5/823 overall, #2/139 high school"
 date: 2024-06-12
-tags:
-  - bca-ctf-2024
 ---
 
 Placement: #5/823 overall, #2/139 high school

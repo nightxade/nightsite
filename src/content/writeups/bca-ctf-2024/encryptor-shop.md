@@ -4,8 +4,6 @@ description: "After realizing how insecure the systems of many companies are (th
 date: 2024-06-12
 tags:
   - crypto
-  - rsa
-  - gcd
 order: 3
 ---
 

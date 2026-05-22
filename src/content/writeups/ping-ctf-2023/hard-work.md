@@ -4,7 +4,6 @@ description: "You've received a cryptic message from your boss at the company. A
 date: 2023-12-11
 tags:
   - crypto
-  - encoding
 order: 1
 ---
 

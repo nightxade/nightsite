@@ -4,8 +4,6 @@ description: "We encoded a flag, and to make sure that pesky interlopers couldn'
 date: 2024-03-19
 tags:
   - rev
-  - brute-force
-  - byte-by-byte
 order: 8
 ---
 

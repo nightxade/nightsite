@@ -4,8 +4,6 @@ description: "I've tried the brand new michael-ld linker on my hello world progr
 date: 2024-01-07
 tags:
   - pwn
-  - buffer-overflow
-  - ret2win
 order: 9
 ---
 

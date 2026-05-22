@@ -2,8 +2,6 @@
 title: Texsaw CTF 2024
 description: "CTF writeup collection — Placement #15/410"
 date: 2024-03-25
-tags:
-  - texsaw-ctf-2024
 ---
 
 Placement: #15/410

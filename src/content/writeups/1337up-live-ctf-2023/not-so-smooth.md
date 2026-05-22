@@ -4,8 +4,6 @@ description: Can you find a and b?
 date: 2023-11-27
 tags:
   - crypto
-  - xor
-  - modular-arithmetic
 order: 2
 ---
 

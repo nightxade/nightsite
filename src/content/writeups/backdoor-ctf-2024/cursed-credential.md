@@ -4,9 +4,6 @@ description: "I forgot my Browser's saved password although a friend of mine tel
 date: 2024-12-24
 tags:
   - forensics
-  - password-cracking
-  - hashcat
-  - rockyou
 order: 2
 ---
 

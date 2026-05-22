@@ -4,8 +4,6 @@ description: Another slight twist on a classic, see if you can recover the flag.
 date: 2023-07-01
 tags:
   - crypto
-  - vigenere
-  - bits
 order: 14
 ---
 

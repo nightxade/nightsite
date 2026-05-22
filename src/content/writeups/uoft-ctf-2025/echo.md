@@ -4,9 +4,6 @@ description: Yet another echo service. However, the service keeps printing stack
 date: 2025-01-12
 tags:
   - pwn
-  - buffer-overflow
-  - format-string
-  - got-overwrite
 order: 4
 ---
 

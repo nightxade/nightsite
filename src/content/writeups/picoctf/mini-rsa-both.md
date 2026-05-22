@@ -4,9 +4,6 @@ description: "Let's decrypt this: ciphertext? Something seems a bit small."
 date: 2023-07-01
 tags:
   - crypto
-  - rsa
-  - brute-force
-  - small-e
 order: 13
 ---
 

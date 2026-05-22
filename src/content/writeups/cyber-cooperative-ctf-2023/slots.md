@@ -4,7 +4,6 @@ description: I heard about this scam that let people rob some slot machines. Can
 date: 2023-12-19
 tags:
   - crypto
-  - randcrack
 order: 1
 ---
 

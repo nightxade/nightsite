@@ -4,7 +4,6 @@ description: "You have intercepted an encrypted message from the RB back to Dr. 
 date: 2024-03-25
 tags:
   - crypto
-  - rsa
 order: 2
 ---
 

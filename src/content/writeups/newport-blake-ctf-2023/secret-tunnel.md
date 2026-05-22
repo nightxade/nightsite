@@ -4,8 +4,6 @@ description: Can you find the flag on the other end of my secret tunnel?
 date: 2023-12-04
 tags:
   - web
-  - localhost
-  - url-encoding
 order: 17
 ---
 

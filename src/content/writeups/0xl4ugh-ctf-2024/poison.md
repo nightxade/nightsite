@@ -4,7 +4,6 @@ description: "Author : mindFlayer02"
 date: 2024-02-10
 tags:
   - crypto
-  - elliptic-curve
 order: 1
 ---
 

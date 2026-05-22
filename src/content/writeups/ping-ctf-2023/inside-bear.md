@@ -4,9 +4,6 @@ description: "This is the hardest reversing challenge I've ever met!!! Can you p
 date: 2023-12-11
 tags:
   - misc
-  - binwalk
-  - audio-forensics
-  - spectrogram
 order: 5
 ---
 

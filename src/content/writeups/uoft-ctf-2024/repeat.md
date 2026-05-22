@@ -4,7 +4,6 @@ description: "I'm a known repeat offender when it comes to bad encryption habits
 date: 2024-01-15
 tags:
   - crypto
-  - xor
 order: 3
 ---
 

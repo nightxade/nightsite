@@ -4,7 +4,6 @@ description: "In RSA d is a lot bigger than e, why don't we use d to encrypt ins
 date: 2023-07-01
 tags:
   - crypto
-  - rsa
 order: 8
 ---
 

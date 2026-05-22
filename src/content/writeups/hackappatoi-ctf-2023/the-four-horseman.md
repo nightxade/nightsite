@@ -4,7 +4,6 @@ description: The Cavaliere is returned. He is awake and he’s ready to unleash 
 date: 2023-12-10
 tags:
   - rev
-  - rot13
 order: 4
 ---
 

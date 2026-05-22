@@ -4,7 +4,6 @@ description: Rune? Like the ancient alphabet?
 date: 2024-01-07
 tags:
   - rev
-  - go
 order: 10
 ---
 

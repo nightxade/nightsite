@@ -4,7 +4,6 @@ description: They say a monkey with a typewriter will eventually type out a mast
 date: 2023-12-04
 tags:
   - osint
-  - babel
 order: 8
 ---
 

@@ -4,8 +4,6 @@ description: My buddy Walter is selling some crystals, check out his shop!
 date: 2023-12-04
 tags:
   - web
-  - SQLi
-  - sql-union
 order: 18
 ---
 

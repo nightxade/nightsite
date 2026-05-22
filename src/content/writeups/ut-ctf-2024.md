@@ -2,8 +2,6 @@
 title: UT CTF 2024
 description: "CTF writeup collection — Placement #8/854"
 date: 2024-04-01
-tags:
-  - ut-ctf-2024
 ---
 
 Placement: #8/854

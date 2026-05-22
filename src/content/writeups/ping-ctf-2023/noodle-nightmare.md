@@ -4,7 +4,6 @@ description: "In the last programming session, Bajtek unleashed a coding catastr
 date: 2023-12-11
 tags:
   - rev
-  - obfuscation
 order: 7
 ---
 

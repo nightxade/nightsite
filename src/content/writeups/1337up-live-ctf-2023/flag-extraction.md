@@ -4,9 +4,6 @@ description: "They told me I just need to extract flag but I don't know what tha
 date: 2023-11-27
 tags:
   - forensics
-  - rar
-  - zip
-  - binwalk
 order: 7
 ---
 

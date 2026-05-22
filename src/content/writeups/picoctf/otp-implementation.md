@@ -4,8 +4,6 @@ description: "Yay reversing! Relevant files: otp flag.txt"
 date: 2023-07-01
 tags:
   - rev
-  - otp
-  - byte-by-byte
 order: 26
 ---
 

@@ -5,9 +5,6 @@ date: 2024-03-25
 tags:
   - forensics
   - network
-  - wireshark
-  - tcp
-  - modbus
 order: 5
 ---
 

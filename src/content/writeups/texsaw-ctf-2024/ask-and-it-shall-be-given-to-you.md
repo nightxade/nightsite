@@ -4,9 +4,6 @@ description: "The flag is at 3.23.56.243:9008. Unfortunately it seems like the s
 date: 2024-03-25
 tags:
   - web
-  - robots.txt
-  - error
-  - post
 order: 5
 ---
 

@@ -4,7 +4,6 @@ description: "Enzo Tommasi was a YouTube \"superstar\" in Italy. He went viral w
 date: 2023-12-10
 tags:
   - osint
-  - google-maps
 order: 2
 ---
 

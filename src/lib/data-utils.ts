@@ -5,11 +5,19 @@ export async function getAllAuthors(): Promise<CollectionEntry<'authors'>[]> {
   return []
 }
 
+async function safeBlogCollection(): Promise<CollectionEntry<'blog'>[]> {
+  try {
+    return await getCollection('blog')
+  } catch {
+    return []
+  }
+}
+
 export async function getAllPosts(): Promise<
   (CollectionEntry<'blog'> | CollectionEntry<'writeups'>)[]
 > {
   const [blogPosts, writeupPosts] = await Promise.all([
-    getCollection('blog'),
+    safeBlogCollection(),
     getCollection('writeups'),
   ])
   return [...blogPosts, ...writeupPosts]
@@ -20,20 +28,33 @@ export async function getAllPosts(): Promise<
 export async function getAllPostsAndSubposts(): Promise<
   CollectionEntry<'blog'>[]
 > {
-  const posts = await getCollection('blog')
+  const posts = await safeBlogCollection()
   return posts
     .filter((post) => !post.data.draft)
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
 }
 
 export async function getAllTags(): Promise<Map<string, number>> {
-  const posts = await getAllPosts()
-  return posts.reduce((acc, post) => {
-    post.data.tags?.forEach((tag) => {
-      acc.set(tag, (acc.get(tag) || 0) + 1)
-    })
-    return acc
-  }, new Map<string, number>())
+  const [blogPosts, writeups] = await Promise.all([
+    safeBlogCollection(),
+    getAllWriteups(),
+  ])
+  const acc = new Map<string, number>()
+
+  // Blog post frontmatter tags
+  blogPosts
+    .filter((p) => !p.data.draft && !isSubpost(p.id))
+    .forEach((post) =>
+      post.data.tags?.forEach((tag) => acc.set(tag, (acc.get(tag) ?? 0) + 1)),
+    )
+
+  // Writeup virtual tags (derived from subposts)
+  for (const writeup of writeups) {
+    const tags = await getSubwriteupTags(writeup.id)
+    tags.forEach((tag) => acc.set(tag, (acc.get(tag) ?? 0) + 1))
+  }
+
+  return acc
 }
 
 export async function getAdjacentPosts(currentId: string): Promise<{
@@ -101,8 +122,25 @@ export async function getAdjacentPosts(currentId: string): Promise<{
 export async function getPostsByTag(
   tag: string,
 ): Promise<(CollectionEntry<'blog'> | CollectionEntry<'writeups'>)[]> {
-  const posts = await getAllPosts()
-  return posts.filter((post) => post.data.tags?.includes(tag))
+  const [blogPosts, writeups] = await Promise.all([
+    safeBlogCollection(),
+    getAllWriteups(),
+  ])
+
+  const results: (CollectionEntry<'blog'> | CollectionEntry<'writeups'>)[] = []
+
+  // Blog posts with this tag in frontmatter
+  blogPosts
+    .filter((p) => !p.data.draft && !isSubpost(p.id) && p.data.tags?.includes(tag))
+    .forEach((p) => results.push(p))
+
+  // Writeup parents whose subposts include this tag
+  for (const writeup of writeups) {
+    const tags = await getSubwriteupTags(writeup.id)
+    if (tags.includes(tag)) results.push(writeup)
+  }
+
+  return results.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
 }
 
 export async function getRecentPosts(
@@ -321,6 +359,33 @@ export async function getParentWriteup(
 
 export async function getWriteupSubpostCount(parentId: string): Promise<number> {
   return (await getSubwriteupsForParent(parentId)).length
+}
+
+export const CTF_CATEGORIES = new Set([
+  'crypto', 'pwn', 'misc', 'rev', 'forensics', 'web',
+  'osint', 'network', 'algo', 'stego', 'jail',
+])
+
+export async function getSubwriteupTags(parentId: string): Promise<string[]> {
+  const subwriteups = await getSubwriteupsForParent(parentId)
+  const seen = new Set<string>()
+  for (const sub of subwriteups) {
+    sub.data.tags?.filter((tag) => CTF_CATEGORIES.has(tag)).forEach((tag) => seen.add(tag))
+  }
+  return Array.from(seen)
+}
+
+export async function getWriteupsByTag(tag: string): Promise<
+  { parent: CollectionEntry<'writeups'>; subposts: CollectionEntry<'writeups'>[] }[]
+> {
+  const writeups = await getAllWriteups()
+  const results: { parent: CollectionEntry<'writeups'>; subposts: CollectionEntry<'writeups'>[] }[] = []
+  for (const writeup of writeups) {
+    const subs = await getSubwriteupsForParent(writeup.id)
+    const matching = subs.filter((s) => s.data.tags?.includes(tag))
+    if (matching.length > 0) results.push({ parent: writeup, subposts: matching })
+  }
+  return results.sort((a, b) => b.parent.data.date.valueOf() - a.parent.data.date.valueOf())
 }
 
 export async function getAdjacentWriteups(currentId: string): Promise<{

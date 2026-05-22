@@ -2,8 +2,6 @@
 title: Hackappatoi CTF 2023
 description: CTF writeup collection for Hackappatoi CTF 2023.
 date: 2023-12-10
-tags:
-  - hackappatoi-ctf-2023
 ---
 
 #116/443

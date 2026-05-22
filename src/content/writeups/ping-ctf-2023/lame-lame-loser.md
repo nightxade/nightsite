@@ -4,7 +4,6 @@ description: In this challenge, your school teacher dismissed your abilities by 
 date: 2023-12-11
 tags:
   - crypto
-  - lll
 order: 2
 ---
 

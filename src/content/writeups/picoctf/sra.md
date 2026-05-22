@@ -4,9 +4,6 @@ description: "I just recently learnt about the SRA public key cryptosystem... or
 date: 2023-07-01
 tags:
   - crypto
-  - rsa
-  - factorization
-  - brute-force
 order: 18
 ---
 

@@ -4,9 +4,6 @@ description: Security questions can be solved by reconnaissance. The weakest lin
 date: 2024-01-07
 tags:
   - osint
-  - instgram
-  - linkedin
-  - facebook
 order: 8
 ---
 

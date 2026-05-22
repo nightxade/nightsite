@@ -4,8 +4,6 @@ description: My client is a bit picky with the primes they are willing to use...
 date: 2024-06-12
 tags:
   - crypto
-  - rsa
-  - branch-and-prune
 order: 6
 ---
 

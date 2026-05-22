@@ -4,7 +4,6 @@ description: One-time pads are perfectly information-theoretically secure, so I 
 date: 2024-03-19
 tags:
   - crypto
-  - otp
 order: 1
 ---
 

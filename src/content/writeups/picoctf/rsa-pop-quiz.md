@@ -4,7 +4,6 @@ description: "Class, take your seats! It's PRIME-time for a quiz... `nc jupiter.
 date: 2023-07-01
 tags:
   - crypto
-  - rsa
 order: 16
 ---
 

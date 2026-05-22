@@ -4,9 +4,6 @@ description: A harder babypwn.
 date: 2024-03-19
 tags:
   - pwn
-  - buffer-overflow
-  - ret2win
-  - gets
 order: 6
 ---
 

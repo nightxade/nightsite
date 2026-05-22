@@ -2,8 +2,6 @@
 title: UIUCTF 2024
 description: "CTF writeup collection — Placement #80/959"
 date: 2024-07-02
-tags:
-  - uiuctf-2024
 ---
 
 Placement: #80/959

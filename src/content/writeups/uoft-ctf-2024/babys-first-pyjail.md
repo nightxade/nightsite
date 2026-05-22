@@ -4,8 +4,6 @@ description: "@windex told me that jails should be sourceless. So no source for 
 date: 2024-01-15
 tags:
   - misc
-  - pyjail
-  - blacklist
 order: 8
 ---
 

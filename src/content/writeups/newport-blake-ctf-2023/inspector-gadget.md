@@ -4,7 +4,6 @@ description: While snooping around this website, inspector gadet lost parts of h
 date: 2023-12-04
 tags:
   - web
-  - inspect
 order: 16
 ---
 

@@ -4,7 +4,6 @@ description: WOLPHV sent me this file. Not sure what to comment about it
 date: 2024-03-19
 tags:
   - forensics
-  - strings
 order: 3
 ---
 

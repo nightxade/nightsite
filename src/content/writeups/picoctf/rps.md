@@ -4,7 +4,6 @@ description: "Here's a program that plays rock, paper, scissors against you. I h
 date: 2023-07-01
 tags:
   - pwn
-  - strstr
 order: 5
 ---
 

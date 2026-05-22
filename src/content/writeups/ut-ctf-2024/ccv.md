@@ -4,7 +4,6 @@ description: "I've got some credit cards but I don't which ones are valid. Where
 date: 2024-04-01
 tags:
   - misc
-  - credit-cards
 order: 8
 ---
 

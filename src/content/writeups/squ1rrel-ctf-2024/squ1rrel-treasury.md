@@ -4,8 +4,6 @@ description: We recently opened a new bank, our exchange rate is pretty poor tho
 date: 2024-04-28
 tags:
   - crypto
-  - aes
-  - cbc
 order: 5
 ---
 

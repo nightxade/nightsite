@@ -4,8 +4,6 @@ description: "Exponents took too long. I decided to use an alternative. It won't
 date: 2023-12-04
 tags:
   - crypto
-  - rsa
-  - broken-rsa
 order: 4
 ---
 

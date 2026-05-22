@@ -4,7 +4,6 @@ description: They said OTPs were too simple.
 date: 2024-05-19
 tags:
   - crypto
-  - lcg
 order: 6
 ---
 

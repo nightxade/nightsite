@@ -4,8 +4,6 @@ description: Echo is lonely and would like to talk
 date: 2024-06-12
 tags:
   - crypto
-  - ecc
-  - invalid-curve-attack
 order: 7
 ---
 

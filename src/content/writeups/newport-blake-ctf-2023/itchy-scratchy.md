@@ -4,8 +4,6 @@ description: "Yeah sorry, I couldn't resist. Use Turbowarp if you want."
 date: 2023-12-04
 tags:
   - rev
-  - Scratch
-  - brute-force
 order: 14
 ---
 

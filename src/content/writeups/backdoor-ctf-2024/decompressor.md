@@ -4,8 +4,6 @@ description: Can you decompress the flag without the codes?
 date: 2024-12-24
 tags:
   - misc
-  - compression
-  - huffman-coding
 order: 3
 ---
 

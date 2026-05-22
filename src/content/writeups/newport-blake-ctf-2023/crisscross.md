@@ -4,7 +4,6 @@ description: X
 date: 2023-12-04
 tags:
   - rev
-  - bits
 order: 13
 ---
 

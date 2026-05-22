@@ -4,8 +4,6 @@ description: This challenge is simple.
 date: 2024-01-15
 tags:
   - pwn
-  - ret2win
-  - buffer-overflow
 order: 11
 ---
 

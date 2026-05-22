@@ -4,7 +4,6 @@ description: "Overflow x64 code Most problems before this are 32-bit x86. Now we
 date: 2023-07-01
 tags:
   - pwn
-  - buffer-overflow
 order: 6
 ---
 

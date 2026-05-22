@@ -4,9 +4,6 @@ description: "Your goal is to find the flag. compress_and_attack.py `nc mercury.
 date: 2023-07-01
 tags:
   - crypto
-  - zlib
-  - Salsa20
-  - brute-force
 order: 11
 ---
 

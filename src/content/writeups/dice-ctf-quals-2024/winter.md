@@ -4,8 +4,6 @@ description: A simple implementation of the Winternitz signature scheme.
 date: 2024-02-04
 tags:
   - crypto
-  - winternitz
-  - signature
 order: 1
 ---
 

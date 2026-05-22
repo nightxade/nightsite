@@ -5,7 +5,6 @@ date: 2024-02-04
 tags:
   - misc
   - jail
-  - zsh
 order: 2
 ---
 

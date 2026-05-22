@@ -4,8 +4,6 @@ description: "Apparently this encryption is \"really secure\" and I don't need t
 date: 2023-11-27
 tags:
   - crypto
-  - rsa
-  - wiener
 order: 3
 ---
 

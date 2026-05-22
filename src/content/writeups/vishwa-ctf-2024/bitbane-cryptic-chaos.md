@@ -4,7 +4,6 @@ description: Once again, Mr. David made a blunder by encrypting some confidentia
 date: 2024-03-03
 tags:
   - crypto
-  - brute-force
 order: 1
 ---
 

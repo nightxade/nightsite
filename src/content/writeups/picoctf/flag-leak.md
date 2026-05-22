@@ -4,7 +4,6 @@ description: "Story telling class 1/2 I'm just copying and pasting with this pro
 date: 2023-07-01
 tags:
   - pwn
-  - format-string
 order: 4
 ---
 

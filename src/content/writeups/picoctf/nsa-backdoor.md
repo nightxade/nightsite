@@ -4,10 +4,6 @@ description: I heard someone has been sneakily installing backdoors in open-sour
 date: 2023-07-01
 tags:
   - crypto
-  - diffie-hellman
-  - rsa
-  - smooth-primes
-  - pollard-attack
 order: 15
 ---
 

@@ -4,8 +4,6 @@ description: "My friend has created his own hashing service and has given it to 
 date: 2024-12-24
 tags:
   - crypto
-  - hash
-  - mac
 order: 1
 ---
 

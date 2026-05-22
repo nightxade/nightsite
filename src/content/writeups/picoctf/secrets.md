@@ -4,7 +4,6 @@ description: We have several pages hidden. Can you find the one with the flag? T
 date: 2023-07-01
 tags:
   - web
-  - curl
 order: 32
 ---
 

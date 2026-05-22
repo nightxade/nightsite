@@ -4,8 +4,6 @@ description: "Welcome to the \"private-conversation\" challenge, where you find 
 date: 2023-12-11
 tags:
   - crypto
-  - encoding
-  - obfuscation
 order: 4
 ---
 

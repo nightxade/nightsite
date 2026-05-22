@@ -2,8 +2,6 @@
 title: ping CTF 2023
 description: "CTF writeup collection — Placement #63/517"
 date: 2023-12-11
-tags:
-  - ping-ctf-2023
 ---
 
 Overall Placement: #63/517 

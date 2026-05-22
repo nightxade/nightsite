@@ -4,7 +4,6 @@ description: "You reach a large metal door. It's protected by large yellow bars.
 date: 2023-12-19
 tags:
   - rev
-  - jar
 order: 7
 ---
 

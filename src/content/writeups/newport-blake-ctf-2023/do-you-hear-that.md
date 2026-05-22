@@ -5,7 +5,6 @@ date: 2023-12-04
 tags:
   - misc
   - forensics
-  - audio-forensics
 order: 6
 ---
 

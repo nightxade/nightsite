@@ -6,7 +6,6 @@ tags:
   - forensics
   - network
   - osint
-  - wifi
 order: 5
 ---
 

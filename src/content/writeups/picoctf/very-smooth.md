@@ -4,9 +4,6 @@ description: "Forget safe primes... Here, we like to live life dangerously... >:
 date: 2023-07-01
 tags:
   - crypto
-  - rsa
-  - smooth-primes
-  - pollard-attack
 order: 20
 ---
 

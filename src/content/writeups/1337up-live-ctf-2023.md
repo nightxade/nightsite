@@ -2,8 +2,6 @@
 title: 1337UP LIVE CTF 2023
 description: "CTF writeup collection — Placement #133/691"
 date: 2023-11-27
-tags:
-  - 1337up-live-ctf-2023
 ---
 
 Placement: #133/691  

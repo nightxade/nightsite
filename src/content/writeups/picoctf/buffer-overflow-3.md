@@ -4,10 +4,6 @@ description: "Do you think you can bypass the protection and get the flag? It lo
 date: 2023-07-01
 tags:
   - pwn
-  - buffer-overflow
-  - stack-canary
-  - ret2win
-  - byte-by-byte
 order: 3
 ---
 

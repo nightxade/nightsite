@@ -4,8 +4,6 @@ description: a little harder this time
 date: 2023-12-19
 tags:
   - pwn
-  - buffer-overflow
-  - ret2win
 order: 6
 ---
 

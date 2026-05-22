@@ -4,8 +4,6 @@ description: For your first assignment, break ChaCha20!
 date: 2024-01-07
 tags:
   - crypto
-  - chacha20
-  - oracle
 order: 1
 ---
 

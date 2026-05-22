@@ -4,7 +4,6 @@ description: "We heard a distress call and received a transmission. Only this te
 date: 2024-03-25
 tags:
   - crypto
-  - caesar
 order: 3
 ---
 

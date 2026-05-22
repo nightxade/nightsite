@@ -5,9 +5,7 @@ date: 2023-11-27
 tags:
   - forensics
   - network
-  - wireshark
   - stego
-  - lsb
 order: 9
 ---
 

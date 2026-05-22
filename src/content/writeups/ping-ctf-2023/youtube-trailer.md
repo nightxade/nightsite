@@ -4,7 +4,6 @@ description: Watch the PING CTF 2023 official trailer and find the flag!
 date: 2023-12-11
 tags:
   - web
-  - curl
 order: 10
 ---
 

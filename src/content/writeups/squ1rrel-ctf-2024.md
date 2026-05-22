@@ -2,8 +2,6 @@
 title: squ1rrel CTF 2024
 description: "CTF writeup collection — Placement #6/378 All, #2/44 Student"
 date: 2024-05-06
-tags:
-  - squ1rrel-ctf-2024
 ---
 
 Placement: #6/378 All, #2/44 Student  

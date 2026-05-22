@@ -4,7 +4,6 @@ description: "Lets see your linkedin experience. There's another flag hidden som
 date: 2023-12-04
 tags:
   - osint
-  - hex
 order: 10
 ---
 

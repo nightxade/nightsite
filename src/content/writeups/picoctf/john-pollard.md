@@ -4,8 +4,6 @@ description: Sometimes RSA certificates are breakable
 date: 2023-07-01
 tags:
   - crypto
-  - rsa
-  - certificate
 order: 12
 ---
 

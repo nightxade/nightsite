@@ -4,9 +4,6 @@ description: Surely they got it right this time.
 date: 2024-03-19
 tags:
   - crypto
-  - hash
-  - sha1
-  - length-extension-attack
 order: 15
 ---
 

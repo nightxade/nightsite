@@ -4,7 +4,6 @@ description: "You've stumbled upon an encrypted message from the past, a mysteri
 date: 2023-12-11
 tags:
   - crypto
-  - caesar
 order: 3
 ---
 

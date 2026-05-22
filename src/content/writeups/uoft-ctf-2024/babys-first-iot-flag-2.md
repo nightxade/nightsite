@@ -4,8 +4,6 @@ description: See introduction for complete context.
 date: 2024-01-15
 tags:
   - osint
-  - iot
-  - reverse-image-search
 order: 7
 ---
 

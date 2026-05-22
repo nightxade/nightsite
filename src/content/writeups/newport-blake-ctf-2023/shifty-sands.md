@@ -4,7 +4,6 @@ description: "Can you escape the sand-filled maze before it's too late?"
 date: 2023-12-04
 tags:
   - rev
-  - maze
 order: 15
 ---
 

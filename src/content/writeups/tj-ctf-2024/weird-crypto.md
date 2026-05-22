@@ -4,8 +4,6 @@ description: weird crypto hmmm
 date: 2024-05-19
 tags:
   - crypto
-  - rsa
-  - wiener
 order: 7
 ---
 

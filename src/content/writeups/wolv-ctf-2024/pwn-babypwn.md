@@ -4,7 +4,6 @@ description: Just a little baby pwn.
 date: 2024-03-19
 tags:
   - pwn
-  - buffer-overflow
 order: 5
 ---
 

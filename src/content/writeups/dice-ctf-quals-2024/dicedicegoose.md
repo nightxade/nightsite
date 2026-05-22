@@ -4,7 +4,6 @@ description: Follow the leader.
 date: 2024-02-04
 tags:
   - web
-  - inspect
 order: 3
 ---
 

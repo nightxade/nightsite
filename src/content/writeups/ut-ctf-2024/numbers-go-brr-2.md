@@ -4,9 +4,6 @@ description: A spiritual successor the first.
 date: 2024-04-01
 tags:
   - crypto
-  - random
-  - aes
-  - oracle
 order: 3
 ---
 

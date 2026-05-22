@@ -4,7 +4,6 @@ description: One of our problem writers got sent back in time! We found a piece 
 date: 2024-06-12
 tags:
   - crypto
-  - scytale
 order: 8
 ---
 

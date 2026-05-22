@@ -4,7 +4,6 @@ description: Every CTF needs an introductory crypto. I found a roman emperor tha
 date: 2023-12-04
 tags:
   - crypto
-  - caesar
 order: 3
 ---
 

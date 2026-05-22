@@ -4,7 +4,6 @@ description: Just a wee-little baby re challenge.
 date: 2024-03-19
 tags:
   - rev
-  - strings
 order: 7
 ---
 

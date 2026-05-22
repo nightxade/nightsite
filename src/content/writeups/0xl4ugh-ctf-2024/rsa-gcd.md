@@ -4,8 +4,6 @@ description: I think i might leaked something but i dont know what
 date: 2024-02-10
 tags:
   - crypto
-  - rsa
-  - gcd
 order: 2
 ---
 

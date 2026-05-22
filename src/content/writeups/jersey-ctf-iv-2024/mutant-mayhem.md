@@ -4,9 +4,6 @@ description: To prevent the RB from impersonating any communications coming from
 date: 2024-03-25
 tags:
   - crypto
-  - ecc
-  - secp256k1
-  - signature
 order: 4
 ---
 

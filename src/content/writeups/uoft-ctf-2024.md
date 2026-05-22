@@ -2,8 +2,6 @@
 title: UofT CTF 2024
 description: "CTF writeup collection — Placement #175/1225"
 date: 2024-01-15
-tags:
-  - uoft-ctf-2024
 ---
 
 Placement: #175/1225

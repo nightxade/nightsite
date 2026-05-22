@@ -4,8 +4,6 @@ description: My friend told me that cryptography is unbreakable if moduli are Ca
 date: 2024-07-02
 tags:
   - crypto
-  - carmichael
-  - dlp
 order: 2
 ---
 

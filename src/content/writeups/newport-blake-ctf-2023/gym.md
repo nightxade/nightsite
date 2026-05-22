@@ -4,7 +4,6 @@ description: Bro kroot.
 date: 2023-12-04
 tags:
   - algo
-  - greedy
 order: 1
 ---
 

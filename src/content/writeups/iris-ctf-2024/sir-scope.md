@@ -4,7 +4,6 @@ description: This circuit used to write out the flag using an array of 8 LEDs, b
 date: 2024-01-07
 tags:
   - misc
-  - brute-force
 order: 4
 ---
 

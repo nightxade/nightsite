@@ -4,8 +4,6 @@ description: I don’t think you’re welcome inside this castle… SHISH!
 date: 2023-12-10
 tags:
   - rev
-  - pyc
-  - rot13
 order: 3
 ---
 

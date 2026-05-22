@@ -4,9 +4,6 @@ description: Before the Kwisatz Haderach, the Bene Gesserit used this oracle to 
 date: 2024-04-28
 tags:
   - crypto
-  - des
-  - 3des
-  - padding-oracle
 order: 1
 ---
 

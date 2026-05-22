@@ -4,9 +4,6 @@ description: "We managed to log into doubledelete's email server. Hopefully this
 date: 2024-03-19
 tags:
   - crypto
-  - aes
-  - oracle
-  - roll-your-own
 order: 11
 ---
 

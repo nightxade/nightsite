@@ -2,8 +2,6 @@
 title: UMD CTF 2024
 description: "CTF writeup collection — Placement #28/562"
 date: 2024-04-28
-tags:
-  - umd-ctf-2024
 ---
 
 Placement: #28/562

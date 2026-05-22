@@ -4,7 +4,6 @@ description: In my friend circle, Mr. Olmstead and Mr. Ben always communicate wi
 date: 2024-03-03
 tags:
   - crypto
-  - esoteric-language
 order: 3
 ---
 

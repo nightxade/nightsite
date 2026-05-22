@@ -4,11 +4,6 @@ description: I have no idea what this message means, can you help me decipher it
 date: 2023-11-27
 tags:
   - crypto
-  - encoding
-  - base32
-  - base64
-  - hex
-  - morse
 order: 6
 ---
 

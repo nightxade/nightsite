@@ -4,7 +4,6 @@ description: "There is a website running at https://jupiter.challenges.picoctf.o
 date: 2023-07-01
 tags:
   - web
-  - sql-injection
 order: 28
 ---
 

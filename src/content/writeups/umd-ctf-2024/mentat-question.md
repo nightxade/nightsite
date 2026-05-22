@@ -4,11 +4,6 @@ description: "Thufir Hawat is ready to answer any and all questions you have. Un
 date: 2024-04-28
 tags:
   - pwn
-  - buffer-overflow
-  - gets
-  - format-string
-  - ret2win
-  - PIE
 order: 2
 ---
 

@@ -4,8 +4,6 @@ description: "[baby] Oh no! Skat forgot their password (again)!"
 date: 2024-01-07
 tags:
   - web
-  - sqli
-  - union
 order: 12
 ---
 

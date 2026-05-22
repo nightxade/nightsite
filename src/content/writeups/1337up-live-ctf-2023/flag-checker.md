@@ -4,8 +4,6 @@ description: Can you beat this FlagChecker?
 date: 2023-11-27
 tags:
   - rev
-  - rust
-  - brute-force
 order: 4
 ---
 

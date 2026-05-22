@@ -4,7 +4,6 @@ description: "This is no ordinary reversing challenge! As the Christmas season i
 date: 2023-12-11
 tags:
   - rev
-  - lsb
 order: 6
 ---
 

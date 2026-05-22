@@ -4,7 +4,6 @@ description: "I need to study for a class but the quizlet I'm using has jumbled 
 date: 2024-03-25
 tags:
   - osint
-  - vigenere
 order: 4
 ---
 

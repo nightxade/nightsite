@@ -4,7 +4,6 @@ description: I have encrypted some text but it seems I have lost the key! Can yo
 date: 2024-03-19
 tags:
   - crypto
-  - xor
 order: 2
 ---
 

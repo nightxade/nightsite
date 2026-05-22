@@ -2,8 +2,6 @@
 title: Backdoor CTF 2024
 description: "CTF writeup collection — Placement #38/476"
 date: 2024-12-24
-tags:
-  - backdoor-ctf-2024
 ---
 
 Placement: #38/476

@@ -4,7 +4,6 @@ description: "Our field agents extracted the disassembly for a function that we 
 date: 2023-12-19
 tags:
   - rev
-  - bytecode
 order: 8
 ---
 

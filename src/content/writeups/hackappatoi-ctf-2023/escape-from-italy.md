@@ -4,8 +4,6 @@ description: Italy is maybe the most touristic country around the world, amazing
 date: 2023-12-10
 tags:
   - misc
-  - pyjail
-  - ruby-jail
 order: 1
 ---
 

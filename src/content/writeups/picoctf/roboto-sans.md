@@ -4,7 +4,6 @@ description: The flag is somewhere on this web application not necessarily on th
 date: 2023-07-01
 tags:
   - web
-  - robots.txt
 order: 31
 ---
 
