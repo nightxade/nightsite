@@ -1,10 +1,328 @@
 ---
 import Breadcrumbs from '@/components/breadcrumbs.astro'
+import Link from '@/components/link.astro'
 import PageHead from '@/components/page-head.astro'
 import Layout from '@/layouts/layout.astro'
+import { readingEntries, type Category } from '@/data/reading'
+
+const MONTH_NAMES = [
+  '', 'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+]
+
+// Group entries in reverse chronological order
+const years = [...new Set(readingEntries.map((e) => e.year))].sort((a, b) => b - a)
+
+interface GroupedMonth {
+  month: number
+  entries: typeof readingEntries
+}
+
+interface GroupedYear {
+  year: number
+  months: GroupedMonth[]
+}
+
+const grouped: GroupedYear[] = years.map((year) => {
+  const yearEntries = readingEntries.filter((e) => e.year === year)
+  const months = [...new Set(yearEntries.map((e) => e.month))].sort((a, b) => b - a)
+  return {
+    year,
+    months: months.map((month) => ({
+      month,
+      entries: yearEntries.filter((e) => e.month === month),
+    })),
+  }
+})
+
+const counts = {
+  all: readingEntries.length,
+  book: readingEntries.filter((e) => e.category === 'book').length,
+  paper: readingEntries.filter((e) => e.category === 'paper').length,
+  article: readingEntries.filter((e) => e.category === 'article').length,
+}
+
+const CATEGORY_LABEL: Record<Category, string> = {
+  book: 'book',
+  paper: 'paper',
+  article: 'article',
+}
 ---
 
 <Layout class="max-w-5xl">
   <PageHead slot="head" title="Reading" />
-  <Breadcrumbs items={[{ label: 'Reading', icon: 'lucide:book-open' }]} />
+  <Breadcrumbs
+    items={[
+      { label: 'Reading', href: '/reading', icon: 'lucide:book-open' },
+      { label: 'Page 1', icon: 'lucide:book-copy' },
+    ]}
+  />
+
+  <p class="text-muted-foreground mb-6 text-sm">
+    I like to read... a lot. Here's a list of almost everything I've read since I started tracking in April 2025. :)
+  </p>
+
+  <!-- Filter buttons -->
+  <div class="mb-8 flex flex-wrap gap-2" id="filter-bar">
+    {
+      (
+        [
+          { target: 'all', label: 'All', count: counts.all },
+          { target: 'book', label: 'Books', count: counts.book },
+          { target: 'paper', label: 'Papers', count: counts.paper },
+          { target: 'article', label: 'Articles', count: counts.article },
+        ] as const
+      ).map(({ target, label, count }) => (
+        <button
+          class="filter-btn inline-flex h-9 cursor-pointer items-center rounded-md px-3 text-sm font-medium transition-all"
+          data-target={target}
+          data-active={target === 'all' ? 'true' : 'false'}
+        >
+          {label}
+          <span class="ml-1.5 font-normal opacity-60">{count}</span>
+        </button>
+      ))
+    }
+  </div>
+
+  <!-- Reading list -->
+  <div class="flex flex-col gap-10" id="reading-list">
+    {
+      grouped.map(({ year, months }) => (
+        <section class="year-section" data-year={year}>
+          <h2 class="mb-5 text-xl font-semibold">{year}</h2>
+          <div class="flex flex-col gap-6">
+            {months.map(({ month, entries }) => (
+              <div class="month-section" data-month={month}>
+                <h3 class="text-muted-foreground mb-3 text-sm font-medium tracking-wider uppercase">
+                  {MONTH_NAMES[month]}
+                </h3>
+                <ul class="flex flex-col gap-1.5">
+                  {entries.map((entry) => (
+                    <li
+                      class="reading-item flex items-baseline gap-2 text-sm"
+                      data-category={entry.category}
+                    >
+                      <span
+                        class:list={[
+                          'category-badge shrink-0 rounded px-1.5 py-0.5 text-[11px] font-medium',
+                          entry.category === 'book' && 'badge-book',
+                          entry.category === 'paper' && 'badge-paper',
+                          entry.category === 'article' && 'badge-article',
+                        ]}
+                      >
+                        {CATEGORY_LABEL[entry.category]}
+                      </span>
+                      {entry.url ? (
+                        <Link
+                          href={entry.url}
+                          external
+                          class="text-foreground hover:text-muted-foreground min-w-0 flex-1 transition-colors"
+                          underline
+                        >
+                          {entry.title}
+                        </Link>
+                      ) : (
+                        <span class="text-foreground min-w-0 flex-1">{entry.title}</span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+
+  <!-- Pagination -->
+  <nav class="mx-auto mt-10 flex w-full justify-center" aria-label="pagination">
+    <ul id="pagination-list" class="flex flex-row flex-wrap items-center gap-1"></ul>
+  </nav>
 </Layout>
+
+<style>
+  .category-badge {
+    width: 3.5rem;
+    text-align: center;
+  }
+
+  .badge-book {
+    background-color: color-mix(in oklch, var(--primary) 15%, transparent);
+    color: var(--primary);
+  }
+
+  .badge-paper {
+    background-color: color-mix(in oklch, var(--reading-paper) 15%, transparent);
+    color: var(--reading-paper);
+  }
+
+  .badge-article {
+    background-color: color-mix(in oklch, var(--reading-article) 15%, transparent);
+    color: var(--reading-article);
+  }
+
+  /* inactive: ghost style — matches pagination ghost buttons */
+  .filter-btn {
+    color: var(--muted-foreground);
+  }
+  .filter-btn:hover {
+    background-color: var(--muted);
+    color: var(--foreground);
+  }
+
+  /* active: default style — matches pagination default/active buttons */
+  .filter-btn[data-active='true'] {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+  }
+  .filter-btn[data-active='true']:hover {
+    background-color: color-mix(in oklch, var(--primary) 90%, transparent);
+  }
+
+  .reading-item.hidden {
+    display: none;
+  }
+
+  .month-section.empty {
+    display: none;
+  }
+
+  .year-section.empty {
+    display: none;
+  }
+
+</style>
+
+<script>
+  const ITEMS_PER_PAGE = 50
+
+  // Lucide chevron SVGs (inline, matches PaginationComponent)
+  const CHEVRON_LEFT = `<svg xmlns="http://www.w3.org/2000/svg" class="size-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>`
+  const CHEVRON_RIGHT = `<svg xmlns="http://www.w3.org/2000/svg" class="size-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>`
+
+  // Button class bases from buttonVariants
+  const BTN_BASE = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none cursor-pointer'
+  const BTN_GHOST_ICON = `${BTN_BASE} hover:bg-muted hover:text-foreground size-9`
+  const BTN_OUTLINE_ICON = `${BTN_BASE} border bg-background hover:bg-muted hover:text-foreground size-9`
+  const BTN_GHOST_DEFAULT = `${BTN_BASE} hover:bg-muted hover:text-foreground h-9 gap-1 px-2.5`
+
+  const filterBar = document.getElementById('filter-bar')!
+  const filterBtns = filterBar.querySelectorAll<HTMLButtonElement>('.filter-btn')
+  const items = Array.from(document.querySelectorAll<HTMLElement>('.reading-item'))
+  const paginationList = document.getElementById('pagination-list')!
+
+  // Breadcrumb page text element (last breadcrumb-page span's inner text span)
+  const breadcrumbPages = document.querySelectorAll('[data-slot="breadcrumb-page"]')
+  const breadcrumbPageText = breadcrumbPages[breadcrumbPages.length - 1]?.querySelector<HTMLElement>('span > span:last-child') ?? null
+
+  let currentFilter = 'all'
+  let currentPage = 1
+
+  function getFiltered() {
+    return items.filter((item) => currentFilter === 'all' || item.dataset.category === currentFilter)
+  }
+
+  function scrollToList() {
+    document.getElementById('reading-list')!.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  function goToPage(page: number) {
+    currentPage = page
+    render()
+    scrollToList()
+  }
+
+  function pagesToShow(current: number, total: number): (number | null)[] {
+    if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1)
+    const set = new Set<number>([1, total])
+    for (let i = Math.max(1, current - 1); i <= Math.min(total, current + 1); i++) set.add(i)
+    const sorted = Array.from(set).sort((a, b) => a - b)
+    const result: (number | null)[] = []
+    let prev = 0
+    for (const p of sorted) {
+      if (p - prev > 1) result.push(null) // ellipsis
+      result.push(p)
+      prev = p
+    }
+    return result
+  }
+
+  function renderPagination(current: number, total: number) {
+    paginationList.innerHTML = ''
+
+    const li = (inner: HTMLElement) => {
+      const el = document.createElement('li')
+      el.appendChild(inner)
+      return el
+    }
+
+    // Previous
+    const prev = document.createElement('button')
+    prev.className = BTN_GHOST_DEFAULT
+    prev.innerHTML = `${CHEVRON_LEFT}<span class="hidden sm:block">Previous</span>`
+    if (current === 1) prev.disabled = true
+    else prev.addEventListener('click', () => goToPage(current - 1))
+    paginationList.appendChild(li(prev))
+
+    // Numbered pages with ellipsis
+    for (const p of pagesToShow(current, total)) {
+      if (p === null) {
+        const ellipsis = document.createElement('span')
+        ellipsis.className = 'flex size-9 items-center justify-center text-sm'
+        ellipsis.textContent = '···'
+        paginationList.appendChild(li(ellipsis))
+      } else {
+        const btn = document.createElement('button')
+        btn.className = p === current ? BTN_OUTLINE_ICON : BTN_GHOST_ICON
+        btn.textContent = String(p)
+        if (p !== current) btn.addEventListener('click', () => goToPage(p))
+        paginationList.appendChild(li(btn))
+      }
+    }
+
+    // Next
+    const next = document.createElement('button')
+    next.className = BTN_GHOST_DEFAULT
+    next.innerHTML = `<span class="hidden sm:block">Next</span>${CHEVRON_RIGHT}`
+    if (current === total) next.disabled = true
+    else next.addEventListener('click', () => goToPage(current + 1))
+    paginationList.appendChild(li(next))
+  }
+
+  function render() {
+    const filtered = getFiltered()
+    const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE))
+    currentPage = Math.min(currentPage, totalPages)
+
+    const start = (currentPage - 1) * ITEMS_PER_PAGE
+    const pageSet = new Set(filtered.slice(start, start + ITEMS_PER_PAGE))
+
+    items.forEach((item) => {
+      const inFilter = currentFilter === 'all' || item.dataset.category === currentFilter
+      item.classList.toggle('hidden', !inFilter || !pageSet.has(item))
+    })
+
+    document.querySelectorAll<HTMLElement>('.month-section').forEach((s) => {
+      s.classList.toggle('empty', s.querySelectorAll('.reading-item:not(.hidden)').length === 0)
+    })
+    document.querySelectorAll<HTMLElement>('.year-section').forEach((s) => {
+      s.classList.toggle('empty', s.querySelectorAll('.month-section:not(.empty)').length === 0)
+    })
+
+    renderPagination(currentPage, totalPages)
+    if (breadcrumbPageText) breadcrumbPageText.textContent = `Page ${currentPage}`
+  }
+
+  filterBar.addEventListener('click', (e) => {
+    const btn = (e.target as Element).closest<HTMLButtonElement>('.filter-btn')
+    if (!btn?.dataset.target) return
+    currentFilter = btn.dataset.target
+    currentPage = 1
+    filterBtns.forEach((b) => (b.dataset.active = String(b.dataset.target === currentFilter)))
+    render()
+  })
+
+  render()
+</script>

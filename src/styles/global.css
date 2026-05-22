@@ -52,6 +52,9 @@
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.78 0.034 272);
   --ring: oklch(0.58 0.036 245);
+
+  --reading-paper: oklch(0.44 0.160 340);
+  --reading-article: oklch(0.42 0.155 175);
 }
 
 [data-theme='dark'] {
@@ -64,6 +67,9 @@
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --ring: oklch(0.50 0.018 260);
+
+  --reading-paper: oklch(0.75 0.065 340);
+  --reading-article: oklch(0.75 0.060 175);
 }
 
 @layer base {

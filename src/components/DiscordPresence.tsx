@@ -152,23 +152,28 @@ const ActivityDisplay = ({ activity }: { activity: Activity }) => {
     return `https://cdn.discordapp.com/app-assets/${activity.application_id}/${val}`
   }
 
+  const largeImageUrl = getImageUrl('large_image')
+  const smallImageUrl = getImageUrl('small_image')
+
   return (
-    <div className="flex w-full items-center gap-x-3">
-      <div
-        className="relative aspect-square h-full w-auto shrink-0 rounded-md bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('${getImageUrl('large_image')}')` }}
-      >
-        {activity.assets?.small_image && (
-          <img
-            src={getImageUrl('small_image')}
-            alt=""
-            width={18}
-            height={18}
-            className="absolute -right-1 -bottom-1 rounded-full border-2"
-          />
-        )}
-      </div>
-      <div className="my-1 flex min-w-0 flex-1 flex-col gap-y-1 overflow-hidden">
+    <div className="flex w-full items-center gap-x-2.5">
+      {largeImageUrl && (
+        <div
+          className="relative size-14 shrink-0 rounded-md bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url('${largeImageUrl}')` }}
+        >
+          {smallImageUrl && (
+            <img
+              src={smallImageUrl}
+              alt=""
+              width={18}
+              height={18}
+              className="ring-background absolute -right-1 -bottom-1 size-[18px] rounded-full ring-2"
+            />
+          )}
+        </div>
+      )}
+      <div className="flex min-w-0 flex-1 flex-col gap-y-1 overflow-hidden">
         {activity.name && (
           <div className="truncate text-xs leading-none font-medium">
             {activity.name}
@@ -288,12 +293,12 @@ const DiscordPresence = () => {
     discord_user.username
 
   return (
-    <div className="relative overflow-hidden rounded-lg">
+    <div className="relative flex h-full flex-col overflow-hidden rounded-lg">
       {/* Banner */}
-      <div className="bg-muted h-16" />
+      <div className="bg-muted h-16 shrink-0" />
 
       {/* Content */}
-      <div className="bg-background flex flex-col gap-2.5 p-3">
+      <div className="bg-background flex flex-1 flex-col gap-2.5 p-3">
           {/* Avatar */}
           <div className="relative w-fit">
             <AvatarComponent
@@ -323,13 +328,23 @@ const DiscordPresence = () => {
           </div>
 
           {/* Activity */}
-          <div className="bg-muted flex min-h-14 flex-1 items-center rounded-md px-3 py-2">
+          <div className="bg-muted flex h-[72px] items-center rounded-md px-3 py-2">
             {mainActivity ? (
               <ActivityDisplay activity={mainActivity} />
             ) : (
               <span className="text-muted-foreground text-xs">No activity</span>
             )}
           </div>
+
+          {/* Credit */}
+          <a
+            href="https://x.com/mioryyn"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground mt-auto text-right text-[10px] leading-none hover:underline"
+          >
+            profile picture by @mioryyn
+          </a>
       </div>
 
       {/* Discord logo badge */}
