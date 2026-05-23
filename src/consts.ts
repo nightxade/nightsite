@@ -4,7 +4,7 @@ export const SITE: Site = {
   title: 'nightxade',
   description:
     'beautiful, deadly poison',
-  href: 'href-todo',
+  href: 'https://nightxade.dev',
   author: 'nightxade',
   locale: 'en-US',
   featuredPostCount: 3,
