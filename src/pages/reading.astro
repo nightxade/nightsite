@@ -10,6 +10,8 @@ const MONTH_NAMES = [
   'July', 'August', 'September', 'October', 'November', 'December',
 ]
 
+const MONTH_ABBR = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
 // Group entries in reverse chronological order
 const years = [...new Set(readingEntries.map((e) => e.year))].sort((a, b) => b - a)
 
@@ -47,6 +49,45 @@ const CATEGORY_LABEL: Record<Category, string> = {
   paper: 'paper',
   article: 'article',
 }
+
+// Group books by bookTitle for "By Book" view
+interface GroupedBook {
+  title: string
+  url?: string
+  chapters: number
+  firstYear: number
+  firstMonth: number
+  lastYear: number
+  lastMonth: number
+  lastIndex: number
+}
+
+const bookMap = new Map<string, GroupedBook>()
+readingEntries.forEach((entry, i) => {
+  if (entry.category !== 'book' || !entry.bookTitle) return
+  const key = entry.bookTitle
+  const existing = bookMap.get(key)
+  if (!existing) {
+    bookMap.set(key, {
+      title: key,
+      url: entry.url,
+      chapters: 1,
+      firstYear: entry.year,
+      firstMonth: entry.month,
+      lastYear: entry.year,
+      lastMonth: entry.month,
+      lastIndex: i,
+    })
+  } else {
+    existing.chapters++
+    existing.lastIndex = i
+    if (!existing.url && entry.url) existing.url = entry.url
+    const t = entry.year * 100 + entry.month
+    if (t < existing.firstYear * 100 + existing.firstMonth) { existing.firstYear = entry.year; existing.firstMonth = entry.month }
+    if (t > existing.lastYear * 100 + existing.lastMonth) { existing.lastYear = entry.year; existing.lastMonth = entry.month }
+  }
+})
+const groupedBooks = [...bookMap.values()].sort((a, b) => b.lastIndex - a.lastIndex)
 ---
 
 <Layout class="max-w-4xl">
@@ -63,7 +104,7 @@ const CATEGORY_LABEL: Record<Category, string> = {
   </p>
 
   <!-- Filter buttons -->
-  <div class="mb-8 flex flex-wrap gap-2" id="filter-bar">
+  <div class="mb-0 flex flex-wrap gap-2" id="filter-bar">
     {
       (
         [
@@ -85,7 +126,27 @@ const CATEGORY_LABEL: Record<Category, string> = {
     }
   </div>
 
-  <!-- Reading list -->
+  <!-- Book view toggle (shown only when Books filter is active) -->
+  <div id="book-view-bar" class="mb-8 hidden flex-wrap gap-2">
+    <button
+      class="book-view-btn inline-flex h-8 cursor-pointer items-center rounded-md px-3 text-sm font-medium transition-all"
+      data-view="chapter"
+      data-active="true"
+    >
+      By Chapter
+      <span class="ml-1.5 font-normal opacity-60">{counts.book}</span>
+    </button>
+    <button
+      class="book-view-btn inline-flex h-8 cursor-pointer items-center rounded-md px-3 text-sm font-medium transition-all"
+      data-view="book"
+      data-active="false"
+    >
+      By Book
+      <span class="ml-1.5 font-normal opacity-60">{groupedBooks.length}</span>
+    </button>
+  </div>
+
+  <!-- Reading list (by chapter) -->
   <div class="flex flex-col gap-10" id="reading-list">
     {
       grouped.map(({ year, months }) => (
@@ -136,6 +197,24 @@ const CATEGORY_LABEL: Record<Category, string> = {
     }
   </div>
 
+  <!-- By Book view -->
+  <ul class="hidden flex-col gap-1.5" id="books-view">
+    {groupedBooks.map((book) => (
+      <li class="flex items-baseline gap-2 text-sm">
+        <span class="badge-book category-badge shrink-0 rounded px-1.5 py-0.5 text-[11px] font-medium">
+          {book.chapters} ch
+        </span>
+        <span class="text-foreground min-w-0 flex-1">{book.title}</span>
+        <span class="text-muted-foreground shrink-0 text-xs tabular-nums">
+          {MONTH_ABBR[book.firstMonth]} '{String(book.firstYear).slice(2)}
+          {(book.firstYear !== book.lastYear || book.firstMonth !== book.lastMonth)
+            ? ` → ${MONTH_ABBR[book.lastMonth]} '${String(book.lastYear).slice(2)}`
+            : ''}
+        </span>
+      </li>
+    ))}
+  </ul>
+
   <!-- Pagination -->
   <nav class="mx-auto mt-10 flex w-full justify-center" aria-label="pagination">
     <ul id="pagination-list" class="flex flex-row flex-wrap items-center gap-1"></ul>
@@ -164,20 +243,20 @@ const CATEGORY_LABEL: Record<Category, string> = {
   }
 
   /* inactive: ghost style — matches pagination ghost buttons */
-  .filter-btn {
+  .filter-btn, .book-view-btn {
     color: var(--muted-foreground);
   }
-  .filter-btn:hover {
+  .filter-btn:hover, .book-view-btn:hover {
     background-color: var(--muted);
     color: var(--foreground);
   }
 
   /* active: default style — matches pagination default/active buttons */
-  .filter-btn[data-active='true'] {
+  .filter-btn[data-active='true'], .book-view-btn[data-active='true'] {
     background-color: var(--primary);
     color: var(--primary-foreground);
   }
-  .filter-btn[data-active='true']:hover {
+  .filter-btn[data-active='true']:hover, .book-view-btn[data-active='true']:hover {
     background-color: color-mix(in oklch, var(--primary) 90%, transparent);
   }
 
@@ -210,6 +289,10 @@ const CATEGORY_LABEL: Record<Category, string> = {
 
   const filterBar = document.getElementById('filter-bar')!
   const filterBtns = filterBar.querySelectorAll<HTMLButtonElement>('.filter-btn')
+  const bookViewBar = document.getElementById('book-view-bar')!
+  const bookViewBtns = bookViewBar.querySelectorAll<HTMLButtonElement>('.book-view-btn')
+  const readingList = document.getElementById('reading-list')!
+  const booksView = document.getElementById('books-view')!
   const items = Array.from(document.querySelectorAll<HTMLElement>('.reading-item'))
   const paginationList = document.getElementById('pagination-list')!
 
@@ -219,6 +302,7 @@ const CATEGORY_LABEL: Record<Category, string> = {
 
   let currentFilter = 'all'
   let currentPage = 1
+  let bookView: 'chapter' | 'book' = 'chapter'
 
   function getFiltered() {
     return items.filter((item) => currentFilter === 'all' || item.dataset.category === currentFilter)
@@ -242,7 +326,7 @@ const CATEGORY_LABEL: Record<Category, string> = {
     const result: (number | null)[] = []
     let prev = 0
     for (const p of sorted) {
-      if (p - prev > 1) result.push(null) // ellipsis
+      if (p - prev > 1) result.push(null)
       result.push(p)
       prev = p
     }
@@ -258,7 +342,6 @@ const CATEGORY_LABEL: Record<Category, string> = {
       return el
     }
 
-    // Previous
     const prev = document.createElement('button')
     prev.className = BTN_GHOST_DEFAULT
     prev.innerHTML = `${CHEVRON_LEFT}<span class="hidden sm:block">Previous</span>`
@@ -266,7 +349,6 @@ const CATEGORY_LABEL: Record<Category, string> = {
     else prev.addEventListener('click', () => goToPage(current - 1))
     paginationList.appendChild(li(prev))
 
-    // Numbered pages with ellipsis
     for (const p of pagesToShow(current, total)) {
       if (p === null) {
         const ellipsis = document.createElement('span')
@@ -282,7 +364,6 @@ const CATEGORY_LABEL: Record<Category, string> = {
       }
     }
 
-    // Next
     const next = document.createElement('button')
     next.className = BTN_GHOST_DEFAULT
     next.innerHTML = `<span class="hidden sm:block">Next</span>${CHEVRON_RIGHT}`
@@ -292,6 +373,15 @@ const CATEGORY_LABEL: Record<Category, string> = {
   }
 
   function render() {
+    const isByBook = currentFilter === 'book' && bookView === 'book'
+
+    // Switch between views
+    readingList.style.display = isByBook ? 'none' : ''
+    booksView.style.display = isByBook ? 'flex' : 'none'
+    paginationList.parentElement!.style.display = isByBook ? 'none' : ''
+
+    if (isByBook) return
+
     const filtered = getFiltered()
     const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE))
     currentPage = Math.min(currentPage, totalPages)
@@ -320,7 +410,24 @@ const CATEGORY_LABEL: Record<Category, string> = {
     if (!btn?.dataset.target) return
     currentFilter = btn.dataset.target
     currentPage = 1
+
+    // Show/hide book view toggle
+    const isBooks = currentFilter === 'book'
+    bookViewBar.style.display = isBooks ? 'flex' : 'none'
+    if (!isBooks) {
+      bookView = 'chapter'
+      bookViewBtns.forEach((b) => (b.dataset.active = String(b.dataset.view === 'chapter')))
+    }
+
     filterBtns.forEach((b) => (b.dataset.active = String(b.dataset.target === currentFilter)))
+    render()
+  })
+
+  bookViewBar.addEventListener('click', (e) => {
+    const btn = (e.target as Element).closest<HTMLButtonElement>('.book-view-btn')
+    if (!btn?.dataset.view) return
+    bookView = btn.dataset.view as 'chapter' | 'book'
+    bookViewBtns.forEach((b) => (b.dataset.active = String(b.dataset.view === bookView)))
     render()
   })
 
