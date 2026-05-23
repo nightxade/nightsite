@@ -25,14 +25,14 @@ Here's a **BRAC-like**, behavior regularized actor critic, algorithm. (Behavior 
 
 1. Evaluate $y_{i}=r(\mathbf{s}_{i},\mathbf{a}_{i})+\gamma \mathbb{E}_{\mathbf{a}'\sim \pi_{\theta}(\mathbf{a}'\mid \mathbf{s}_{i}')}[\hat{Q}_{\phi}^{\pi}(\mathbf{s}_{i}',\mathbf{a}_{i})-\lambda D(\pi_{\theta}(\cdot \mid \mathbf{s}_{i}'),\pi_{\beta}(\cdot \mid\mathbf{s}_{i}'))]$. (modifying reward)
 2. Update $\phi$ using $\nabla_{\phi}\sum_{i=1}^{B}\lVert \hat{Q}_{\phi}^{\pi}(\mathbf{s}_{i},\mathbf{a}_{i})-y_{i} \rVert^{2}$.
-3. $J(\theta)=\sum_{i}\mathbb{E}_{\mathbf{a}\sim \pi_{\theta}(\mathbf{a}\mid \mathbfit{s},_{i})}[\hat{Q}_{\phi}^{\pi}(\mathbf{s}_{i},\mathbf{a})]-\lambda \mathcal{D}(\pi_{\theta}(\cdot \mid \mathbf{s}_{i}),\pi_{\beta}(\cdot \mid \mathbf{s}_{i}))$. (modifying actor objective)
+3. $J(\theta)=\sum_{i}\mathbb{E}_{\mathbf{a}\sim \pi_{\theta}(\mathbf{a}\mid \boldsymbol{s},_{i})}[\hat{Q}_{\phi}^{\pi}(\mathbf{s}_{i},\mathbf{a})]-\lambda \mathcal{D}(\pi_{\theta}(\cdot \mid \mathbf{s}_{i}),\pi_{\beta}(\cdot \mid \mathbf{s}_{i}))$. (modifying actor objective)
 4. $\theta\leftarrow\theta+\alpha \nabla_{\theta}J(\theta)$.
 
 And here's an **AC+BC-like**, actor critic + behavioral cloning?, algorithm.
 
 1. Evaluate $y_{i}=r(\mathbf{s}_{i},\mathbf{a}_{i})+\gamma \mathbb{E}_{\mathbf{a}'\sim \pi_{\theta}(\mathbf{a}'\mid \mathbf{s}_{i}')}[\hat{Q}_{\phi}^{\pi}(\mathbf{s}_{i}',\mathbf{a}_{i})]$.
 2. Update $\phi$ using $\nabla_{\phi}\sum_{i=1}^{B}\lVert \hat{Q}_{\phi}^{\pi}(\mathbf{s}_{i},\mathbf{a}_{i})-y_{i} \rVert^{2}$.
-3. $J(\theta)=\sum_{i}\mathbb{E}_{\mathbf{a}\sim \pi_{\theta}(\mathbf{a}\mid \mathbfit{s},_{i})}[\hat{Q}_{\phi}^{\pi}(\mathbf{s}_{i},\mathbf{a})]+\lambda \log \pi_{\theta}(\mathbf{a}_{i}\mid \mathbf{s}_{i})$. (modifying actor objective with forward KL)
+3. $J(\theta)=\sum_{i}\mathbb{E}_{\mathbf{a}\sim \pi_{\theta}(\mathbf{a}\mid \boldsymbol{s},_{i})}[\hat{Q}_{\phi}^{\pi}(\mathbf{s}_{i},\mathbf{a})]+\lambda \log \pi_{\theta}(\mathbf{a}_{i}\mid \mathbf{s}_{i})$. (modifying actor objective with forward KL)
 4. $\theta\leftarrow\theta+\alpha \nabla_{\theta}J(\theta)$.
 ### Implicit Policy Constraint Methods
 > [!info]
@@ -240,7 +240,7 @@ where $u(s,a)$ represents an **uncertainty penalty**. This can be computed by e.
 
 Alternatively, we can leverage the same ideas as in [[#Conservative $Q$-Learning (CQL)|CQL]]. Similar to how CQL "pushes down" on large $Q$-values, model-based RL can "push down" on the $Q$-values of model state-action tuples. In essence, for a model $p$, we use a $Q$-function update rule of
 $$
-\hat{Q}^{k+1} \leftarrow \underset{Q}{\arg\min}\ \beta(\mathbb{E}_{\mathbf{s},\mathbf{a}\sim p(\mathbf{s},\mathbf{a})}[Q(\mathbf{s},\mathbf{a})]-\mathbb{E}_{\mathbf{s},\mathbf{a}\sim \mathcal{D}}[Q(\mathbf{s},\mathbf{a})])+\frac{1}{2}\mathbb{E}_{\mathbf{s},\mathbf{a},\mathbf{s}'\sim \mathbfit{d}_{\mathbfit{f}}}[(Q(\mathbf{s},\mathbf{a})-\hat{\beta}^{\pi}\hat{Q}^{k}(\mathbf{s},\mathbf{a}))^{2}]
+\hat{Q}^{k+1} \leftarrow \underset{Q}{\arg\min}\ \beta(\mathbb{E}_{\mathbf{s},\mathbf{a}\sim p(\mathbf{s},\mathbf{a})}[Q(\mathbf{s},\mathbf{a})]-\mathbb{E}_{\mathbf{s},\mathbf{a}\sim \mathcal{D}}[Q(\mathbf{s},\mathbf{a})])+\frac{1}{2}\mathbb{E}_{\mathbf{s},\mathbf{a},\mathbf{s}'\sim \boldsymbol{d}_{\boldsymbol{f}}}[(Q(\mathbf{s},\mathbf{a})-\hat{\beta}^{\pi}\hat{Q}^{k}(\mathbf{s},\mathbf{a}))^{2}]
 $$
 Again, the intuition is the same. It's like a GAN: if the model, the generator, produces something that looks clearly different from real data, the $Q$-function, the discriminator, will assign low values to it.
 <div style="page-break-after: always;"></div>
