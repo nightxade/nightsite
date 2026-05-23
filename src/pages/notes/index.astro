@@ -28,7 +28,7 @@ const collectionData = await Promise.all(
       collectionData.map(({ id, meta, count }) => (
         <Link
           href={`/notes/${id}`}
-          class="hover:bg-muted/50 group flex flex-col gap-1 rounded-lg border px-4 py-3 transition-colors"
+          class="bg-muted/30 hover:bg-muted/50 group flex flex-col gap-1 rounded-lg border px-4 py-3 transition-colors"
         >
           <div class="flex items-baseline justify-between gap-2">
             <span class="font-medium">{meta.name}</span>
