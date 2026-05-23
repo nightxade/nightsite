@@ -52,7 +52,10 @@ const CATEGORY_ICON: Record<string, string> = {
     <section class="flex flex-col bg-muted/30 rounded-lg border">
       <div class="flex items-center justify-between border-b px-4 py-3">
         <h2 class="text-sm font-medium">Recent Posts</h2>
-        <Link href="/writeups" class="text-muted-foreground hover:text-foreground text-xs transition-colors">see all →</Link>
+        <div class="flex gap-3">
+          <Link href="/blog" class="text-muted-foreground hover:text-foreground text-xs transition-colors">blog →</Link>
+          <Link href="/writeups" class="text-muted-foreground hover:text-foreground text-xs transition-colors">writeups →</Link>
+        </div>
       </div>
       <ul class="flex flex-col divide-y">
         {recentPosts.map((post) => (
