@@ -293,7 +293,10 @@ export async function getAllProjects(): Promise<CollectionEntry<'projects'>[]> {
     const projects = await getCollection('projects')
     return projects
       .filter((p) => !p.data.draft)
-      .sort((a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf())
+      .sort((a, b) => {
+        if (a.data.pinned !== b.data.pinned) return a.data.pinned ? -1 : 1
+        return b.data.startDate.valueOf() - a.data.startDate.valueOf()
+      })
   } catch {
     return []
   }
