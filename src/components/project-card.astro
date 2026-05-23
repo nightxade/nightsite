@@ -1,0 +1,73 @@
+---
+import Link from '@/components/link.astro'
+import { Badge } from '@/components/ui/badge'
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets'
+import type { CollectionEntry } from 'astro:content'
+
+interface Props {
+  entry: CollectionEntry<'projects'>
+}
+
+const { entry } = Astro.props
+const { title, description, link, image, startDate, endDate, tags } = entry.data
+
+function fmtDate(d: Date) {
+  return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' })
+}
+
+async function fetchOgImage(url: string): Promise<string | null> {
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(5000) })
+    const html = await res.text()
+    const match =
+      html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/) ??
+      html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/)
+    return match?.[1] ?? null
+  } catch {
+    return null
+  }
+}
+
+const ogImageUrl = !image && link ? await fetchOgImage(link) : null
+---
+
+<a
+  href={link ?? undefined}
+  target={link ? '_blank' : undefined}
+  rel={link ? 'noopener noreferrer' : undefined}
+  class:list={['bg-muted/30 rounded-xl border p-4 transition-colors duration-300 ease-in-out', link ? 'hover:bg-muted/50 cursor-pointer' : 'cursor-default']}
+>
+  <div class="flex flex-col gap-4 sm:flex-row">
+    {image ? (
+      <div class="w-full sm:max-w-3xs sm:shrink-0">
+        <Image src={image} alt={title} width={1200} height={630} class="project-img rounded-lg object-cover" />
+      </div>
+    ) : ogImageUrl ? (
+      <div class="w-full sm:max-w-3xs sm:shrink-0">
+        <img src={ogImageUrl} alt={title} class="project-img rounded-lg object-cover w-full" />
+      </div>
+    ) : null}
+    <div class="grow">
+      <div class="mb-1 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-0.5">
+        <h3 class="text-lg font-medium">{title}</h3>
+        <span class="text-muted-foreground flex items-center gap-1.5 text-xs">
+          <Icon name="lucide:calendar" class="size-3 shrink-0" />
+          {fmtDate(startDate)}{endDate ? ` → ${fmtDate(endDate)}` : ' → Present'}
+        </span>
+      </div>
+      <p class="text-muted-foreground mb-3 text-sm">{description}</p>
+      {tags && tags.length > 0 && (
+        <div class="flex flex-wrap gap-2">
+          {tags.map((tag: string) => <Badge variant="muted">{tag}</Badge>)}
+        </div>
+      )}
+    </div>
+  </div>
+</a>
+
+<style is:global>
+  [data-theme='dark'] .project-img {
+    filter: brightness(0.8);
+  }
+</style>

@@ -1,11 +1,11 @@
 ---
 import Breadcrumbs from '@/components/breadcrumbs.astro'
 import PageHead from '@/components/page-head.astro'
-import WorkCard from '@/components/work-card.astro'
+import ProjectCard from '@/components/project-card.astro'
 import Layout from '@/layouts/layout.astro'
-import { getAllWork } from '@/lib/data-utils'
+import { getAllProjects } from '@/lib/data-utils'
 
-const work = await getAllWork()
+const projects = await getAllProjects()
 ---
 
 <Layout class="max-w-4xl">
@@ -14,7 +14,7 @@ const work = await getAllWork()
 
   <section>
     <div class="flex flex-col gap-4">
-      {work.map((entry) => <WorkCard entry={entry} />)}
+      {projects.map((entry) => <ProjectCard entry={entry} />)}
     </div>
   </section>
 </Layout>

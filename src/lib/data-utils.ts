@@ -288,11 +288,11 @@ export type TOCSection = {
   subpostId?: string
 }
 
-export async function getAllWork(): Promise<CollectionEntry<'work'>[]> {
+export async function getAllProjects(): Promise<CollectionEntry<'projects'>[]> {
   try {
-    const work = await getCollection('work')
-    return work
-      .filter((w) => !w.data.draft)
+    const projects = await getCollection('projects')
+    return projects
+      .filter((p) => !p.data.draft)
       .sort((a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf())
   } catch {
     return []
