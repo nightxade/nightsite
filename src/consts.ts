@@ -31,12 +31,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
     href: 'https://www.linkedin.com/in/matthew-cai1337/',
     label: 'LinkedIn'
   },
-  // {
-  //   href: 'https://twitter.com/enscry',
-  //   label: 'Twitter',
-  // },
   {
-    href: 'mailto:matthew.cai.official@gmail.com',
+    href: 'mailto:nightxade@nightxade.dev',
     label: 'Email',
   },
   {
