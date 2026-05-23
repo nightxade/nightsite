@@ -1,8 +1,24 @@
 ---
+import { readingEntries } from '@/data/reading'
+import { getAllPosts } from '@/lib/data-utils'
 import DiscordPresence from '@/components/DiscordPresence'
 import Link from '@/components/link.astro'
 import PageHead from '@/components/page-head.astro'
 import Layout from '@/layouts/layout.astro'
+import { Icon } from 'astro-icon/components'
+
+const recentPosts = (await getAllPosts()).slice(0, 5)
+const recentReading = [...readingEntries]
+  .sort((a, b) => b.year - a.year || b.month - a.month)
+  .slice(0, 5)
+
+const MONTH_ABBR = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+const CATEGORY_ICON: Record<string, string> = {
+  book: 'lucide:book-open',
+  paper: 'lucide:file-text',
+  article: 'lucide:globe',
+}
 ---
 
 <Layout class="max-w-5xl">
@@ -28,6 +44,71 @@ import Layout from '@/layouts/layout.astro'
 
     <section class="w-full rounded-lg border sm:w-72">
       <DiscordPresence client:load />
+    </section>
+  </div>
+
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <!-- Recent Posts -->
+    <section class="flex flex-col rounded-lg border">
+      <div class="flex items-center justify-between border-b px-4 py-3">
+        <h2 class="text-sm font-medium">Recent Posts</h2>
+        <Link href="/writeups" class="text-muted-foreground hover:text-foreground text-xs transition-colors">see all →</Link>
+      </div>
+      <ul class="flex flex-col divide-y">
+        {recentPosts.map((post) => (
+          <li>
+            <Link
+              href={`/${post.collection}/${post.id}`}
+              class="group flex items-center gap-3 px-4 py-2.5"
+            >
+              <span class="text-muted-foreground shrink-0 text-xs tabular-nums">
+                {post.data.date.toLocaleDateString('en-US', { month: 'short', year: '2-digit' })}
+              </span>
+              <span class="group-hover:text-foreground text-foreground/80 truncate text-sm transition-colors">
+                {post.data.title}
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- Recent Reading -->
+    <section class="flex flex-col rounded-lg border">
+      <div class="flex items-center justify-between border-b px-4 py-3">
+        <h2 class="text-sm font-medium">Recent Reading</h2>
+        <Link href="/reading" class="text-muted-foreground hover:text-foreground text-xs transition-colors">see all →</Link>
+      </div>
+      <ul class="flex flex-col divide-y">
+        {recentReading.map((entry) => (
+          <li>
+            {entry.url ? (
+              <a
+                href={entry.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group flex items-center gap-3 px-4 py-2.5"
+              >
+                <Icon name={CATEGORY_ICON[entry.category]} class="text-muted-foreground size-3.5 shrink-0" />
+                <span class="group-hover:text-foreground text-foreground/80 truncate text-sm transition-colors">
+                  {entry.title}
+                </span>
+                <span class="text-muted-foreground ml-auto shrink-0 text-xs tabular-nums">
+                  {MONTH_ABBR[entry.month]} '{String(entry.year).slice(2)}
+                </span>
+              </a>
+            ) : (
+              <div class="flex items-center gap-3 px-4 py-2.5">
+                <Icon name={CATEGORY_ICON[entry.category]} class="text-muted-foreground size-3.5 shrink-0" />
+                <span class="text-foreground/80 truncate text-sm">{entry.title}</span>
+                <span class="text-muted-foreground ml-auto shrink-0 text-xs tabular-nums">
+                  {MONTH_ABBR[entry.month]} '{String(entry.year).slice(2)}
+                </span>
+              </div>
+            )}
+          </li>
+        ))}
+      </ul>
     </section>
   </div>
 </Layout>
