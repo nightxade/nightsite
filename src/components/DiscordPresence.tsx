@@ -219,7 +219,7 @@ const ActivityDisplay = ({ activity }: { activity: Activity }) => {
 const DiscordSkeleton = () => (
   <div className="relative overflow-hidden rounded-lg">
     <Skeleton className="h-14" />
-    <div className="bg-background flex flex-col gap-2.5 p-3">
+    <div className="flex flex-col gap-2.5 p-3">
       <Skeleton className="-mt-10 size-16 rounded-full" />
       <Skeleton className="h-14 rounded-md" />
       <Skeleton className="h-16 rounded-md" />
@@ -298,7 +298,7 @@ const DiscordPresence = () => {
       <div className="bg-muted h-16 shrink-0" />
 
       {/* Content */}
-      <div className="bg-background flex flex-1 flex-col gap-2.5 p-3">
+      <div className="flex flex-1 flex-col gap-2.5 p-3">
           {/* Avatar */}
           <div className="relative w-fit">
             <AvatarComponent
