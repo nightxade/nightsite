@@ -3,7 +3,7 @@ import type { IconMap, SocialLink, Site } from '@/types'
 export const SITE: Site = {
   title: 'nightxade',
   description:
-    'beautiful, deadly poison',
+    'a poisonous flower',
   href: 'https://nightxade.dev',
   author: 'nightxade',
   locale: 'en-US',
