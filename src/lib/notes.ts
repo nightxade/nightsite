@@ -1,6 +1,7 @@
 import { readdir, readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import rehypeCallouts from '@/lib/rehype-callouts'
+import rehypeImageSize from '@/lib/rehype-image-size'
 import remarkObsidian from '@/lib/remark-obsidian'
 import type { Root } from 'mdast'
 import rehypeKatex from 'rehype-katex'
@@ -147,6 +148,7 @@ export async function processNote(filePath: string, collection: string): Promise
     .use(remarkBreaks)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeCallouts)
+    .use(rehypeImageSize)
     .use(rehypeKatex)
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(content)

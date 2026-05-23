@@ -27,12 +27,14 @@ export async function getStaticPaths() {
 const { note, notes, index, collection } = Astro.props
 const meta = COLLECTION_META[collection]
 const html = await processNote(note.path, collection)
+const hasKatex = html.includes('class="katex')
 const prev = index > 0 ? notes[index - 1] : null
 const next = index < notes.length - 1 ? notes[index + 1] : null
 ---
 
 <Layout class="max-w-4xl">
   <PageHead slot="head" title={`${note.title} — ${meta.name}`} />
+  {hasKatex && <link slot="head" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" />}
   <Breadcrumbs
     items={[
       { label: 'Notes', href: '/notes', icon: 'lucide:notebook-text' },
@@ -75,16 +77,6 @@ const next = index < notes.length - 1 ? notes[index + 1] : null
   }
 </Layout>
 
-<script>
-  if (document.querySelector('.katex')) {
-    if (!document.querySelector('link[href*="katex.min.css"]')) {
-      const link = document.createElement('link')
-      link.rel = 'stylesheet'
-      link.href = 'https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css'
-      document.head.appendChild(link)
-    }
-  }
-</script>
 
 <style>
   /* Callout styles */
@@ -125,10 +117,14 @@ const next = index < notes.length - 1 ? notes[index + 1] : null
   :global(.prose img) {
     border-radius: 0.375rem;
     display: block;
+    max-width: 420px;
+    mix-blend-mode: multiply;
+    margin-block: 0;
   }
 
   :global([data-theme='dark'] .prose img) {
     filter: invert(1);
+    mix-blend-mode: screen;
   }
 
   /* TikZJax rendered SVGs */
