@@ -289,8 +289,16 @@ export type TOCSection = {
 }
 
 export async function getAllWork(): Promise<CollectionEntry<'work'>[]> {
-  return []
+  try {
+    const work = await getCollection('work')
+    return work
+      .filter((w) => !w.data.draft)
+      .sort((a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf())
+  } catch {
+    return []
+  }
 }
+
 
 export async function getAllWriteups(): Promise<CollectionEntry<'writeups'>[]> {
   const writeups = await getCollection('writeups')
