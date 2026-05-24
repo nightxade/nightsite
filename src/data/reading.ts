@@ -3916,6 +3916,15 @@ export const readingEntries: ReadingEntry[] = [
     "month": 3
   },
   {
+    "title": "Computer Architecture, A Quantitative Approach, Sixth Edition — Appendix H",
+    "category": "book",
+    "bookTitle": "Computer Architecture, A Quantitative Approach, Sixth Edition",
+    "chapter": "Appendix H",
+    "dateRead": "2026-03-21",
+    "year": 2026,
+    "month": 3
+  },
+  {
     "title": "A Survey on the Memory Mechanism of Large Language Model based Agents",
     "category": "paper",
     "dateRead": "2026-03-21",
