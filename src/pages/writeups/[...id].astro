@@ -98,6 +98,7 @@ const tocCurrentId = isCurrentSubwriteup
       ) && <TOCHeader slot="table-of-contents" headings={headings} />
   }
 
+  <!-- Header: breadcrumbs, image, title/meta/top-nav -->
   <section
     class="grid grid-cols-[minmax(0px,1fr)_min(720px,100%)_minmax(0px,1fr)] gap-y-6"
   >
@@ -237,7 +238,12 @@ const tocCurrentId = isCurrentSubwriteup
         parentWriteup={isCurrentSubwriteup ? navigation.parent : undefined}
       />
     </section>
+  </section>
 
+  <!-- Content: sidebars + article + bottom nav -->
+  <section
+    class="grid grid-cols-[minmax(0px,1fr)_min(720px,100%)_minmax(0px,1fr)] gap-y-6"
+  >
     {
       tocSections.length > 0 && (
         <TOCSidebar sections={tocSections} currentPostId={tocCurrentId} />
@@ -318,6 +324,4 @@ const tocCurrentId = isCurrentSubwriteup
 
   document.addEventListener('astro:page-load', ensureKatexStyles)
   document.addEventListener('astro:after-swap', ensureKatexStyles)
-</script>
-o:after-swap', ensureKatexStyles)
 </script>
