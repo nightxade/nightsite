@@ -2,23 +2,24 @@
 import Breadcrumbs from '@/components/breadcrumbs.astro'
 import PageHead from '@/components/page-head.astro'
 import Layout from '@/layouts/layout.astro'
+import { Icon } from 'astro-icon/components'
 
 const courses = [
-  { code: 'CS 61A',   name: 'Structure and Interpretation of Computer Programs', semester: 'Fall 2024', grade: 'A+' },
-  { code: 'CS 61B',   name: 'Data Structures and Algorithms',                    semester: 'Fall 2024', grade: 'A+' },
+  { code: 'CS 61A',   name: 'Structure and Interpretation of Computer Programs', semester: 'Fall 2024',   grade: 'A+' },
+  { code: 'CS 61B',   name: 'Data Structures and Algorithms',                    semester: 'Fall 2024',   grade: 'A+' },
   { code: 'CS 61C',   name: 'Machine Structures',                                semester: 'Spring 2025', grade: 'A+' },
   { code: 'CS 70',    name: 'Discrete Mathematics and Probability Theory',       semester: 'Spring 2025', grade: 'A+' },
   { code: 'CS 152',   name: 'Computer Architecture and Engineering',             semester: 'Spring 2026', grade: 'A+' },
-  { code: 'CS 161',   name: 'Computer Security',                                 semester: 'Fall 2025', grade: 'A+' },
-  { code: 'CS 162',   name: 'Operating Systems and System Programming',          semester: 'Fall 2025', grade: 'A+' },
-  { code: 'CS 164',   name: 'Programming Languages and Compilers',               semester: 'Fall 2025', grade: 'A' },
-  { code: 'CS 170',   name: 'Efficient Algorithms and Intractable Problems',     semester: 'Fall 2025', grade: 'A+' },
-  { code: 'CS 185',   name: 'Deep Reinforcement Learning',                       semester: 'Spring 2026', grade: 'A' },
+  { code: 'CS 161',   name: 'Computer Security',                                 semester: 'Fall 2025',   grade: 'A+' },
+  { code: 'CS 162',   name: 'Operating Systems and System Programming',          semester: 'Fall 2025',   grade: 'A+', starred: true },
+  { code: 'CS 164',   name: 'Programming Languages and Compilers',               semester: 'Fall 2025',   grade: 'A' },
+  { code: 'CS 170',   name: 'Efficient Algorithms and Intractable Problems',     semester: 'Fall 2025',   grade: 'A+', starred: true },
+  { code: 'CS 185',   name: 'Deep Reinforcement Learning',                       semester: 'Spring 2026', grade: 'A', starred: true },
   { code: 'CS 186',   name: 'Introduction to Database Systems',                  semester: 'Spring 2026', grade: 'A+' },
   { code: 'CS 189',   name: 'Introduction to Machine Learning',                  semester: 'Spring 2026', grade: 'TBD' },
   { code: 'CS 261',   name: 'Security in Computer Systems',   grad: true,        semester: 'Spring 2026', grade: 'A+' },
-  { code: 'CS 294',   name: 'Performance Optimization',       grad: true,        semester: 'Fall 2025', grade: 'A' },
-  { code: 'EECS 16A', name: 'Designing Information Devices and Systems I',       semester: 'Fall 2024', grade: 'A' },
+  { code: 'CS 294-262',   name: 'Performance Analysis and Optimization of Computer Systems',       grad: true,        semester: 'Fall 2025',   grade: 'A', starred: true },
+  { code: 'EECS 16A', name: 'Designing Information Devices and Systems I',       semester: 'Fall 2024',   grade: 'A' },
   { code: 'EECS 16B', name: 'Designing Information Devices and Systems II',      semester: 'Spring 2025', grade: 'A' },
   { code: 'MATH 53',  name: 'Multivariable Calculus',                            semester: 'Spring 2025', grade: 'A+' },
   { code: 'MATH 113', name: 'Abstract Algebra',                                  semester: 'Spring 2025', grade: 'A+' },
@@ -47,6 +48,7 @@ const courses = [
             <div class="flex items-center gap-2">
               <span class="text-sm font-medium">{c.code}</span>
               {c.grad && <span class="text-muted-foreground rounded border px-1.5 py-0.5 text-xs">Graduate</span>}
+              {c.starred && <Icon name="lucide:star" class="text-yellow-500 size-3.5 fill-yellow-500" aria-label="Favorite" />}
             </div>
             <span class="text-foreground/80 text-sm">{c.grade}</span>
           </div>
@@ -55,6 +57,11 @@ const courses = [
         </div>
       ))}
     </div>
+
+    <p class="text-muted-foreground text-xs flex items-center gap-1.5">
+      <Icon name="lucide:star" class="text-yellow-500 size-3 fill-yellow-500 shrink-0" />
+      a course I particularly enjoyed
+    </p>
 
   </div>
 </Layout>

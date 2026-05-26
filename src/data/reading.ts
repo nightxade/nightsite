@@ -15,6 +15,14 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+    "url": "https://arxiv.org/abs/1701.06538",
+    "category": "paper",
+    "dateRead": "2026-05-26",
+    "year": 2026,
+    "month": 5
+  },
+  {
     "title": "Deep Learning: Foundations and Concepts — Chapter 12",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
