@@ -15,6 +15,31 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Deep Learning: Foundations and Concepts — Chapter 12",
+    "category": "book",
+    "bookTitle": "Deep Learning: Foundations and Concepts",
+    "chapter": "Chapter 12",
+    "dateRead": "2026-05-25",
+    "year": 2026,
+    "month": 5
+  },
+  {
+    "title": "SGLang: Efficient Execution of Structured Language Model Programs",
+    "url": "https://arxiv.org/abs/2312.07104",
+    "category": "paper",
+    "dateRead": "2026-05-25",
+    "year": 2026,
+    "month": 5
+  },
+  {
+    "title": "A History of Large Language Models ",
+    "url": "https://gregorygundersen.com/blog/2025/10/01/large-language-models/",
+    "category": "article",
+    "dateRead": "2026-05-24",
+    "year": 2026,
+    "month": 5
+  },
+  {
     "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
     "url": "https://arxiv.org/abs/2309.06180",
     "category": "paper",
