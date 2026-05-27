@@ -82,12 +82,16 @@ readingEntries.forEach((entry, i) => {
     existing.chapters++
     existing.lastIndex = i
     if (!existing.url && entry.url) existing.url = entry.url
-    const t = entry.year * 100 + entry.month
-    if (t < existing.firstYear * 100 + existing.firstMonth) { existing.firstYear = entry.year; existing.firstMonth = entry.month }
-    if (t > existing.lastYear * 100 + existing.lastMonth) { existing.lastYear = entry.year; existing.lastMonth = entry.month }
+    const t = entry.year * 12 + entry.month
+    if (t < existing.firstYear * 12 + existing.firstMonth) { existing.firstYear = entry.year; existing.firstMonth = entry.month }
+    if (t > existing.lastYear * 12 + existing.lastMonth) { existing.lastYear = entry.year; existing.lastMonth = entry.month }
   }
 })
-const groupedBooks = [...bookMap.values()].sort((a, b) => b.lastIndex - a.lastIndex)
+const groupedBooks = [...bookMap.values()].sort((a, b) => {
+  const bDate = b.lastYear * 12 + b.lastMonth
+  const aDate = a.lastYear * 12 + a.lastMonth
+  return bDate - aDate
+})
 ---
 
 <Layout class="max-w-4xl">
