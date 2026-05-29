@@ -15,7 +15,33 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
-    "title": "A Review of Sparse Expert Models in Deep Learning]",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 14",
+    "category": "book",
+    "bookTitle": "Deep Learning: Foundations and Concepts",
+    "chapter": "Chapter 14",
+    "dateRead": "2026-05-28",
+    "year": 2026,
+    "month": 5
+  },
+  {
+    "title": "Land ahoy: leaving the Sea of Nodes",
+    "url": "https://v8.dev/blog/leaving-the-sea-of-nodes",
+    "category": "article",
+    "dateRead": "2026-05-28",
+    "year": 2026,
+    "month": 5
+  },
+  {
+    "title": "Database System Concepts, 7th Edition — Chapter 26",
+    "category": "book",
+    "bookTitle": "Database System Concepts, 7th Edition",
+    "chapter": "Chapter 26",
+    "dateRead": "2026-05-28",
+    "year": 2026,
+    "month": 5
+  },
+  {
+    "title": "A Review of Sparse Expert Models in Deep Learning",
     "url": "https://arxiv.org/abs/2209.01667",
     "category": "paper",
     "dateRead": "2026-05-26",
@@ -31,11 +57,11 @@ export const readingEntries: ReadingEntry[] = [
     "month": 5
   },
   {
-    "title": "Deep Learning: Foundations and Concepts — Chapter 12",
+    "title": "Deep Learning: Foundations and Concepts — Chapter 13",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
-    "chapter": "Chapter 12",
-    "dateRead": "2026-05-25",
+    "chapter": "Chapter 13",
+    "dateRead": "2026-05-26",
     "year": 2026,
     "month": 5
   },
