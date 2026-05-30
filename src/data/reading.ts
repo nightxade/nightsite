@@ -15,6 +15,22 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Cerebras vs SambaNova vs Groq: AI Chip Comparison (2025)",
+    "url": "https://intuitionlabs.ai/articles/cerebras-vs-sambanova-vs-groq-ai-chips",
+    "category": "article",
+    "dateRead": "2026-05-29",
+    "year": 2026,
+    "month": 5
+  },
+  {
+    "title": "What is a Language Processing Unit?",
+    "url": "https://groq.com/blog/the-groq-lpu-explained",
+    "category": "article",
+    "dateRead": "2026-05-29",
+    "year": 2026,
+    "month": 5
+  },
+  {
     "title": "Deep Learning: Foundations and Concepts — Chapter 14",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",

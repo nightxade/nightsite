@@ -7,7 +7,7 @@ import Layout from '@/layouts/layout.astro'
 
 <Layout class="max-w-4xl">
   <PageHead slot="head" title="Resume" />
-  <div class="flex items-center justify-between">
+  <div class="flex flex-wrap items-center justify-between gap-y-2">
     <Breadcrumbs items={[{ label: 'Resume', icon: 'lucide:file-text' }]} />
     <div class="flex items-center gap-4">
       <Link href="/transcript" class="text-muted-foreground hover:text-foreground text-sm" underline>View Transcript</Link>
@@ -20,11 +20,11 @@ import Layout from '@/layouts/layout.astro'
     <!-- Header -->
     <div class="flex flex-col items-center gap-1 text-center">
       <h1 class="text-5xl font-semibold">Matthew Cai</h1>
-      <div class="text-muted-foreground flex items-center gap-4 text-sm">
+      <div class="text-muted-foreground flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-sm">
         <span>(561) 777-6131</span>
-        <span>&middot;</span>
+        <span class="hidden sm:inline">&middot;</span>
         <Link href="mailto:matthew.cai.official@gmail.com" class="text-muted-foreground hover:text-foreground" underline>matthew.cai.official@gmail.com</Link>
-        <span>&middot;</span>
+        <span class="hidden sm:inline">&middot;</span>
         <Link href="https://github.com/nightxade" external class="text-muted-foreground hover:text-foreground" underline>github.com/nightxade</Link>
       </div>
     </div>
@@ -33,11 +33,11 @@ import Layout from '@/layouts/layout.astro'
     <section class="flex flex-col gap-3">
       <h2 class="border-b-2 border-foreground/25 pb-1 text-lg font-semibold">Education</h2>
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <span class="font-semibold">University of California, Berkeley</span>
           <span class="text-muted-foreground shrink-0 text-sm">Expected December 2027</span>
         </div>
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <span class="text-muted-foreground text-sm italic">Bachelor of Science, Electrical Engineering and Computer Science</span>
           <span class="text-muted-foreground shrink-0 text-sm">GPA: 4.00/4.00</span>
         </div>
@@ -52,21 +52,21 @@ import Layout from '@/layouts/layout.astro'
       <h2 class="border-b-2 border-foreground/25 pb-1 text-lg font-semibold">Experience</h2>
 
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <p class="text-sm"><span class="font-semibold">Tesla</span> <span class="text-muted-foreground">| <span class="italic">(Incoming) Product Security Engineering Intern, Vehicle Software</span></span></p>
           <span class="text-muted-foreground shrink-0 text-sm">August 2026 – December 2026</span>
         </div>
       </div>
 
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <p class="text-sm"><span class="font-semibold">Meta</span> <span class="text-muted-foreground">| <span class="italic">(Incoming) Offensive Security Engineering Intern</span></span></p>
           <span class="text-muted-foreground shrink-0 text-sm">June 2026 – August 2026</span>
         </div>
       </div>
 
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <p class="text-sm"><span class="font-semibold">Meta</span> <span class="text-muted-foreground">| <span class="italic">Software Engineering (Network Security) Intern</span></span></p>
           <span class="text-muted-foreground shrink-0 text-sm">May 2025 – August 2025</span>
         </div>
@@ -79,7 +79,7 @@ import Layout from '@/layouts/layout.astro'
       </div>
 
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <p class="text-sm"><span class="font-semibold">MITRE</span> <span class="text-muted-foreground">| <span class="italic">Reverse Engineering Intern</span></span></p>
           <span class="text-muted-foreground shrink-0 text-sm">June 2024 – August 2024</span>
         </div>
@@ -96,7 +96,7 @@ import Layout from '@/layouts/layout.astro'
       <h2 class="border-b-2 border-foreground/25 pb-1 text-lg font-semibold">Research</h2>
 
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <p class="text-sm"><span class="font-semibold">Graduate Computer Security Research at UC Berkeley (CS 261)</span> <span class="text-muted-foreground">| <span class="italic">Security Researcher <span class="font-semibold">[1]</span></span></span></p>
           <span class="text-muted-foreground shrink-0 text-sm">February 2026 – May 2026</span>
         </div>
@@ -108,7 +108,7 @@ import Layout from '@/layouts/layout.astro'
       </div>
 
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <p class="text-sm"><span class="font-semibold">Security Group at UC Berkeley (D. Song)</span> <span class="text-muted-foreground">| <span class="italic">Security Researcher <span class="font-semibold">[2]</span></span></span></p>
           <span class="text-muted-foreground shrink-0 text-sm">January 2025 – December 2025</span>
         </div>
@@ -120,7 +120,7 @@ import Layout from '@/layouts/layout.astro'
       </div>
 
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <p class="text-sm"><span class="font-semibold">Industrial Cyber-Physical Systems (iCyPhy) at UC Berkeley</span> <span class="text-muted-foreground">| <span class="italic">Systems Researcher <span class="font-semibold">[3]</span></span></span></p>
           <span class="text-muted-foreground shrink-0 text-sm">October 2025 – December 2025</span>
         </div>
@@ -135,7 +135,7 @@ import Layout from '@/layouts/layout.astro'
     <section class="flex flex-col gap-4">
       <h2 class="border-b-2 border-foreground/25 pb-1 text-lg font-semibold">Publications</h2>
 
-      <div class="flex items-baseline justify-between gap-4">
+      <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
         <div class="flex flex-col gap-0.5">
           <p class="text-sm font-semibold">[1] ComeBack: Assessing LLM Decompilation for Go</p>
           <p class="text-muted-foreground text-sm"><span class="underline decoration-muted-foreground underline-offset-[3px]">Matthew Cai</span>, Jonah Bedouch</p>
@@ -143,7 +143,7 @@ import Layout from '@/layouts/layout.astro'
         <span class="text-muted-foreground shrink-0 text-sm">Preprint, 2026</span>
       </div>
 
-      <div class="flex items-baseline justify-between gap-4">
+      <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
         <div class="flex flex-col gap-0.5">
           <p class="text-sm font-semibold"><a href="https://arxiv.org/abs/2506.02548" target="_blank" class="hover:underline underline-offset-[3px] decoration-muted-foreground">[2] CyberGym: Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale</a></p>
           <p class="text-muted-foreground text-sm">Zhun Wang, Tianneng Shi, Jingxuan He, <span class="underline decoration-muted-foreground underline-offset-[3px]">Matthew Cai</span>, Jialin Zhang, Dawn Song</p>
@@ -151,7 +151,7 @@ import Layout from '@/layouts/layout.astro'
         <span class="text-muted-foreground shrink-0 text-sm">ICLR Oral 2026</span>
       </div>
 
-      <div class="flex items-baseline justify-between gap-4">
+      <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
         <div class="flex flex-col gap-0.5">
           <p class="text-sm font-semibold"><a href="https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F25/projects/reports/project1012_paper_97290597159163632740.pdf" target="_blank" class="hover:underline underline-offset-[3px] decoration-muted-foreground">[3] Formally Verified WCET Analysis of Distributed Lingua Franca Systems via GameTime</a></p>
           <p class="text-muted-foreground text-sm">Zeynep Guzey, Anagha Ananth, <span class="underline decoration-muted-foreground underline-offset-[3px]">Matthew Cai</span>, Jiaquan Li, Shaokai Lin</p>
@@ -165,7 +165,7 @@ import Layout from '@/layouts/layout.astro'
       <h2 class="border-b-2 border-foreground/25 pb-1 text-lg font-semibold">Activities and Projects</h2>
 
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <p class="text-sm"><span class="font-semibold">Cybersecurity Capture the Flag</span> <span class="text-muted-foreground">| <span class="italic">Vulnerability Researcher</span></span></p>
           <span class="text-muted-foreground shrink-0 text-sm">September 2023 – Present</span>
         </div>
@@ -176,7 +176,7 @@ import Layout from '@/layouts/layout.astro'
       </div>
 
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <p class="text-sm"><span class="font-semibold">Berke1337 Cybersecurity Club</span> <span class="text-muted-foreground">| <span class="italic">Officer</span></span></p>
           <span class="text-muted-foreground shrink-0 text-sm">August 2024 – Present</span>
         </div>
@@ -187,14 +187,14 @@ import Layout from '@/layouts/layout.astro'
       </div>
 
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <p class="text-sm"><span class="font-semibold">Google × Flare Verifiable AI Hackathon</span> <span class="text-muted-foreground">| <span class="italic">3rd Place</span></span></p>
           <span class="text-muted-foreground shrink-0 text-sm">March 2025</span>
         </div>
       </div>
 
       <div class="flex flex-col gap-1">
-        <div class="flex items-baseline justify-between gap-4">
+        <div class="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
           <p class="text-sm"><span class="font-semibold">American Invitational Mathematics Examination</span> <span class="text-muted-foreground">| <span class="italic">5-time qualifier, highest score of 7</span></span></p>
           <span class="text-muted-foreground shrink-0 text-sm">2019 – 2024</span>
         </div>

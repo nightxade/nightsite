@@ -18,7 +18,7 @@ import logo from '../../public/static/logo.svg'
       >
     </Link>
     <div class="flex items-center gap-4">
-      <nav class="flex items-center gap-4 text-sm sm:gap-6">
+      <nav class="hidden items-center gap-4 text-sm sm:flex sm:gap-6">
         {
           NAV_LINKS.map((item) => (
             <Link
@@ -31,6 +31,58 @@ import logo from '../../public/static/logo.svg'
         }
       </nav>
       <ThemeToggle transition:persist />
+      <button
+        id="mobile-menu-btn"
+        class="flex sm:hidden items-center justify-center p-1 text-foreground/60 hover:text-foreground transition-colors"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <svg id="menu-icon-open" class="size-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="menu-icon-close" class="size-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
   </div>
+  <div
+    id="mobile-menu"
+    class="hidden sm:hidden border-t border-border px-4 pb-3"
+  >
+    <nav class="flex flex-col gap-3 pt-3 text-sm">
+      {
+        NAV_LINKS.map((item) => (
+          <Link
+            href={item.href}
+            class="text-foreground/60 hover:text-foreground capitalize transition-colors"
+          >
+            {item.label}
+          </Link>
+        ))
+      }
+    </nav>
+  </div>
 </div>
+
+<script>
+  function initMobileMenu() {
+    const btn = document.getElementById('mobile-menu-btn')
+    const menu = document.getElementById('mobile-menu')
+    const iconOpen = document.getElementById('menu-icon-open')
+    const iconClose = document.getElementById('menu-icon-close')
+
+    if (!btn || !menu) return
+
+    btn.addEventListener('click', () => {
+      const isOpen = !menu.classList.contains('hidden')
+      menu.classList.toggle('hidden', isOpen)
+      iconOpen?.classList.toggle('hidden', !isOpen)
+      iconClose?.classList.toggle('hidden', isOpen)
+      btn.setAttribute('aria-expanded', String(!isOpen))
+    })
+  }
+
+  initMobileMenu()
+  document.addEventListener('astro:after-swap', initMobileMenu)
+</script>
