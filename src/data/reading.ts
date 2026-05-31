@@ -15,6 +15,39 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 1",
+    "category": "book",
+    "bookTitle": "Deep Learning: Foundations and Concepts",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-05-31",
+    "year": 2026,
+    "month": 5
+  },
+  {
+    "title": "Google AI Infrastructure Supremacy: Systems Matter More Than Microarchitecture",
+    "url": "https://newsletter.semianalysis.com/p/google-ai-infrastructure-supremacy",
+    "category": "article",
+    "dateRead": "2026-05-29",
+    "year": 2026,
+    "month": 5
+  },
+  {
+    "title": "Tensor Processing Unit (TPU): High Level System Architecture",
+    "url": "https://qsysarch.com/posts/tpu-architecture/",
+    "category": "article",
+    "dateRead": "2026-05-29",
+    "year": 2026,
+    "month": 5
+  },
+  {
+    "title": "Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics",
+    "url": "https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf",
+    "category": "paper",
+    "dateRead": "2026-05-29",
+    "year": 2026,
+    "month": 5
+  },
+  {
     "title": "Cerebras vs SambaNova vs Groq: AI Chip Comparison (2025)",
     "url": "https://intuitionlabs.ai/articles/cerebras-vs-sambanova-vs-groq-ai-chips",
     "category": "article",
