@@ -15,9 +15,17 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "From JAX to VLIW: Tracing a Computation Through the TPU Compiler Stack",
+    "url": "https://patricktoulme.substack.com/p/from-jax-to-vliw-tracing-a-computation",
+    "category": "article",
+    "dateRead": "2026-05-31",
+    "year": 2026,
+    "month": 5
+  },
+  {
     "title": "Principles and Practices of Interconnection Networks — Chapter 1",
     "category": "book",
-    "bookTitle": "Deep Learning: Foundations and Concepts",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
     "chapter": "Chapter 1",
     "dateRead": "2026-05-31",
     "year": 2026,
