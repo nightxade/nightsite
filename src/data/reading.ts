@@ -15,6 +15,39 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Inference Engines 0/N: Foundations",
+    "url": "https://jessicaruan.com/posts/tiny-decode-p0",
+    "category": "article",
+    "dateRead": "2026-06-03",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "The AI Security Market Has an Offensive-Defensive Mismatch",
+    "url": "https://jessicaruan.com/posts/ai-security-market-mismatch",
+    "category": "article",
+    "dateRead": "2026-06-03",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 1",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-06-03",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Dremel: Interactive Analysis of Web-Scale Datasets",
+    "url": "https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36632.pdf",
+    "category": "paper",
+    "dateRead": "2026-06-03",
+    "year": 2026,
+    "month": 6
+  },
+  {
     "title": "Principles and Practices of Interconnection Networks — Chapter 2",
     "category": "book",
     "bookTitle": "Principles and Practices of Interconnection Networks",
