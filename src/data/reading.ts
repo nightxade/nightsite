@@ -15,6 +15,38 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "The Open Frontier 0.5/N: I Tried to Jailbreak an MoE Model and Learned More About MoE Than Jailbreaking",
+    "url": "https://jessicaruan.com/posts/open-frontier-p0-5",
+    "category": "article",
+    "dateRead": "2026-06-07",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "The Open Frontier 0/N: Who, what, Qwen, and why?",
+    "url": "https://jessicaruan.com/posts/open-frontier-p0",
+    "category": "article",
+    "dateRead": "2026-06-07",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Inference Engines 3/N: Speculative Decoding",
+    "url": "https://jessicaruan.com/posts/tiny-decode-p3",
+    "category": "article",
+    "dateRead": "2026-06-07",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Inference Engines 2/N: Batching and PagedAttention",
+    "url": "https://jessicaruan.com/posts/tiny-decode-p2",
+    "category": "article",
+    "dateRead": "2026-06-07",
+    "year": 2026,
+    "month": 6
+  },
+  {
     "title": "Inference Engines 1/N: KV Cache",
     "url": "https://jessicaruan.com/posts/tiny-decode-p1",
     "category": "article",
