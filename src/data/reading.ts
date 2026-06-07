@@ -15,6 +15,31 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Inference Engines 1/N: KV Cache",
+    "url": "https://jessicaruan.com/posts/tiny-decode-p1",
+    "category": "article",
+    "dateRead": "2026-06-07",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "When AI builds itself",
+    "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+    "category": "article",
+    "dateRead": "2026-06-05",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 3",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-06-04",
+    "year": 2026,
+    "month": 6
+  },
+  {
     "title": "Inference Engines 0/N: Foundations",
     "url": "https://jessicaruan.com/posts/tiny-decode-p0",
     "category": "article",
