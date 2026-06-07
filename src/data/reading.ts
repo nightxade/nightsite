@@ -80,6 +80,14 @@ export const readingEntries: ReadingEntry[] = [
     "month": 6
   },
   {
+    "title": "How to Raise a Creole: PTX, DSLs, and the Case for Optimizing the Universal Dialect",
+    "url": "https://jessicaruan.com/posts/ptx-dsls",
+    "category": "article",
+    "dateRead": "2026-06-03",
+    "year": 2026,
+    "month": 6
+  },
+  {
     "title": "The AI Security Market Has an Offensive-Defensive Mismatch",
     "url": "https://jessicaruan.com/posts/ai-security-market-mismatch",
     "category": "article",

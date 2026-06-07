@@ -146,6 +146,12 @@ const next = index < notes.length - 1 ? notes[index + 1] : null
     display: block;
     margin: 1.5rem auto;
   }
+
+  /* Reset KaTeX SVGs (e.g. \vec arrow, \cancel) overridden by the rule above */
+  :global(.prose .katex svg) {
+    display: block;
+    margin: 0;
+  }
 </style>
 
 <script>
