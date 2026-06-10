@@ -15,6 +15,32 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Claude Fable 5 and Claude Mythos 5",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5?curius=1940",
+    "category": "article",
+    "dateRead": "2026-06-09",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Deep Learning: Foundations and Concepts — Chapter 17",
+    "category": "book",
+    "bookTitle": "Deep Learning: Foundations and Concepts",
+    "chapter": "Chapter 18",
+    "dateRead": "2026-06-09",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 2",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-06-09",
+    "year": 2026,
+    "month": 6
+  },
+  {
     "title": "The Open Frontier 0.5/N: I Tried to Jailbreak an MoE Model and Learned More About MoE Than Jailbreaking",
     "url": "https://jessicaruan.com/posts/open-frontier-p0-5",
     "category": "article",
