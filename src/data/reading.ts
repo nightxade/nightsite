@@ -15,6 +15,31 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Deep Learning: Foundations and Concepts — Chapter 18",
+    "category": "book",
+    "bookTitle": "Deep Learning: Foundations and Concepts",
+    "chapter": "Chapter 18",
+    "dateRead": "2026-06-17",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Producing Wrong Data Without Doing Anything Obviously Wrong!",
+    "url": "https://dl.acm.org/doi/10.1145/1508284.1508275",
+    "category": "paper",
+    "dateRead": "2026-06-17",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Efficient Large Language Models: A Survey",
+    "url": "https://arxiv.org/abs/2312.03863",
+    "category": "paper",
+    "dateRead": "2026-06-13",
+    "year": 2026,
+    "month": 6
+  },
+  {
     "title": "Claude Fable 5 and Claude Mythos 5",
     "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5?curius=1940",
     "category": "article",
