@@ -15,6 +15,31 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Dremel: A Decade of Interactive SQL Analysis at Web Scale",
+    "url": "https://research.google/pubs/dremel-a-decade-of-interactive-sql-analysis-at-web-scale/",
+    "category": "paper",
+    "dateRead": "2026-06-21",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 3",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-06-20",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "To study how chips really work, MIT researchers built their own operating system ",
+    "url": "https://news.mit.edu/2026/to-study-how-chips-really-work-mit-researchers-built-their-own-operating-system-0610",
+    "category": "article",
+    "dateRead": "2026-06-19",
+    "year": 2026,
+    "month": 6
+  },
+  {
     "title": "Deep Learning: Foundations and Concepts — Chapter 18",
     "category": "book",
     "bookTitle": "Deep Learning: Foundations and Concepts",
