@@ -15,6 +15,24 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 4",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-06-21",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Deep Learning: Foundations and Concepts — Chapter 19",
+    "category": "book",
+    "bookTitle": "Deep Learning: Foundations and Concepts",
+    "chapter": "Chapter 19",
+    "dateRead": "2026-06-21",
+    "year": 2026,
+    "month": 6
+  },
+  {
     "title": "Dremel: A Decade of Interactive SQL Analysis at Web Scale",
     "url": "https://research.google/pubs/dremel-a-decade-of-interactive-sql-analysis-at-web-scale/",
     "category": "paper",
