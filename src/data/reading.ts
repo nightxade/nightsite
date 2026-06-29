@@ -15,6 +15,49 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Machine Learning Systems, Volume 2: At Scale — Chapter 1",
+    "category": "book",
+    "bookTitle": "Machine Learning Systems, Volume 2: At Scale",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-06-28",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Optimizing cloud economics with linear elastic caching",
+    "url": "https://research.google/blog/optimizing-cloud-economics-with-linear-elastic-caching/",
+    "category": "article",
+    "dateRead": "2026-06-28",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "How to Land a Frontier Lab Job",
+    "url": "https://vladfeinberg.com/2026/05/10/how-to-land-a-job-at-a-frontier-lab.html",
+    "category": "article",
+    "dateRead": "2026-06-27",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 4",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-06-26",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 3",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-06-26",
+    "year": 2026,
+    "month": 6
+  },
+  {
     "title": "Principles and Practices of Interconnection Networks — Chapter 4",
     "category": "book",
     "bookTitle": "Principles and Practices of Interconnection Networks",
@@ -79,6 +122,24 @@ export const readingEntries: ReadingEntry[] = [
     "url": "https://arxiv.org/abs/2312.03863",
     "category": "paper",
     "dateRead": "2026-06-13",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 2",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-06-12",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 1",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-06-12",
     "year": 2026,
     "month": 6
   },
