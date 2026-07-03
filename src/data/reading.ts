@@ -15,6 +15,66 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Inside the eighth-generation TPU: An architecture deep dive",
+    "url": "https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive",
+    "category": "article",
+    "dateRead": "2026-07-02",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Google's Training Supercomputers from TPU v2 to Ironwood: Architectural Stability, Scale, Resilience, Power Efficiency, and Sustainability Across Five Generations",
+    "url": "https://arxiv.org/abs/2606.15870",
+    "category": "paper",
+    "dateRead": "2026-07-02",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 7",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-07-01",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 6",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-07-01",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Deep Learning: Foundations and Concepts — Chapter 20",
+    "category": "book",
+    "bookTitle": "Deep Learning: Foundations and Concepts",
+    "chapter": "Chapter 20",
+    "dateRead": "2026-06-30",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 5",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-06-29",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "ELBO — What & Why",
+    "url": "https://yunfanj.com/blog/2021/01/11/ELBO.html",
+    "category": "article",
+    "dateRead": "2026-06-28",
+    "year": 2026,
+    "month": 6
+  },
+  {
     "title": "Machine Learning Systems, Volume 2: At Scale — Chapter 1",
     "category": "book",
     "bookTitle": "Machine Learning Systems, Volume 2: At Scale",
