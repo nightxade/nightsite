@@ -15,6 +15,31 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
+    "url": "https://arxiv.org/abs/1910.02054",
+    "category": "paper",
+    "dateRead": "2026-07-06",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Photon: A Fast Query Engine for Lakehouse Systems",
+    "url": "https://dl.acm.org/doi/10.1145/3514221.3526054?__cf_chl_f_tk=2Yky0EKedRHVK7SUnA_zVpXlfF3w0_bIDdMPN1IZszY-1783221314-1.0.1.1-yHTuyu_ZT4EmeSx.NT8ujKP7YeTWKsguAkIrkUExdG4",
+    "category": "paper",
+    "dateRead": "2026-07-04",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 5",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-07-03",
+    "year": 2026,
+    "month": 7
+  },
+  {
     "title": "Inside the eighth-generation TPU: An architecture deep dive",
     "url": "https://cloud.google.com/blog/products/compute/tpu-8t-and-tpu-8i-technical-deep-dive",
     "category": "article",
