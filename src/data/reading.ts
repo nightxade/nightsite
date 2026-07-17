@@ -15,6 +15,86 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "The Book of Kubernetes: A Complete Guide to Container Orchestration — Chapter 1",
+    "category": "book",
+    "bookTitle": "The Book of Kubernetes: A Complete Guide to Container Orchestration",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-07-16",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Delos (Claude-gen) — Chapter 2",
+    "category": "book",
+    "bookTitle": "Delos (Claude-gen)",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-07-16",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Delos (Claude-gen) — Chapter 1",
+    "category": "book",
+    "bookTitle": "Delos (Claude-gen)",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-07-15",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Virtual Consensus in Delos",
+    "url": "https://www.usenix.org/system/files/osdi20-balakrishnan.pdf",
+    "category": "paper",
+    "dateRead": "2026-07-15",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 12",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 12",
+    "dateRead": "2026-07-07",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 11",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 11",
+    "dateRead": "2026-07-07",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 10",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 10",
+    "dateRead": "2026-07-07",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 9",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 9",
+    "dateRead": "2026-07-07",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Android Internals (Claude-gen) — Chapter 8",
+    "category": "book",
+    "bookTitle": "Android Internals (Claude-gen)",
+    "chapter": "Chapter 8",
+    "dateRead": "2026-07-07",
+    "year": 2026,
+    "month": 7
+  },
+  {
     "title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
     "url": "https://arxiv.org/abs/1910.02054",
     "category": "paper",
