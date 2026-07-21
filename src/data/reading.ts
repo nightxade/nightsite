@@ -15,13 +15,21 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Rail-Optimized Networking for AI Training Workloads",
+    "url": "https://networkphil.com/2026/04/15/rail-optimized-data-center-networking-for-ai-training-workloads/",
+    "category": "article",
+    "dateRead": "2026-07-21",
+    "year": 2026,
+    "month": 7
+  },
+  {
     "title": "Machine Learning Systems, Volume 2: At Scale — Chapter 2",
     "category": "book",
     "bookTitle": "Machine Learning Systems, Volume 2: At Scale",
     "chapter": "Chapter 2",
     "dateRead": "2026-07-21",
     "year": 2026,
-    "month": 6
+    "month": 7
   },
   {
     "title": "The Book of Kubernetes: A Complete Guide to Container Orchestration — Chapter 3",
