@@ -15,6 +15,112 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Machine Learning Systems, Volume 2: At Scale — Chapter 2",
+    "category": "book",
+    "bookTitle": "Machine Learning Systems, Volume 2: At Scale",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-07-21",
+    "year": 2026,
+    "month": 6
+  },
+  {
+    "title": "The Book of Kubernetes: A Complete Guide to Container Orchestration — Chapter 3",
+    "category": "book",
+    "bookTitle": "The Book of Kubernetes: A Complete Guide to Container Orchestration",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-07-20",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Delos (Claude-gen) — Chapter 9",
+    "category": "book",
+    "bookTitle": "Delos (Claude-gen)",
+    "chapter": "Chapter 9",
+    "dateRead": "2026-07-20",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Delos (Claude-gen) — Chapter 8",
+    "category": "book",
+    "bookTitle": "Delos (Claude-gen)",
+    "chapter": "Chapter 8",
+    "dateRead": "2026-07-20",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Delos (Claude-gen) — Chapter 7",
+    "category": "book",
+    "bookTitle": "Delos (Claude-gen)",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-07-20",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Delos (Claude-gen) — Chapter 6",
+    "category": "book",
+    "bookTitle": "Delos (Claude-gen)",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-07-20",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Delos (Claude-gen) — Chapter 5",
+    "category": "book",
+    "bookTitle": "Delos (Claude-gen)",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-07-20",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Delos (Claude-gen) — Chapter 4",
+    "category": "book",
+    "bookTitle": "Delos (Claude-gen)",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-07-20",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "The Open Frontier 0.75/N: Chain of Thought Faithfulness via Rickroll",
+    "url": "https://jessicaruan.com/posts/open-frontier-p0-75",
+    "category": "article",
+    "dateRead": "2026-07-18",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Limiting negative dentries",
+    "url": "https://lwn.net/Articles/1079407/",
+    "category": "article",
+    "dateRead": "2026-07-18",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Delos (Claude-gen) — Chapter 3",
+    "category": "book",
+    "bookTitle": "Delos (Claude-gen)",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-07-17",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "The Book of Kubernetes: A Complete Guide to Container Orchestration — Chapter 2",
+    "category": "book",
+    "bookTitle": "The Book of Kubernetes: A Complete Guide to Container Orchestration",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-07-17",
+    "year": 2026,
+    "month": 7
+  },
+  {
     "title": "The Book of Kubernetes: A Complete Guide to Container Orchestration — Chapter 1",
     "category": "book",
     "bookTitle": "The Book of Kubernetes: A Complete Guide to Container Orchestration",
