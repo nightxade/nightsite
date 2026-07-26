@@ -15,6 +15,87 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "ZippyDB (Claude-gen) — Chapter 7",
+    "category": "book",
+    "bookTitle": "ZippyDB (Claude-gen)",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-07-25",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "ZippyDB (Claude-gen) — Chapter 6",
+    "category": "book",
+    "bookTitle": "ZippyDB (Claude-gen)",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-07-25",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "ZippyDB (Claude-gen) — Chapter 5",
+    "category": "book",
+    "bookTitle": "ZippyDB (Claude-gen)",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-07-25",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "ZippyDB (Claude-gen) — Chapter 4",
+    "category": "book",
+    "bookTitle": "ZippyDB (Claude-gen)",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-07-25",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "The Book of Kubernetes: A Complete Guide to Container Orchestration — Chapter 5",
+    "category": "book",
+    "bookTitle": "The Book of Kubernetes: A Complete Guide to Container Orchestration",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-07-22",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "The Book of Kubernetes: A Complete Guide to Container Orchestration — Chapter 4",
+    "category": "book",
+    "bookTitle": "The Book of Kubernetes: A Complete Guide to Container Orchestration",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-07-22",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "ZippyDB (Claude-gen) — Chapter 3",
+    "category": "book",
+    "bookTitle": "ZippyDB (Claude-gen)",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-07-21",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "ZippyDB (Claude-gen) — Chapter 2",
+    "category": "book",
+    "bookTitle": "ZippyDB (Claude-gen)",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-07-21",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "ZippyDB (Claude-gen) — Chapter 1",
+    "category": "book",
+    "bookTitle": "ZippyDB (Claude-gen)",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-07-21",
+    "year": 2026,
+    "month": 7
+  },
+  {
     "title": "Rail-Optimized Networking for AI Training Workloads",
     "url": "https://networkphil.com/2026/04/15/rail-optimized-data-center-networking-for-ai-training-workloads/",
     "category": "article",
