@@ -15,6 +15,70 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "The Bottlenecks for AI-Driven System Design: why Principal Engineers are not (yet) obsolete.",
+    "url": "https://maheshba.bitbucket.io/blog/2026/07/22/agentdesign.html",
+    "category": "article",
+    "dateRead": "2026-07-26",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Your Agent is a Distributed System (and fails like one)",
+    "url": "https://maheshba.bitbucket.io/blog/2026/04/24/agentfailures.html",
+    "category": "article",
+    "dateRead": "2026-07-26",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Jeeps, Ferraris, and Other Engineers",
+    "url": "https://maheshba.bitbucket.io/blog/2025/04/29/cars.html",
+    "category": "article",
+    "dateRead": "2026-07-26",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "The Art of Managing Skunks",
+    "url": "https://maheshba.bitbucket.io/blog/2025/02/09/2025-skunks.html",
+    "category": "article",
+    "dateRead": "2026-07-26",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Three Laws of Software Complexity (or: why software engineers are always grumpy)",
+    "url": "https://maheshba.bitbucket.io/blog/2024/05/08/2024-ThreeLaws.html",
+    "category": "article",
+    "dateRead": "2026-07-26",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "What we talk about when we talk about System Design",
+    "url": "https://maheshba.bitbucket.io/blog/2023/07/12/Design.html",
+    "category": "article",
+    "dateRead": "2026-07-26",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "42 things I learned from building a production database",
+    "url": "https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html",
+    "category": "article",
+    "dateRead": "2026-07-26",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Taming Consensus in the Wild (with the Shared Log Abstraction)",
+    "url": "https://dl.acm.org/doi/10.1145/3689051.3689053",
+    "category": "paper",
+    "dateRead": "2026-07-26",
+    "year": 2026,
+    "month": 7
+  },
+  {
     "title": "ZippyDB (Claude-gen) — Chapter 7",
     "category": "book",
     "bookTitle": "ZippyDB (Claude-gen)",
