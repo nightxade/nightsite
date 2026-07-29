@@ -15,6 +15,85 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "TAO: Facebook’s Distributed Data Store for the Social Graph",
+    "url": "https://dl.acm.org/doi/10.5555/2535461.2535468",
+    "category": "paper",
+    "dateRead": "2026-07-28",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "Discovering cryptographic weaknesses with Claude",
+    "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+    "category": "article",
+    "dateRead": "2026-07-28",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "TAO (Claude-gen) — Chapter 7",
+    "category": "book",
+    "bookTitle": "TAO (Claude-gen)",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-07-27",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "TAO (Claude-gen) — Chapter 6",
+    "category": "book",
+    "bookTitle": "TAO (Claude-gen)",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-07-27",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "TAO (Claude-gen) — Chapter 5",
+    "category": "book",
+    "bookTitle": "TAO (Claude-gen)",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-07-27",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "TAO (Claude-gen) — Chapter 4",
+    "category": "book",
+    "bookTitle": "TAO (Claude-gen)",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-07-27",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "TAO (Claude-gen) — Chapter 3",
+    "category": "book",
+    "bookTitle": "TAO (Claude-gen)",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-07-27",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "TAO (Claude-gen) — Chapter 2",
+    "category": "book",
+    "bookTitle": "TAO (Claude-gen)",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-07-27",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "TAO (Claude-gen) — Chapter 1",
+    "category": "book",
+    "bookTitle": "TAO (Claude-gen)",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-07-27",
+    "year": 2026,
+    "month": 7
+  },
+  {
     "title": "The Bottlenecks for AI-Driven System Design: why Principal Engineers are not (yet) obsolete.",
     "url": "https://maheshba.bitbucket.io/blog/2026/07/22/agentdesign.html",
     "category": "article",
