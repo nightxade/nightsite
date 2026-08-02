@@ -15,6 +15,121 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "MTIA (Claude-gen) — Chapter 9",
+    "category": "book",
+    "bookTitle": "MTIA (Claude-gen)",
+    "chapter": "Chapter 9",
+    "dateRead": "2026-08-01",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "MTIA (Claude-gen) — Chapter 8",
+    "category": "book",
+    "bookTitle": "MTIA (Claude-gen)",
+    "chapter": "Chapter 8",
+    "dateRead": "2026-08-01",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "MTIA (Claude-gen) — Chapter 7",
+    "category": "book",
+    "bookTitle": "MTIA (Claude-gen)",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-08-01",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "MTIA (Claude-gen) — Chapter 6",
+    "category": "book",
+    "bookTitle": "MTIA (Claude-gen)",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-08-01",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "MTIA (Claude-gen) — Chapter 5",
+    "category": "book",
+    "bookTitle": "MTIA (Claude-gen)",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-08-01",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "MTIA (Claude-gen) — Chapter 4",
+    "category": "book",
+    "bookTitle": "MTIA (Claude-gen)",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-08-01",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "MTIA (Claude-gen) — Chapter 3",
+    "category": "book",
+    "bookTitle": "MTIA (Claude-gen)",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-08-01",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "MTIA (Claude-gen) — Chapter 2",
+    "category": "book",
+    "bookTitle": "MTIA (Claude-gen)",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-08-01",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "MTIA (Claude-gen) — Chapter 1",
+    "category": "book",
+    "bookTitle": "MTIA (Claude-gen)",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-08-01",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "The Book of Kubernetes: A Complete Guide to Container Orchestration — Chapter 7",
+    "category": "book",
+    "bookTitle": "The Book of Kubernetes: A Complete Guide to Container Orchestration",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-08-01",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+    "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+    "category": "article",
+    "dateRead": "2026-07-31",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "MTIA: First Generation Silicon Targeting Meta's Recommendation Systems",
+    "url": "https://dl.acm.org/doi/10.1145/3579371.3589348",
+    "category": "paper",
+    "dateRead": "2026-07-30",
+    "year": 2026,
+    "month": 7
+  },
+  {
+    "title": "The Book of Kubernetes: A Complete Guide to Container Orchestration — Chapter 6",
+    "category": "book",
+    "bookTitle": "The Book of Kubernetes: A Complete Guide to Container Orchestration",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-07-28",
+    "year": 2026,
+    "month": 7
+  },
+  {
     "title": "TAO: Facebook’s Distributed Data Store for the Social Graph",
     "url": "https://dl.acm.org/doi/10.5555/2535461.2535468",
     "category": "paper",
