@@ -15,6 +15,121 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "LogDevice: a distributed data store for logs",
+    "url": "https://engineering.fb.com/2017/08/31/core-infra/logdevice-a-distributed-data-store-for-logs/",
+    "category": "article",
+    "dateRead": "2026-08-05",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "LogDevice (Claude-gen) — Chapter 2",
+    "category": "book",
+    "bookTitle": "LogDevice (Claude-gen)",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-08-04",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "LogDevice (Claude-gen) — Chapter 1",
+    "category": "book",
+    "bookTitle": "LogDevice (Claude-gen)",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-08-04",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "PyTorch: An Imperative Style, High-Performance Deep Learning Library",
+    "url": "https://arxiv.org/abs/1912.01703",
+    "category": "paper",
+    "dateRead": "2026-07-03",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "PyTorch2 (Claude-gen) — Chapter 9",
+    "category": "book",
+    "bookTitle": "PyTorch2 (Claude-gen)",
+    "chapter": "Chapter 9",
+    "dateRead": "2026-08-02",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "PyTorch2 (Claude-gen) — Chapter 8",
+    "category": "book",
+    "bookTitle": "PyTorch2 (Claude-gen)",
+    "chapter": "Chapter 8",
+    "dateRead": "2026-08-02",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "PyTorch2 (Claude-gen) — Chapter 7",
+    "category": "book",
+    "bookTitle": "PyTorch2 (Claude-gen)",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-08-02",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "PyTorch2 (Claude-gen) — Chapter 6",
+    "category": "book",
+    "bookTitle": "PyTorch2 (Claude-gen)",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-08-02",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "PyTorch2 (Claude-gen) — Chapter 5",
+    "category": "book",
+    "bookTitle": "PyTorch2 (Claude-gen)",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-08-02",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "PyTorch2 (Claude-gen) — Chapter 4",
+    "category": "book",
+    "bookTitle": "PyTorch2 (Claude-gen)",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-08-02",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "PyTorch2 (Claude-gen) — Chapter 3",
+    "category": "book",
+    "bookTitle": "PyTorch2 (Claude-gen)",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-08-02",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "PyTorch2 (Claude-gen) — Chapter 2",
+    "category": "book",
+    "bookTitle": "PyTorch2 (Claude-gen)",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-08-02",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "PyTorch2 (Claude-gen) — Chapter 1",
+    "category": "book",
+    "bookTitle": "PyTorch2 (Claude-gen)",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-08-02",
+    "year": 2026,
+    "month": 8
+  },
+  {
     "title": "MTIA (Claude-gen) — Chapter 9",
     "category": "book",
     "bookTitle": "MTIA (Claude-gen)",
