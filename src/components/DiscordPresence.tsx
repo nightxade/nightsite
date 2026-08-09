@@ -338,12 +338,12 @@ const DiscordPresence = () => {
 
           {/* Credit */}
           <a
-            href="https://x.com/mioryyn"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground mt-auto text-right text-[10px] leading-none hover:underline"
           >
-            profile picture by @mioryyn
+            profile picture by idk :(
           </a>
       </div>
 
