@@ -15,6 +15,47 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Analyzing and Comparing Lakehouse Storage Systems",
+    "url": "https://www.cidrdb.org/cidr2023/papers/p92-jain.pdf",
+    "category": "paper",
+    "dateRead": "2026-08-12",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "A Post-AI CTF Format Could Be A Research Retreat",
+    "url": "https://jessicaruan.com/posts/save-ctfs",
+    "category": "article",
+    "dateRead": "2026-08-12",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 6",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-08-11",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+    "url": "https://arxiv.org/abs/2608.09867",
+    "category": "paper",
+    "dateRead": "2026-08-09",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel",
+    "url": "https://arxiv.org/abs/2304.11277",
+    "category": "paper",
+    "dateRead": "2026-08-09",
+    "year": 2026,
+    "month": 8
+  },
+  {
     "title": "LogDevice: a distributed data store for logs",
     "url": "https://engineering.fb.com/2017/08/31/core-infra/logdevice-a-distributed-data-store-for-logs/",
     "category": "article",
