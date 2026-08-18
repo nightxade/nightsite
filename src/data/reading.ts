@@ -15,6 +15,129 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "CacheLib (Claude-gen) — Chapter 6",
+    "category": "book",
+    "bookTitle": "CacheLib (Claude-gen)",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-08-18",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "CacheLib (Claude-gen) — Chapter 5",
+    "category": "book",
+    "bookTitle": "CacheLib (Claude-gen)",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-08-18",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "CacheLib (Claude-gen) — Chapter 4",
+    "category": "book",
+    "bookTitle": "CacheLib (Claude-gen)",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-08-18",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "CacheLib (Claude-gen) — Chapter 3",
+    "category": "book",
+    "bookTitle": "CacheLib (Claude-gen)",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-08-18",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "CacheLib (Claude-gen) — Chapter 2",
+    "category": "book",
+    "bookTitle": "CacheLib (Claude-gen)",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-08-18",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "CacheLib (Claude-gen) — Chapter 1",
+    "category": "book",
+    "bookTitle": "CacheLib (Claude-gen)",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-08-18",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "The CacheLib Caching Engine: Design and Experiences at Scale",
+    "url": "https://www.usenix.org/system/files/osdi20-berg.pdf",
+    "category": "paper",
+    "dateRead": "2026-08-15",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "LogDevice (Claude-gen) — Chapter 7",
+    "category": "book",
+    "bookTitle": "LogDevice (Claude-gen)",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-08-14",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "LogDevice (Claude-gen) — Chapter 6",
+    "category": "book",
+    "bookTitle": "LogDevice (Claude-gen)",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-08-14",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "LogDevice (Claude-gen) — Chapter 5",
+    "category": "book",
+    "bookTitle": "LogDevice (Claude-gen)",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-08-14",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "LogDevice (Claude-gen) — Chapter 4",
+    "category": "book",
+    "bookTitle": "LogDevice (Claude-gen)",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-08-14",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "LogDevice (Claude-gen) — Chapter 3",
+    "category": "book",
+    "bookTitle": "LogDevice (Claude-gen)",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-08-14",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Inside TPU and GPU Clusters: The Anatomy of Collective Communication",
+    "url": "https://www.aleksagordic.com/blog/collective-operations",
+    "category": "article",
+    "dateRead": "2026-08-14",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Patterns and problems in emerging multiagent systems",
+    "url": "https://www.anthropic.com/research/multiagent-systems",
+    "category": "article",
+    "dateRead": "2026-08-13",
+    "year": 2026,
+    "month": 8
+  },
+  {
     "title": "Analyzing and Comparing Lakehouse Storage Systems",
     "url": "https://www.cidrdb.org/cidr2023/papers/p92-jain.pdf",
     "category": "paper",
