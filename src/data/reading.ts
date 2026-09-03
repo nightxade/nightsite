@@ -15,6 +15,139 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Machine Learning Systems, Volume 2: At Scale — Chapter 4",
+    "category": "book",
+    "bookTitle": "Machine Learning Systems, Volume 2: At Scale",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-09-02",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety",
+    "url": "https://arxiv.org/abs/2507.11473",
+    "category": "paper",
+    "dateRead": "2026-08-27",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "The Hugging Face incident and the road ahead",
+    "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+    "category": "article",
+    "dateRead": "2026-08-27",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Tectonic (Claude-gen) — Chapter 10",
+    "category": "book",
+    "bookTitle": "Tectonic (Claude-gen)",
+    "chapter": "Chapter 10",
+    "dateRead": "2026-08-20",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Tectonic (Claude-gen) — Chapter 9",
+    "category": "book",
+    "bookTitle": "Tectonic (Claude-gen)",
+    "chapter": "Chapter 9",
+    "dateRead": "2026-08-20",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Tectonic (Claude-gen) — Chapter 8",
+    "category": "book",
+    "bookTitle": "Tectonic (Claude-gen)",
+    "chapter": "Chapter 8",
+    "dateRead": "2026-08-20",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Tectonic (Claude-gen) — Chapter 7",
+    "category": "book",
+    "bookTitle": "Tectonic (Claude-gen)",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-08-20",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Tectonic (Claude-gen) — Chapter 6",
+    "category": "book",
+    "bookTitle": "Tectonic (Claude-gen)",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-08-20",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Tectonic (Claude-gen) — Chapter 5",
+    "category": "book",
+    "bookTitle": "Tectonic (Claude-gen)",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-08-20",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Tectonic (Claude-gen) — Chapter 4",
+    "category": "book",
+    "bookTitle": "Tectonic (Claude-gen)",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-08-19",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Tectonic (Claude-gen) — Chapter 3",
+    "category": "book",
+    "bookTitle": "Tectonic (Claude-gen)",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-08-18",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Tectonic (Claude-gen) — Chapter 2",
+    "category": "book",
+    "bookTitle": "Tectonic (Claude-gen)",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-08-18",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "Tectonic (Claude-gen) — Chapter 1",
+    "category": "book",
+    "bookTitle": "Tectonic (Claude-gen)",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-08-18",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "CacheLib (Claude-gen) — Chapter 8",
+    "category": "book",
+    "bookTitle": "CacheLib (Claude-gen)",
+    "chapter": "Chapter 8",
+    "dateRead": "2026-08-18",
+    "year": 2026,
+    "month": 8
+  },
+  {
+    "title": "CacheLib (Claude-gen) — Chapter 7",
+    "category": "book",
+    "bookTitle": "CacheLib (Claude-gen)",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-08-18",
+    "year": 2026,
+    "month": 8
+  },
+  {
     "title": "CacheLib (Claude-gen) — Chapter 6",
     "category": "book",
     "bookTitle": "CacheLib (Claude-gen)",
