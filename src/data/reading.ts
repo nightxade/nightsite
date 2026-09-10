@@ -15,6 +15,171 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "What will our economic future look like?",
+    "url": "https://www.anthropic.com/institute/econ-scenarios",
+    "category": "article",
+    "dateRead": "2026-09-09",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 16",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 16",
+    "dateRead": "2026-09-09",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "AI Safety is Bottlenecked - Opportunity for Impact is High",
+    "url": "https://briandavies.substack.com/p/ai-safety-is-bottlenecked-opportunity",
+    "category": "article",
+    "dateRead": "2026-09-09",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 15",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 15",
+    "dateRead": "2026-09-07",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 14",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 14",
+    "dateRead": "2026-09-07",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "An Alien Mind",
+    "url": "https://openai.com/index/an-alien-mind/",
+    "category": "article",
+    "dateRead": "2026-09-06",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Research acceleration: The view inside OpenAI",
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+    "category": "article",
+    "dateRead": "2026-09-06",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 13",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 13",
+    "dateRead": "2026-09-06",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Modern Poker Theory — Chapter 1",
+    "category": "book",
+    "bookTitle": "Modern Poker Theory",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-09-06",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 12",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 12",
+    "dateRead": "2026-09-06",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 5",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-09-06",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 4",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-09-06",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 11",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 11",
+    "dateRead": "2026-09-05",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Selective Optimism: a critique of AI 2040",
+    "url": "https://www.lesswrong.com/posts/BBd2EJywf2xXftyFn/selective-optimism-a-critique-of-ai-2040",
+    "category": "article",
+    "dateRead": "2026-09-05",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "AI 2040",
+    "url": "ai-2040.com",
+    "category": "article",
+    "dateRead": "2026-09-05",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 10",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 10",
+    "dateRead": "2026-09-05",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 9",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 9",
+    "dateRead": "2026-09-04",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 8",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 8",
+    "dateRead": "2026-09-03",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 7",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-09-02",
+    "year": 2026,
+    "month": 9
+  },
+  {
     "title": "Machine Learning Systems, Volume 2: At Scale — Chapter 4",
     "category": "book",
     "bookTitle": "Machine Learning Systems, Volume 2: At Scale",
