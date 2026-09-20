@@ -15,6 +15,217 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 15",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 15",
+    "dateRead": "2026-09-19",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 14",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 14",
+    "dateRead": "2026-09-18",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 13",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 13",
+    "dateRead": "2026-09-17",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Distributed Systems — Chapter 2",
+    "category": "book",
+    "bookTitle": "Distributed Systems",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-09-17",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 12",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 12",
+    "dateRead": "2026-09-16",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 23",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 23",
+    "dateRead": "2026-09-16",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 11",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 11",
+    "dateRead": "2026-09-16",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Composable AI: Build Prod, Not God",
+    "url": "https://typesafe.ai/manifesto",
+    "category": "article",
+    "dateRead": "2026-09-16",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Introducing System One Models & Jev",
+    "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+    "category": "article",
+    "dateRead": "2026-09-16",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 10",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 10",
+    "dateRead": "2026-09-16",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 22",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 22",
+    "dateRead": "2026-09-15",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 9",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 9",
+    "dateRead": "2026-09-15",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 8",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 8",
+    "dateRead": "2026-09-15",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 21",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 21",
+    "dateRead": "2026-09-14",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 20",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 20",
+    "dateRead": "2026-09-14",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Distributed Systems — Chapter 1",
+    "category": "book",
+    "bookTitle": "Distributed Systems",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-09-13",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 19",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 19",
+    "dateRead": "2026-09-12",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Modern Poker Theory — Chapter 2",
+    "category": "book",
+    "bookTitle": "Modern Poker Theory",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-09-12",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "We Must Pace the Frontier",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+    "category": "article",
+    "dateRead": "2026-09-12",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 18",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 18",
+    "dateRead": "2026-09-12",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 7",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-09-11",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Measuring tactical intelligence targeting and conventional weapons capabilities of AI models",
+    "url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
+    "category": "article",
+    "dateRead": "2026-09-11",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Principles and Practices of Interconnection Networks — Chapter 17",
+    "category": "book",
+    "bookTitle": "Principles and Practices of Interconnection Networks",
+    "chapter": "Chapter 17",
+    "dateRead": "2026-09-10",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "An alignment assessment of recent cybersecurity incidents",
+    "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+    "category": "article",
+    "dateRead": "2026-09-09",
+    "year": 2026,
+    "month": 9
+  },
+  {
     "title": "What will our economic future look like?",
     "url": "https://www.anthropic.com/institute/econ-scenarios",
     "category": "article",
