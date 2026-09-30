@@ -15,6 +15,146 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 20",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 20",
+    "dateRead": "2026-09-30",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 19",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 19",
+    "dateRead": "2026-09-30",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs",
+    "url": "https://arxiv.org/abs/2502.17424",
+    "category": "paper",
+    "dateRead": "2026-09-28",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Dive into Design Patterns — Chapter 5",
+    "category": "book",
+    "bookTitle": "Dive into Design Patterns",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-09-27",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Dive into Design Patterns — Chapter 4",
+    "category": "book",
+    "bookTitle": "Dive into Design Patterns",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-09-27",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Dive into Design Patterns — Chapter 3",
+    "category": "book",
+    "bookTitle": "Dive into Design Patterns",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-09-27",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Dive into Design Patterns — Chapter 2",
+    "category": "book",
+    "bookTitle": "Dive into Design Patterns",
+    "chapter": "Chapter 2",
+    "dateRead": "2026-09-27",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Dive into Design Patterns — Chapter 1",
+    "category": "book",
+    "bookTitle": "Dive into Design Patterns",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-09-27",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 18",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 18",
+    "dateRead": "2026-09-27",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Distributed Systems — Chapter 4",
+    "category": "book",
+    "bookTitle": "Distributed Systems",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-09-27",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 17",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 17",
+    "dateRead": "2026-09-25",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "How we made claude.ai 3x faster in two weeks",
+    "url": "https://claude.dev/blog/how-we-made-claude-ai-faster/",
+    "category": "article",
+    "dateRead": "2026-09-24",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 16",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 16",
+    "dateRead": "2026-09-24",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Distributed Systems — Chapter 3",
+    "category": "book",
+    "bookTitle": "Distributed Systems",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-09-23",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "How much does an outage cost?",
+    "url": "https://antithesis.com/docs/resources/cost_of_outages/",
+    "category": "article",
+    "dateRead": "2026-09-22",
+    "year": 2026,
+    "month": 9
+  },
+  {
+    "title": "Measurements for understanding the pace of AI development inside frontier labs",
+    "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+    "category": "article",
+    "dateRead": "2026-09-22",
+    "year": 2026,
+    "month": 9
+  },
+  {
     "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 15",
     "category": "book",
     "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
