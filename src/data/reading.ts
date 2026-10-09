@@ -46,6 +46,7 @@ export const readingEntries: ReadingEntry[] = [
     "dateRead": "2026-10-07",
     "year": 2026,
     "month": 10
+  },
   {
     "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
     "url": "https://arxiv.org/abs/2402.03300",
