@@ -15,6 +15,98 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+    "url": "https://arxiv.org/abs/2503.14476",
+    "category": "paper",
+    "dateRead": "2026-10-08",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Understanding R1-Zero-Like Training: A Critical Perspective",
+    "url": "https://arxiv.org/abs/2503.20783",
+    "category": "paper",
+    "dateRead": "2026-10-08",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2501.12948",
+    "category": "paper",
+    "dateRead": "2026-10-07",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 23",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 23",
+    "dateRead": "2026-10-07",
+    "year": 2026,
+    "month": 10
+  {
+    "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+    "url": "https://arxiv.org/abs/2402.03300",
+    "category": "paper",
+    "dateRead": "2026-10-06",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Dive into Design Patterns — Chapter 6",
+    "category": "book",
+    "bookTitle": "Dive into Design Patterns",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-10-05",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+    "url": "https://arxiv.org/abs/2408.03314",
+    "category": "paper",
+    "dateRead": "2026-10-05",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 22",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 22",
+    "dateRead": "2026-10-04",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 21",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 21",
+    "dateRead": "2026-10-03",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Distributed Systems — Chapter 5",
+    "category": "book",
+    "bookTitle": "Distributed Systems",
+    "chapter": "Chapter 5",
+    "dateRead": "2026-10-02",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Training Compute-Optimal Large Language Models",
+    "url": "https://arxiv.org/abs/2203.15556",
+    "category": "paper",
+    "dateRead": "2026-10-01",
+    "year": 2026,
+    "month": 10
+  },
+  {
     "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 20",
     "category": "book",
     "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
