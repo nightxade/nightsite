@@ -15,6 +15,130 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Claude reveals ECDSA curve origins",
+    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+    "category": "article",
+    "dateRead": "2026-10-18",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 26",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 26",
+    "dateRead": "2026-10-18",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+    "url": "https://arxiv.org/abs/2504.13837",
+    "category": "paper",
+    "dateRead": "2026-10-18",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "How employment is changing at Anthropic",
+    "url": "https://www.anthropic.com/research/employment-at-anthropic",
+    "category": "article",
+    "dateRead": "2026-10-17",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "VAPO: Efficient and Reliable Reinforcement Learning for Advanced Reasoning Tasks",
+    "url": "https://arxiv.org/abs/2504.05118",
+    "category": "paper",
+    "dateRead": "2026-10-15",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Defeating Nondeterminism in LLM Inference",
+    "url": "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/#how-do-we-make-kernels-batch-invariant",
+    "category": "article",
+    "dateRead": "2026-10-15",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Toward RL on mixed-precision, mixed-accelerator samplers",
+    "url": "https://modal.com/blog/toward-rl-on-mixed-precision-mixed-accelerator-samplers",
+    "category": "article",
+    "dateRead": "2026-10-15",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 25",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 25",
+    "dateRead": "2026-10-14",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Distributed Systems — Chapter 6",
+    "category": "book",
+    "bookTitle": "Distributed Systems",
+    "chapter": "Chapter 6",
+    "dateRead": "2026-10-14",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": " Redesigning source control at Anthropic",
+    "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+    "category": "article",
+    "dateRead": "2026-10-14",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Strengthening our defenses against distillation attacks",
+    "url": "https://www.anthropic.com/research/distillation-defenses",
+    "category": "article",
+    "dateRead": "2026-10-14",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "AI models may be capable of self-replicating without access to a datacenter",
+    "url": "https://www.anthropic.com/research/self-replicating-ai",
+    "category": "article",
+    "dateRead": "2026-10-14",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 24",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 24",
+    "dateRead": "2026-10-10",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Group Sequence Policy Optimization",
+    "url": "https://arxiv.org/abs/2507.18071",
+    "category": "paper",
+    "dateRead": "2026-10-09",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention",
+    "url": "https://arxiv.org/abs/2506.13585",
+    "category": "paper",
+    "dateRead": "2026-10-09",
+    "year": 2026,
+    "month": 10
+  },
+  {
     "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
     "url": "https://arxiv.org/abs/2503.14476",
     "category": "paper",
