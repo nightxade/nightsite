@@ -15,6 +15,105 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "LLMs are making formal software verification feasible at a much larger scale",
+    "url": "https://www.anthropic.com/research/formal-verification",
+    "category": "article",
+    "dateRead": "2026-10-23",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Using Claude to reduce the attack surface of code",
+    "url": "https://www.anthropic.com/research/attack-surface-reduction",
+    "category": "article",
+    "dateRead": "2026-10-23",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "I Did This Without Your Knowledge",
+    "url": "https://www.lesswrong.com/posts/3375SZNGA5dKHQMie/i-did-this-without-your-knowledge",
+    "category": "article",
+    "dateRead": "2026-10-23",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes",
+    "url": "https://arxiv.org/abs/2306.13649",
+    "category": "paper",
+    "dateRead": "2026-10-23",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "LoRA Without Regret",
+    "url": "https://thinkingmachines.ai/blog/lora/",
+    "category": "article",
+    "dateRead": "2026-10-23",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "On-Policy Distillation",
+    "url": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+    "category": "article",
+    "dateRead": "2026-10-21",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 29",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 29",
+    "dateRead": "2026-10-21",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 28",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 28",
+    "dateRead": "2026-10-21",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Trading and Exchanges: Market Microstructure for Practitioners — Chapter 27",
+    "category": "book",
+    "bookTitle": "Trading and Exchanges: Market Microstructure for Practitioners",
+    "chapter": "Chapter 27",
+    "dateRead": "2026-10-20",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Reinforcement Learning via Self-Distillation",
+    "url": "https://arxiv.org/abs/2601.20802",
+    "category": "paper",
+    "dateRead": "2026-10-20",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Inoculation Prompting: Instructing LLMs to misbehave at train-time improves test-time alignment",
+    "url": "https://alignment.anthropic.com/2025/inoculation-prompting/",
+    "category": "article",
+    "dateRead": "2026-10-20",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Reducing Reward Hacking by Localizing Bad Behavior Instead of Penalizing It",
+    "url": "https://alignment.anthropic.com/2026/graft/",
+    "category": "article",
+    "dateRead": "2026-10-20",
+    "year": 2026,
+    "month": 10
+  },
+  {
     "title": "Claude reveals ECDSA curve origins",
     "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
     "category": "article",
