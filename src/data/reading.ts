@@ -24,12 +24,20 @@ export const readingEntries: ReadingEntry[] = [
     "month": 11
   },
   {
+    "title": "Announcing Zellic's and V12's Work on x86 Binary Formal Verification",
+    "url": "https://www.zellic.io/blog/x86-formal-verification-intro/",
+    "category": "article",
+    "dateRead": "2026-11-04",
+    "year": 2026,
+    "month": 11
+  },
+  {
     "title": "AceReason-Nemotron: Advancing Math and Code Reasoning through Reinforcement Learning",
     "url": "https://arxiv.org/abs/2505.16400",
     "category": "paper",
     "dateRead": "2026-11-02",
     "year": 2026,
-    "month": 10
+    "month": 11
   },
   {
     "title": "Securing Internet-Critical Software: How We Could Have Backdoored Bash",
