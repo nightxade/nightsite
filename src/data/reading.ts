@@ -15,6 +15,155 @@ export interface ReadingEntry {
 
 export const readingEntries: ReadingEntry[] = [
   {
+    "title": "Distributed Systems — Chapter 7",
+    "category": "book",
+    "bookTitle": "Distributed Systems",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-11-05",
+    "year": 2026,
+    "month": 11
+  },
+  {
+    "title": "AceReason-Nemotron: Advancing Math and Code Reasoning through Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2505.16400",
+    "category": "paper",
+    "dateRead": "2026-11-02",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Securing Internet-Critical Software: How We Could Have Backdoored Bash",
+    "url": "https://www.hacktron.ai/blog/hacking-gnu-savannah",
+    "category": "article",
+    "dateRead": "2026-10-31",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "PipelineRL: Faster On-policy Reinforcement Learning for Long Sequence Generation",
+    "url": "https://arxiv.org/abs/2509.19128",
+    "category": "paper",
+    "dateRead": "2026-10-30",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "How AI agents shape experts’ judgment calls",
+    "url": "https://www.anthropic.com/research/agents-judgment-calls",
+    "category": "article",
+    "dateRead": "2026-10-29",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "How to fix a bug in a fix",
+    "url": "https://projectzero.google/2026/10/emergency-patching.html",
+    "category": "article",
+    "dateRead": "2026-10-29",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Discovering and exploiting vulnerabilities in critical, real-world software with Claude",
+    "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
+    "category": "article",
+    "dateRead": "2026-10-29",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Hunger beats tenure: Advice for junior engineers",
+    "url": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+    "category": "article",
+    "dateRead": "2026-10-29",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "ProRL: Prolonged Reinforcement Learning Expands Reasoning Boundaries in Large Language Models",
+    "url": "https://arxiv.org/abs/2505.24864",
+    "category": "paper",
+    "dateRead": "2026-10-28",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "The Art of Scaling Reinforcement Learning Compute for LLMs",
+    "url": "https://arxiv.org/abs/2510.13786",
+    "category": "paper",
+    "dateRead": "2026-10-27",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Qwen3 Technical Report",
+    "url": "https://arxiv.org/abs/2505.09388",
+    "category": "paper",
+    "dateRead": "2026-10-26",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "A Practical Guide to Quantitative Finance Interviews — Chapter 1",
+    "category": "book",
+    "bookTitle": "A Practical Guide to Quantitative Finance Interviews",
+    "chapter": "Chapter 1",
+    "dateRead": "2026-10-25",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
+    "url": "https://arxiv.org/abs/2306.00978",
+    "category": "paper",
+    "dateRead": "2026-10-25",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Dive into Design Patterns — Chapter 7",
+    "category": "book",
+    "bookTitle": "Dive into Design Patterns",
+    "chapter": "Chapter 7",
+    "dateRead": "2026-10-25",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+    "url": "https://arxiv.org/abs/2208.07339",
+    "category": "paper",
+    "dateRead": "2026-10-24",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Modern Poker Theory — Chapter 4",
+    "category": "book",
+    "bookTitle": "Modern Poker Theory",
+    "chapter": "Chapter 4",
+    "dateRead": "2026-10-24",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Modern Poker Theory — Chapter 3",
+    "category": "book",
+    "bookTitle": "Modern Poker Theory",
+    "chapter": "Chapter 3",
+    "dateRead": "2026-10-24",
+    "year": 2026,
+    "month": 10
+  },
+  {
+    "title": "Securing our frontier model training environment",
+    "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+    "category": "article",
+    "dateRead": "2026-10-23",
+    "year": 2026,
+    "month": 10
+  },
+  {
     "title": "LLMs are making formal software verification feasible at a much larger scale",
     "url": "https://www.anthropic.com/research/formal-verification",
     "category": "article",
